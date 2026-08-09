@@ -1,0 +1,20 @@
+{
+  "balance_rule": "max<=1.5*ideal and min>=0.5*ideal",
+  "chosen_folds": 5,
+  "fold_sizes": [
+    191,
+    191,
+    191,
+    191,
+    191
+  ],
+  "label_columns_read": false,
+  "largest_component": 134,
+  "largest_component_fraction": 0.14031413612565444,
+  "n_components": 230,
+  "n_nodes": 955,
+  "requested_folds": 5,
+  "seed": 2901,
+  "status": "SCG_FEASIBLE",
+  "target": "CHEMBL237_EC50"
+}

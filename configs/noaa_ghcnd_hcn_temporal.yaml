@@ -1,0 +1,95 @@
+name: noaa_ghcnd_hcn_daily_temperature_temporal
+status: frozen_before_station_eligibility_audit_or_performance_metrics
+source:
+  dataset: GHCN-Daily_US_Historical_Climatology_Network
+  version: 3.34-upd-2026071718
+  archive_url: https://www.ncei.noaa.gov/pub/data/ghcn/daily/ghcnd_hcn.tar.gz
+  archive_path: data/raw/noaa_ghcnd_hcn_20260717/ghcnd_hcn.tar.gz
+  archive_bytes: 315799709
+  archive_sha256: 2d6742b0191bf15766b577963a47be1e7961cf14c4640a9d1d88e746b5f2b929
+  stations_url: https://www.ncei.noaa.gov/pub/data/ghcn/daily/ghcnd-stations.txt
+  stations_path: data/raw/noaa_ghcnd_hcn_20260717/ghcnd-stations.txt
+  stations_bytes: 11395053
+  stations_sha256: fedc8bbe92f9b1eee0a57f8886e5e022965a542efa60710c01b47a838120b18d
+  doi: 10.7289/V5D21VHZ
+  license: NOAA_public_domain_with_attribution
+curation:
+  region: contiguous_united_states
+  latitude_range: [24.0, 50.0]
+  longitude_range: [-125.0, -66.0]
+  elements: [TMAX, TMIN]
+  daily_mean: arithmetic_mean_tmax_tmin_celsius
+  reject_nonblank_quality_flag: true
+  require_finite_elevation: true
+  minimum_partition_coverage: 0.90
+  minimum_eligible_stations: 300
+time_split:
+  train_years: [2019, 2020, 2021, 2022]
+  validation_years: [2023]
+  test_years: [2024]
+graph:
+  construction: haversine_knn_union
+  k: 8
+  maximum_edge_distance_km: 500.0
+  weight: exp_negative_distance_over_edge_median
+forecast:
+  task: causal_one_day_ahead_station_temperature
+  lag_days: 1
+  current_or_future_response_features: prohibited
+  lag_missing_fallback: zero_train_residual
+  frozen_features:
+    - previous_day_station_residual_scaled
+    - previous_day_weighted_neighbor_mean_residual_scaled
+    - previous_day_weighted_neighbor_residual_standard_deviation_scaled
+    - previous_day_absolute_station_neighbor_gap_scaled
+    - current_day_fourier_sine_cosine_harmonics_1_through_4
+    - response_free_station_latitude_longitude_elevation_and_graph_degree
+  feature_standardization: training_only_for_ridge
+  climatology: station_fourier_ridge
+  climatology_harmonics: 4
+  climatology_ridge_alpha: 1.0
+  residual_scale: global_train_median_absolute_residual_plus_1e-6
+  ridge_alpha: 1.0
+  hist_gradient_boosting:
+    max_iter: 200
+    learning_rate: 0.05
+    max_leaf_nodes: 31
+    l2_regularization: 1.0
+    random_state: 2901
+  base_weights:
+    persistence: 0.5
+    ridge: 0.25
+    hist_gradient_boosting: 0.25
+operator:
+  graph: fixed_station_knn
+  active_edge_rule: absolute_unscaled_predicted_residual_delta
+  predicted_delta_threshold_train_scale_units: 0.5
+  scale: 1.5
+  center: confidence_weighted_by_frozen_base_disagreement
+  uncertainty_floor: date_prediction_median_plus_1e-6
+  clipping: none
+boundary_evaluation:
+  definition: absolute_true_residual_edge_delta
+  threshold: train_edge_delta_quantile
+  train_quantile: 0.90
+  test_boundary_opened_after_prediction_hash_freeze: true
+evaluation:
+  metrics: [overall_mae_celsius, boundary_endpoint_mae_celsius, boundary_pair_delta_mae_celsius]
+  aggregation: date_then_test_year_macro
+  bootstrap: moving_week_block_over_test_dates
+  bootstrap_iterations: 10000
+  seed: 2901
+decision:
+  minimum_pair_relative_improvement: 0.03
+  minimum_pair_favorable_date_fraction: 0.60
+  maximum_overall_relative_cost: 0.01
+  maximum_boundary_endpoint_relative_cost: 0.01
+  maximum_pair_bootstrap_upper: 0.0
+firewall:
+  validation_only_diagnostics: true
+  test_date_prediction_cannot_read_same_or_future_date_response: true
+  predictions_hashed_before_same_date_response_evaluation: true
+compute:
+  maximum_logical_cpu_threads: 320
+  leave_at_least_physical_cpu_cores: 30
+  smoke_station_limit: 20

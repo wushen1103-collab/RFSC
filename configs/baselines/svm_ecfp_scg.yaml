@@ -1,0 +1,27 @@
+method: svm_ecfp
+protocol: moleculeace_scg
+status: frozen_public_global_mode_before_svm_scg_predictions
+source:
+  repository: https://github.com/molML/MoleculeACE
+  commit: 7e6de0bd2968c56589c580f2a397f01c531ede26
+  public_benchmark_config_mode: 27_of_30_C_10_and_30_of_30_gamma_0.01
+data_root: data/processed/moleculeace
+fingerprint:
+  radius: 2
+  n_bits: 1024
+model:
+  kernel: rbf
+  C: 10.0
+  gamma: 0.01
+  epsilon: 0.1
+  cache_size_mb: 2048
+selection:
+  target_specific_hyperparameters: prohibited
+  validation_labels: not_used
+evaluation:
+  response: y_pactivity
+  primary: mmp_cliff_endpoint_mae
+  secondary: [overall_mae, pair_delta_mae]
+  deterministic: true
+seeds: [0]
+

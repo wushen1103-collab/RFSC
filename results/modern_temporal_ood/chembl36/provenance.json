@@ -1,0 +1,82 @@
+{
+  "svm": {
+    "result_source": "Re-run",
+    "prediction_template": "experiments/chembl36_temporal_earliest/predictions/{target}/seed_{seed}/svm/predictions.parquet",
+    "split": "identical frozen temporal split",
+    "seeds": [
+      0,
+      1,
+      2
+    ]
+  },
+  "rf": {
+    "result_source": "Re-run",
+    "prediction_template": "experiments/chembl36_temporal_earliest/predictions/{target}/seed_{seed}/rf/predictions.parquet",
+    "split": "identical frozen temporal split",
+    "seeds": [
+      0,
+      1,
+      2
+    ]
+  },
+  "gine": {
+    "result_source": "Re-run",
+    "prediction_template": "experiments/chembl36_temporal_earliest/predictions/{target}/seed_{seed}/gine/predictions.parquet",
+    "split": "identical frozen temporal split",
+    "seeds": [
+      0,
+      1,
+      2
+    ]
+  },
+  "unscaled_reference": {
+    "result_source": "Ours",
+    "prediction_template": "experiments/chembl36_temporal_earliest/predictions/{target}/seed_{seed}/unscaled_reference/predictions.parquet",
+    "split": "identical frozen temporal split",
+    "seeds": [
+      0,
+      1,
+      2
+    ]
+  },
+  "bps": {
+    "result_source": "Ours",
+    "prediction_template": "experiments/chembl36_temporal_earliest/predictions/{target}/seed_{seed}/bps/predictions.parquet",
+    "split": "identical frozen temporal split",
+    "seeds": [
+      0,
+      1,
+      2
+    ]
+  },
+  "gatv2": {
+    "result_source": "Re-run",
+    "prediction_template": "experiments/modern_temporal_ood/chembl36/gatv2/{target}/temporal/seed_{seed}/predictions.parquet",
+    "split": "identical frozen temporal split",
+    "seeds": [
+      0,
+      1,
+      2
+    ]
+  },
+  "mpnn": {
+    "result_source": "Re-run",
+    "prediction_template": "experiments/modern_temporal_ood/chembl36/mpnn/{target}/temporal/seed_{seed}/predictions.parquet",
+    "split": "identical frozen temporal split",
+    "seeds": [
+      0,
+      1,
+      2
+    ]
+  },
+  "attentivefp": {
+    "result_source": "Re-run",
+    "prediction_template": "experiments/modern_temporal_ood/chembl36/attentivefp/{target}/temporal/seed_{seed}/predictions.parquet",
+    "split": "identical frozen temporal split",
+    "seeds": [
+      0,
+      1,
+      2
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "status": "GO",
+  "validation_only": true,
+  "test_labels_materialized": false,
+  "criteria": {
+    "rf_rmse_improves_at_least_1pct": true,
+    "fixed_equal_overall_nonworse": true,
+    "fixed_equal_cliff_nonworse": true,
+    "fixed_equal_pair_within_0_5pct": true
+  },
+  "relative_changes_pct": {
+    "overall_mae": -2.251360479536979,
+    "cliff_endpoint_mae": -6.009985054130729,
+    "cliff_pair_delta_mae": -9.3864665237248
+  },
+  "rf_rmse_relative_change_pct": -6.08133609643372,
+  "action": "preregister_two_point_replication"
+}

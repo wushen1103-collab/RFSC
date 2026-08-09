@@ -1,0 +1,13 @@
+name: eswa_qm9_structured_missingness
+status: frozen_before_qm9_held_out_response_evaluation
+source_config: configs/eswa_qm9_direct_pair.yaml
+tasks: [homo, lumo, gap]
+folds: 5
+nodes: 128
+schemes: [hub_biased, chemistry_local, disconnected_blocks]
+densities: [0.05, 0.10, 0.25]
+fingerprint: {radius: 2, bits: 1024}
+hash_seed: 290814
+primary: {scheme: chemistry_local, density: 0.10}
+evaluation: {bootstrap_iterations: 10000, bootstrap_seed: 290815}
+firewall: {topology_uses_structures_only: true, responses_after_complete_hash_preflight: true}

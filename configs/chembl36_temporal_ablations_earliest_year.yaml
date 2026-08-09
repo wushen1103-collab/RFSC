@@ -1,0 +1,30 @@
+name: chembl36_temporal_earliest_year_post_primary_ablations
+status: inherited_unchanged_from_prelabel_ablation_grid
+source_config: configs/chembl36_temporal_external_earliest_year.yaml
+random_seed: 2901
+mechanism:
+  identity: {scale: 1.0, graph: main_mmp}
+  all_mmp: {scale: 1.5, edge_rule: all_internal_test_mmp}
+  random_q_mmp: {scale: 1.5, edge_rule: random_without_replacement_matching_main_active_count}
+  low_delta_q_mmp: {scale: 1.5, edge_rule: smallest_absolute_predicted_delta_matching_main_active_count}
+base_model:
+  svm: {scale: 1.5, predicted_delta_threshold: 0.5}
+  rf_gine: {scale: 1.5, predicted_delta_threshold: 0.5}
+graph:
+  ecfp_knn:
+    fingerprint_radius: 2
+    fingerprint_bits: 1024
+    similarity: tanimoto
+    k: 10
+    minimum_similarity: 0.4
+    symmetrization: union
+    scale: 1.5
+    predicted_delta_threshold: 0.5
+sensitivity:
+  scales: [1.25, 1.5, 1.75]
+  predicted_delta_thresholds: [0.25, 0.5, 0.75]
+evaluation:
+  status: corrected_label_robustness_only
+  model_selection_allowed: false
+  metrics: [overall_mae, cliff_endpoint_mae, mmp_cliff_pair_delta_mae]
+  report_negative_results: true

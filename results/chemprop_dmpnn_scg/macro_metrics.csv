@@ -1,0 +1,2 @@
+method,n_targets,n_runs,n_seeds,total_wall_time_hours,peak_vram_gib,overall_mae_mean,overall_mae_std,overall_rmse_mean,overall_rmse_std,cliff_mae_mean,cliff_mae_std,cliff_rmse_mean,cliff_rmse_std,pair_delta_mae_mean,pair_delta_mae_std
+chemprop_dmpnn,29,429,3,8.267391896119161,0.0,0.7943540215865937,0.0027484229822623604,0.9986202094485237,0.003527065501616071,0.8512151461194142,0.003073874789353243,1.0514061156703276,0.003655262204215862,1.4156684026328106,0.0026107159870827315

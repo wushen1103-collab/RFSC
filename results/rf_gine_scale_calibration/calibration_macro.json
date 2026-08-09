@@ -1,0 +1,29 @@
+{
+  "paired_runs": 87,
+  "targets": 6,
+  "overall_mae_relative_change_vs_gine": -0.0633108241202892,
+  "cliff_mae_relative_change_vs_gine": -0.04793334675783741,
+  "pair_delta_mae_relative_change_vs_gine": -0.005064087686855919,
+  "overall_mae_relative_change_vs_fixed_equal": 0.023465976863547216,
+  "cliff_mae_relative_change_vs_fixed_equal": 0.011615643740471951,
+  "pair_delta_mae_relative_change_vs_fixed_equal": -0.016809287905494852,
+  "cliff_improved_targets_vs_gine": 5,
+  "pair_improved_targets_vs_fixed_equal": 4,
+  "criteria": {
+    "cliff_gain_vs_gine": true,
+    "overall_vs_gine": true,
+    "pair_vs_gine": true,
+    "cliff_directions_vs_gine": true,
+    "cliff_vs_fixed_equal": false,
+    "overall_vs_fixed_equal": false,
+    "pair_vs_fixed_equal": true,
+    "pair_directions_vs_fixed_equal": true
+  },
+  "promote_calibration": false,
+  "selected_scale_counts": {
+    "1.0": 34,
+    "1.25": 32,
+    "1.5": 13,
+    "2.0": 8
+  }
+}

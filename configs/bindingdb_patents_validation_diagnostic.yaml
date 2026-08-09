@@ -1,0 +1,20 @@
+name: bindingdb_patents_validation_only_projection_diagnostic
+status: post_external_reveal_method_development_only
+thresholds: [0.25, 0.5, 0.75, 1.0, 1.25]
+scales: [1.25, 1.5, 1.75, 2.0, 2.25, 2.5]
+centers: [ordinary, confidence_weighted]
+base_weights:
+  svm: 0.5
+  rf: 0.25
+  gine: 0.25
+uncertainty:
+  median_floor_additive: 1.0e-6
+selection:
+  maximum_overall_relative_cost: 0.01
+  maximum_cliff_relative_cost: 0.01
+  objective: minimum_pair_delta_mae_subject_to_point_costs
+firewall:
+  allowed_partition: validation
+  test_predictions_forbidden: true
+  test_labels_forbidden: true
+

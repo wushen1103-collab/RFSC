@@ -1,0 +1,33 @@
+name: loto_gated_component_scale_fixed_equal_rf_gine
+status: frozen_before_outer_test_predictions
+scope:
+  partition: outer_test
+  test_labels_in_builder: prohibited
+selection:
+  source: experiments/rf_gine_gated_component_scale_validation/full/loto_selected_parameters.csv
+  protocol: leave_one_target_out_validation
+  per_target:
+    CHEMBL234_Ki: {scale: 1.5, threshold: 0.25}
+    CHEMBL287_Ki: {scale: 1.5, threshold: 0.5}
+    CHEMBL2971_Ki: {scale: 1.5, threshold: 0.5}
+    CHEMBL4005_Ki: {scale: 1.5, threshold: 0.0}
+    CHEMBL4203_Ki: {scale: 1.5, threshold: 0.5}
+    CHEMBL4616_EC50: {scale: 1.5, threshold: 0.5}
+operator:
+  center: prediction_mean_within_selected_mmp_component
+  edge_gate: absolute_fixed_equal_predicted_mmp_delta_at_least_threshold
+  isolated_nodes: unchanged
+  base: fixed_equal_rf_gine
+evaluation:
+  primary: mmp_cliff_pair_delta_mae
+  secondary: [overall_mae, cliff_endpoint_mae]
+  aggregation: seed_then_fold_then_target_macro
+decision:
+  maximum_overall_relative_change_vs_fixed_equal: 0.01
+  maximum_cliff_relative_change_vs_fixed_equal: 0.01
+  minimum_pair_relative_improvement_vs_fixed_equal: 0.03
+  minimum_pair_improved_targets_vs_fixed_equal: 4
+  maximum_overall_relative_change_vs_gine: 0.0
+  maximum_cliff_relative_change_vs_gine: -0.03
+  maximum_pair_relative_change_vs_gine: 0.0
+

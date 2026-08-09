@@ -1,0 +1,15 @@
+branch,dataset,scope,candidate,reference,metric,relative_change,bootstrap95_lower,bootstrap95_upper,directions,status
+untouched_node,AqSolDB,5 SCG folds x 3 seeds,BPS,unscaled SVM/RF/GINE reference,overall_mae,0.0458306,0.0155899,0.0854127,0/5,NO-GO point cost
+untouched_node,AqSolDB,5 SCG folds x 3 seeds,BPS,unscaled SVM/RF/GINE reference,cliff_endpoint_mae,0.0807269,0.0190824,0.172130,0/5,NO-GO point cost
+untouched_node,AqSolDB,5 SCG folds x 3 seeds,BPS,unscaled SVM/RF/GINE reference,pair_delta_mae,-0.0560946,-0.0822185,-0.0267858,5/5,GO pair mechanism
+selective_risk,AqSolDB,nominal 80%; realized node coverage 81.84%,accepted BPS,accepted reference,overall_mae,0.0068361,0.0012257,0.0153315,1/5,point estimate within 1%; CI upper exceeds 1%
+selective_risk,AqSolDB,nominal 80%; pair coverage 41.23%,accepted BPS,accepted reference,pair_delta_mae,-0.0700252,-0.103016,-0.0360853,5/5,GO frozen risk rule
+selective_hybrid,AqSolDB,nominal 80%; full query cohort,risk-gated BPS/reference hybrid,reference,overall_mae,0.0055932,0.0009450,0.0127680,1/5,point estimate within 1%; strict CI noninferiority fails
+selective_hybrid,AqSolDB,nominal 80%; full cliff endpoints,risk-gated BPS/reference hybrid,reference,cliff_endpoint_mae,0.0089737,-0.0017787,0.0280616,2/5,point estimate within 1%; strict CI noninferiority fails
+selective_hybrid,AqSolDB,nominal 80%; full true-cliff pairs,risk-gated BPS/reference hybrid,reference,pair_delta_mae,-0.0226450,-0.0413529,-0.0005959,4/5,significant modest pair gain
+new_edge_family,QM9 HOMO/LUMO/gap,3 tasks x 5 folds,Hodge flow,raw direct Delta-LightGBM flow,pair_rmse,-0.0118536,-0.0129405,-0.0109383,15/15,GO
+new_edge_family,QM9 HOMO/LUMO/gap,3 tasks x 5 folds,Hodge flow,raw direct Delta-LightGBM flow,pair_mae,-0.0112692,-0.0122920,-0.0103586,15/15,GO
+new_edge_family,QM9 HOMO/LUMO/gap,3 tasks x 5 folds,Hodge flow,antisymmetric flow,pair_rmse,-0.0068379,-0.0076452,-0.0062094,15/15,GO incremental Hodge
+new_edge_family,QM9 HOMO/LUMO/gap,3 tasks x 5 folds,Hodge flow,antisymmetric flow,pair_mae,-0.0061073,-0.0069899,-0.0053862,15/15,GO incremental Hodge
+new_edge_family,QM9 HOMO/LUMO/gap,3 tasks x 5 folds,Hodge flow,absolute-LightGBM difference,pair_mae,0.140698,0.112219,0.166172,0/15,NO-GO direct-pair quality control
+structured_missingness,QM9 HOMO/LUMO/gap,chemistry-local 10%; 3 tasks x 5 folds,sparse Hodge,raw held flow,held_pair_rmse,0.0018469,-0.0025951,0.0074177,1/3,NO-GO preregistered primary

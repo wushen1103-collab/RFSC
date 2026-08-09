@@ -1,0 +1,15 @@
+name: rf_gine_fixed_equal_seed_mean_outer_test
+status: frozen_before_seed_ensemble_evaluation
+scope:
+  partition: outer_test
+  methods: [fixed_equal_seed_mean, gine_seed_mean, rf_seed_mean]
+  aggregation: outer_fold_then_target_macro
+protocol:
+  components: existing_frozen_rf_gine_predictions
+  seed_count: 3
+  test_labels_in_builder: prohibited
+decision:
+  maximum_overall_relative_change_vs_gine: 0.0
+  maximum_cliff_relative_change_vs_gine: -0.03
+  maximum_pair_delta_relative_change_vs_gine: 0.0
+  minimum_improved_targets_vs_gine: 4

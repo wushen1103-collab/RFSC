@@ -1,0 +1,1814 @@
+[
+  {
+    "folds": [
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 0,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 279,
+        "train_n": 515
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 1,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 172,
+        "train_n": 622
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 2,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 172,
+        "train_n": 622
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 3,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 171,
+        "train_n": 623
+      }
+    ],
+    "passed": true,
+    "protocol": "SCG",
+    "status": "SCG_FEASIBLE",
+    "target": "CHEMBL1862_Ki"
+  },
+  {
+    "folds": [
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 0,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 132,
+        "train_n": 527
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 1,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 132,
+        "train_n": 527
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 2,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 132,
+        "train_n": 527
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 3,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 132,
+        "train_n": 527
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 4,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 131,
+        "train_n": 528
+      }
+    ],
+    "passed": true,
+    "protocol": "SCG",
+    "status": "SCG_FEASIBLE",
+    "target": "CHEMBL1871_Ki"
+  },
+  {
+    "folds": [
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 0,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 150,
+        "train_n": 600
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 1,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 150,
+        "train_n": 600
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 2,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 150,
+        "train_n": 600
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 3,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 150,
+        "train_n": 600
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 4,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 150,
+        "train_n": 600
+      }
+    ],
+    "passed": true,
+    "protocol": "SCG",
+    "status": "SCG_FEASIBLE",
+    "target": "CHEMBL2034_Ki"
+  },
+  {
+    "folds": [
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 0,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 127,
+        "train_n": 504
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 1,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 126,
+        "train_n": 505
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 2,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 126,
+        "train_n": 505
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 3,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 126,
+        "train_n": 505
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 4,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 126,
+        "train_n": 505
+      }
+    ],
+    "passed": true,
+    "protocol": "SCG",
+    "status": "SCG_FEASIBLE",
+    "target": "CHEMBL2047_EC50"
+  },
+  {
+    "folds": [
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 0,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 551,
+        "train_n": 2203
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 1,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 551,
+        "train_n": 2203
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 2,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 551,
+        "train_n": 2203
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 3,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 551,
+        "train_n": 2203
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 4,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 550,
+        "train_n": 2204
+      }
+    ],
+    "passed": true,
+    "protocol": "SCG",
+    "status": "SCG_FEASIBLE",
+    "target": "CHEMBL204_Ki"
+  },
+  {
+    "folds": [
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 0,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 292,
+        "train_n": 1164
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 1,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 291,
+        "train_n": 1165
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 2,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 291,
+        "train_n": 1165
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 3,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 291,
+        "train_n": 1165
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 4,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 291,
+        "train_n": 1165
+      }
+    ],
+    "passed": true,
+    "protocol": "SCG",
+    "status": "SCG_FEASIBLE",
+    "target": "CHEMBL2147_Ki"
+  },
+  {
+    "folds": [
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 0,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 664,
+        "train_n": 2653
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 1,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 664,
+        "train_n": 2653
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 2,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 663,
+        "train_n": 2654
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 3,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 663,
+        "train_n": 2654
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 4,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 663,
+        "train_n": 2654
+      }
+    ],
+    "passed": true,
+    "protocol": "SCG",
+    "status": "SCG_FEASIBLE",
+    "target": "CHEMBL214_Ki"
+  },
+  {
+    "folds": [
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 0,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 207,
+        "train_n": 824
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 1,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 206,
+        "train_n": 825
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 2,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 206,
+        "train_n": 825
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 3,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 206,
+        "train_n": 825
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 4,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 206,
+        "train_n": 825
+      }
+    ],
+    "passed": true,
+    "protocol": "SCG",
+    "status": "SCG_FEASIBLE",
+    "target": "CHEMBL218_EC50"
+  },
+  {
+    "folds": [
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 0,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 373,
+        "train_n": 1492
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 1,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 373,
+        "train_n": 1492
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 2,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 373,
+        "train_n": 1492
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 3,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 373,
+        "train_n": 1492
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 4,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 373,
+        "train_n": 1492
+      }
+    ],
+    "passed": true,
+    "protocol": "SCG",
+    "status": "SCG_FEASIBLE",
+    "target": "CHEMBL219_Ki"
+  },
+  {
+    "folds": [
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 0,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 341,
+        "train_n": 1363
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 1,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 341,
+        "train_n": 1363
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 2,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 341,
+        "train_n": 1363
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 3,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 341,
+        "train_n": 1363
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 4,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 340,
+        "train_n": 1364
+      }
+    ],
+    "passed": true,
+    "protocol": "SCG",
+    "status": "SCG_FEASIBLE",
+    "target": "CHEMBL228_Ki"
+  },
+  {
+    "folds": [
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 0,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 195,
+        "train_n": 778
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 1,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 195,
+        "train_n": 778
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 2,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 195,
+        "train_n": 778
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 3,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 194,
+        "train_n": 779
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 4,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 194,
+        "train_n": 779
+      }
+    ],
+    "passed": true,
+    "protocol": "SCG",
+    "status": "SCG_FEASIBLE",
+    "target": "CHEMBL231_Ki"
+  },
+  {
+    "folds": [
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 0,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 629,
+        "train_n": 2513
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 1,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 629,
+        "train_n": 2513
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 2,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 628,
+        "train_n": 2514
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 3,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 628,
+        "train_n": 2514
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 4,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 628,
+        "train_n": 2514
+      }
+    ],
+    "passed": true,
+    "protocol": "SCG",
+    "status": "SCG_FEASIBLE",
+    "target": "CHEMBL233_Ki"
+  },
+  {
+    "folds": [
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 0,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 732,
+        "train_n": 2925
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 1,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 732,
+        "train_n": 2925
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 2,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 731,
+        "train_n": 2926
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 3,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 731,
+        "train_n": 2926
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 4,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 731,
+        "train_n": 2926
+      }
+    ],
+    "passed": true,
+    "protocol": "SCG",
+    "status": "SCG_FEASIBLE",
+    "target": "CHEMBL234_Ki"
+  },
+  {
+    "folds": [
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 0,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 470,
+        "train_n": 1879
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 1,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 470,
+        "train_n": 1879
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 2,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 470,
+        "train_n": 1879
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 3,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 470,
+        "train_n": 1879
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 4,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 469,
+        "train_n": 1880
+      }
+    ],
+    "passed": true,
+    "protocol": "SCG",
+    "status": "SCG_FEASIBLE",
+    "target": "CHEMBL235_EC50"
+  },
+  {
+    "folds": [
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 0,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 520,
+        "train_n": 2078
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 1,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 520,
+        "train_n": 2078
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 2,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 520,
+        "train_n": 2078
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 3,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 519,
+        "train_n": 2079
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 4,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 519,
+        "train_n": 2079
+      }
+    ],
+    "passed": true,
+    "protocol": "SCG",
+    "status": "SCG_FEASIBLE",
+    "target": "CHEMBL236_Ki"
+  },
+  {
+    "folds": [
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 0,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 191,
+        "train_n": 764
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 1,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 191,
+        "train_n": 764
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 2,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 191,
+        "train_n": 764
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 3,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 191,
+        "train_n": 764
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 4,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 191,
+        "train_n": 764
+      }
+    ],
+    "passed": true,
+    "protocol": "SCG",
+    "status": "SCG_FEASIBLE",
+    "target": "CHEMBL237_EC50"
+  },
+  {
+    "folds": [
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 0,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 521,
+        "train_n": 2082
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 1,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 521,
+        "train_n": 2082
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 2,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 521,
+        "train_n": 2082
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 3,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 520,
+        "train_n": 2083
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 4,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 520,
+        "train_n": 2083
+      }
+    ],
+    "passed": true,
+    "protocol": "SCG",
+    "status": "SCG_FEASIBLE",
+    "target": "CHEMBL237_Ki"
+  },
+  {
+    "folds": [
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 0,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 211,
+        "train_n": 841
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 1,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 211,
+        "train_n": 841
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 2,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 210,
+        "train_n": 842
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 3,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 210,
+        "train_n": 842
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 4,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 210,
+        "train_n": 842
+      }
+    ],
+    "passed": true,
+    "protocol": "SCG",
+    "status": "SCG_FEASIBLE",
+    "target": "CHEMBL238_Ki"
+  },
+  {
+    "folds": [
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 0,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 345,
+        "train_n": 1376
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 1,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 344,
+        "train_n": 1377
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 2,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 344,
+        "train_n": 1377
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 3,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 344,
+        "train_n": 1377
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 4,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 344,
+        "train_n": 1377
+      }
+    ],
+    "passed": true,
+    "protocol": "SCG",
+    "status": "SCG_FEASIBLE",
+    "target": "CHEMBL239_EC50"
+  },
+  {
+    "folds": [
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 0,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 620,
+        "train_n": 2477
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 1,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 620,
+        "train_n": 2477
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 2,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 619,
+        "train_n": 2478
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 3,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 619,
+        "train_n": 2478
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 4,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 619,
+        "train_n": 2478
+      }
+    ],
+    "passed": true,
+    "protocol": "SCG",
+    "status": "SCG_FEASIBLE",
+    "target": "CHEMBL244_Ki"
+  },
+  {
+    "folds": [
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 0,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 172,
+        "train_n": 684
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 1,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 171,
+        "train_n": 685
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 2,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 171,
+        "train_n": 685
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 3,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 171,
+        "train_n": 685
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 4,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 171,
+        "train_n": 685
+      }
+    ],
+    "passed": true,
+    "protocol": "SCG",
+    "status": "SCG_FEASIBLE",
+    "target": "CHEMBL262_Ki"
+  },
+  {
+    "folds": [
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 0,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 573,
+        "train_n": 2289
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 1,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 573,
+        "train_n": 2289
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 2,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 572,
+        "train_n": 2290
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 3,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 572,
+        "train_n": 2290
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 4,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 572,
+        "train_n": 2290
+      }
+    ],
+    "passed": true,
+    "protocol": "SCG",
+    "status": "SCG_FEASIBLE",
+    "target": "CHEMBL264_Ki"
+  },
+  {
+    "folds": [],
+    "passed": null,
+    "protocol": "SCG",
+    "status": "SCG_INFEASIBLE",
+    "target": "CHEMBL2835_Ki"
+  },
+  {
+    "folds": [
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 0,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 266,
+        "train_n": 1062
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 1,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 266,
+        "train_n": 1062
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 2,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 266,
+        "train_n": 1062
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 3,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 265,
+        "train_n": 1063
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 4,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 265,
+        "train_n": 1063
+      }
+    ],
+    "passed": true,
+    "protocol": "SCG",
+    "status": "SCG_FEASIBLE",
+    "target": "CHEMBL287_Ki"
+  },
+  {
+    "folds": [
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 0,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 356,
+        "train_n": 620
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 1,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 207,
+        "train_n": 769
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 2,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 207,
+        "train_n": 769
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 3,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 206,
+        "train_n": 770
+      }
+    ],
+    "passed": true,
+    "protocol": "SCG",
+    "status": "SCG_FEASIBLE",
+    "target": "CHEMBL2971_Ki"
+  },
+  {
+    "folds": [
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 0,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 225,
+        "train_n": 900
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 1,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 225,
+        "train_n": 900
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 2,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 225,
+        "train_n": 900
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 3,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 225,
+        "train_n": 900
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 4,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 225,
+        "train_n": 900
+      }
+    ],
+    "passed": true,
+    "protocol": "SCG",
+    "status": "SCG_FEASIBLE",
+    "target": "CHEMBL3979_EC50"
+  },
+  {
+    "folds": [
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 0,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 261,
+        "train_n": 699
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 1,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 175,
+        "train_n": 785
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 2,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 175,
+        "train_n": 785
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 3,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 175,
+        "train_n": 785
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 4,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 174,
+        "train_n": 786
+      }
+    ],
+    "passed": true,
+    "protocol": "SCG",
+    "status": "SCG_FEASIBLE",
+    "target": "CHEMBL4005_Ki"
+  },
+  {
+    "folds": [
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 0,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 147,
+        "train_n": 584
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 1,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 146,
+        "train_n": 585
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 2,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 146,
+        "train_n": 585
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 3,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 146,
+        "train_n": 585
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 4,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 146,
+        "train_n": 585
+      }
+    ],
+    "passed": true,
+    "protocol": "SCG",
+    "status": "SCG_FEASIBLE",
+    "target": "CHEMBL4203_Ki"
+  },
+  {
+    "folds": [
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 0,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 154,
+        "train_n": 528
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 1,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 132,
+        "train_n": 550
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 2,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 132,
+        "train_n": 550
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 3,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 132,
+        "train_n": 550
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 4,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 132,
+        "train_n": 550
+      }
+    ],
+    "passed": true,
+    "protocol": "SCG",
+    "status": "SCG_FEASIBLE",
+    "target": "CHEMBL4616_EC50"
+  },
+  {
+    "folds": [
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 0,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 298,
+        "train_n": 1173
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 1,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 294,
+        "train_n": 1177
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 2,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 293,
+        "train_n": 1178
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 3,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 293,
+        "train_n": 1178
+      },
+      {
+        "cross_split_eligible_mmp_edges": 0,
+        "cross_split_exact_connectivity": 0,
+        "cross_split_nonempty_scaffold": 0,
+        "fold": 4,
+        "passed_structure_assertions": true,
+        "prediction_hash_created_before_evaluation": null,
+        "test_labels_loaded_before_prediction": false,
+        "test_n": 293,
+        "train_n": 1178
+      }
+    ],
+    "passed": true,
+    "protocol": "SCG",
+    "status": "SCG_FEASIBLE",
+    "target": "CHEMBL4792_Ki"
+  }
+]

@@ -1,0 +1,90 @@
+version: 1
+tables:
+  - name: benchmark_expansion
+    outputs:
+      - paper/tables/benchmark_expansion/table_strict_scg_modern_baselines.csv
+      - paper/tables/benchmark_expansion/table_baseline_provenance.csv
+      - paper/tables/benchmark_expansion/table_temporal_ood_macro.csv
+      - paper/tables/benchmark_expansion/table_bps_backbone_transfer.csv
+      - paper/tables/benchmark_expansion/table_experiment_coverage.csv
+    sources:
+      - results/modern_baselines_scg/macro_metrics.csv
+      - results/chemprop_dmpnn_scg/macro_metrics.csv
+      - results/modern_temporal_ood/chembl36/macro_mean_std.csv
+      - results/modern_temporal_ood/bindingdb/macro_mean_std.csv
+      - results/bps_backbone_transfer/architecture_summary.csv
+      - results/bps_backbone_transfer/family_summary.json
+    command: python scripts/build_expansion_tables.py
+    evidence_status: complete_same_protocol_reruns_with_negative_backbone_transfer
+  - name: moleculeace_phase4
+    outputs:
+      - paper/tables/phase4/table_phase4_method_macro.csv
+      - paper/tables/phase4/table_phase4_paired_statistics.csv
+    sources:
+      - experiments/phase4_confirmatory/results/complete_results.parquet
+      - experiments/phase4_confirmatory/statistics/paired_statistics.json
+    command: >-
+      python scripts/build_phase4_tables.py
+      --results experiments/phase4_confirmatory/results/complete_results.parquet
+      --statistics experiments/phase4_confirmatory/statistics/paired_statistics.json
+      --output-dir paper/tables/phase4
+    evidence_status: confirmatory
+  - name: moleculeace_svm_bps
+    outputs:
+      - paper/tables/svm_bps/table_svm_bps_all29_methods.csv
+      - paper/tables/svm_bps/table_svm_bps_phase4_paired_statistics.csv
+    sources:
+      - experiments/svm_bps_selected/development_results/complete_results.parquet
+      - experiments/svm_bps_selected/phase4_secondary_results/complete_results.parquet
+      - experiments/svm_bps_selected/phase4_secondary_statistics/paired_statistics.json
+    command: >-
+      python scripts/build_svm_bps_tables.py
+      --development-results experiments/svm_bps_selected/development_results/complete_results.parquet
+      --secondary-results experiments/svm_bps_selected/phase4_secondary_results/complete_results.parquet
+      --secondary-statistics experiments/svm_bps_selected/phase4_secondary_statistics/paired_statistics.json
+      --output-dir paper/tables/svm_bps
+    evidence_status: development-selected_plus_secondary
+  - name: chembl36_corrected_temporal
+    outputs:
+      - paper/tables/temporal/table_chembl36_corrected_projection.csv
+    sources:
+      - experiments/chembl36_temporal_earliest/evaluation/primary_statistics.csv
+      - experiments/chembl36_temporal_earliest/confidence_weighted_robustness/evaluation/statistics.csv
+    command: python scripts/audit_release_package.py
+    evidence_status: corrected_postprimary_robustness
+  - name: deepdelta_five_repeat
+    outputs:
+      - paper/tables/deepdelta/table_deepdelta_5x10_macro.csv
+    sources:
+      - experiments/deepdelta_5x10_projection/evaluation/statistics.csv
+      - experiments/deepdelta_5x10_projection/evaluation/decision.json
+    command: python scripts/audit_release_package.py
+    evidence_status: performance_robustness_with_provenance_no_go
+  - name: delta_lgbm_second_architecture
+    outputs:
+      - paper/tables/deepdelta/table_delta_lgbm_projection_macro.csv
+      - paper/tables/deepdelta/table_delta_lgbm_projection_mechanism.csv
+    sources:
+      - results/delta_lgbm_10fold/statistics.csv
+      - results/delta_lgbm_10fold/decision.json
+      - experiments/deepdelta_delta_lgbm_projection/mechanism/dataset_mechanism.csv
+    command: python scripts/audit_release_package.py
+    evidence_status: tenfold_robustness_go_with_onefold_tail_warning_retained
+  - name: incomplete_flow
+    outputs:
+      - paper/tables/deepdelta/table_sparse_projection_density.csv
+    sources:
+      - experiments/deepdelta_sparse_projection/evaluation/statistics.csv
+      - experiments/deepdelta_sparse_projection/evaluation/decision.json
+    command: python scripts/audit_release_package.py
+    evidence_status: postprimary_generality
+  - name: projection_scaling
+    outputs:
+      - paper/tables/table_projection_scaling.csv
+    sources:
+      - experiments/projection_scaling/projection_scaling.csv
+      - experiments/projection_scaling/summary.json
+    command: >-
+      python scripts/benchmark_projection_scaling.py
+      --output-dir reproduced/projection_scaling --repeats 5
+    evidence_status: response_free_systems_benchmark

@@ -1,0 +1,27 @@
+method: gine
+protocol: moleculeace_official
+data_root: data/processed/moleculeace
+cache_root: cache/pyg
+selection:
+  strategy: train_only_scaffold_group_holdout
+  validation_fraction: 0.15
+  seed: 2901
+  criterion: validation_mae
+model:
+  hidden_dim: 128
+  layers: 4
+  dropout: 0.2
+optimization:
+  loss: mse_on_robust_scaled_response
+  learning_rate: 0.001
+  weight_decay: 0.00001
+  batch_size: 64
+  max_epochs: 200
+  patience: 30
+  gradient_clip: 5.0
+  amp: true
+evaluation:
+  response: y_pactivity
+  official_neural_anchor: MPNN_GRAPH
+seeds: [0, 1, 2]
+

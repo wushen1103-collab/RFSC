@@ -1,0 +1,8 @@
+method,metric,targets,relative_change,bootstrap95_lower,bootstrap95_upper,favorable_targets,formal_status
+Ordinary BPS,overall MAE,36,0.0068113413,0.0038501708,0.0103116570,8/36,point cost below 1%; CI upper exceeds 1%
+Ordinary BPS,cliff-endpoint MAE,35,0.0077459083,0.0000049664,0.0161194174,15/35,point cost below 1%; CI upper exceeds 1%
+Ordinary BPS,pair-delta MAE,35,-0.0372495268,-0.0567448755,-0.0211055388,29/35,positive pair result
+Confidence-weighted BPS,overall MAE,36,0.0067326501,0.0033305259,0.0105970749,9/36,point cost below 1%; CI upper exceeds 1%
+Confidence-weighted BPS,cliff-endpoint MAE,35,0.0075095622,-0.0014226805,0.0171706841,13/35,point cost below 1%; CI upper exceeds 1%
+Confidence-weighted BPS,pair-delta MAE,35,-0.0372657833,-0.0569227997,-0.0210602116,29/35,post-primary robustness positive
+

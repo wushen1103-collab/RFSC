@@ -1,0 +1,17 @@
+method: gine
+protocol: aqsol_external_scg
+status: inherited_frozen_parameters
+data_root: data/processed/aqsoldb_external
+cache_root: cache/pyg_aqsol_external
+selection: {strategy: next_structure_component_outer_fold, validation_fraction: null, seed: 2901, criterion: validation_mae}
+model: {hidden_dim: 128, layers: 4, dropout: 0.2}
+optimization:
+  loss: mse_on_robust_scaled_response
+  learning_rate: 0.001
+  weight_decay: 0.00001
+  batch_size: 64
+  max_epochs: 200
+  patience: 30
+  gradient_clip: 5.0
+  amp: true
+seeds: [0, 1, 2]

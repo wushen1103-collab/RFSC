@@ -1,0 +1,40 @@
+name: svm_bps_selected_phase4_secondary
+status: frozen_from_development_validation_before_candidate_evaluation
+selection_source: experiments/svm_rf_gine_validation/full
+selection:
+  svm_weight: 0.5
+  scale: 1.5
+  predicted_mmp_delta_threshold: 0.5
+  rule: robust_direction_before_mean_gain
+scope:
+  labels: phase4_secondary_not_independent_confirmation
+  targets:
+    - CHEMBL1862_Ki
+    - CHEMBL1871_Ki
+    - CHEMBL2034_Ki
+    - CHEMBL204_Ki
+    - CHEMBL2047_EC50
+    - CHEMBL214_Ki
+    - CHEMBL2147_Ki
+    - CHEMBL218_EC50
+    - CHEMBL219_Ki
+    - CHEMBL228_Ki
+    - CHEMBL231_Ki
+    - CHEMBL233_Ki
+    - CHEMBL235_EC50
+    - CHEMBL236_Ki
+    - CHEMBL237_EC50
+    - CHEMBL237_Ki
+    - CHEMBL238_Ki
+    - CHEMBL239_EC50
+    - CHEMBL244_Ki
+    - CHEMBL262_Ki
+    - CHEMBL264_Ki
+    - CHEMBL3979_EC50
+    - CHEMBL4792_Ki
+  expected_runs: 342
+decision:
+  maximum_overall_relative_change_vs_svm: 0.0
+  maximum_cliff_relative_change_vs_svm: 0.0
+  maximum_pair_relative_change_vs_svm: 0.0
+  minimum_improved_targets_per_metric: 12

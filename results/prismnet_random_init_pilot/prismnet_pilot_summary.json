@@ -1,0 +1,22 @@
+{
+  "target": "CHEMBL287_Ki",
+  "fold": 0,
+  "seed": 0,
+  "initialization": "random_init_architecture_audit",
+  "published_pretrained_reproduction": false,
+  "best_epoch": 49,
+  "best_validation_rmse": 0.8222420719574933,
+  "wall_time_seconds": 706.4367513796315,
+  "peak_vram_bytes": 1225615360,
+  "relative_change_vs_gine": {
+    "overall": 0.05951675336395246,
+    "cliff": 0.0032513004611809393,
+    "pair_delta": -0.048213268201698134
+  },
+  "criteria": {
+    "overall": true,
+    "cliff": true,
+    "pair_delta": true
+  },
+  "advance_random_init_matrix": true
+}

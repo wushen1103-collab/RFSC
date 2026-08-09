@@ -1,0 +1,9 @@
+{
+  "checks": {
+    "diagonal_repair_zero": true,
+    "hodge_vs_antisymmetric_bootstrap_upper": true,
+    "hodge_vs_antisymmetric_task_directions": true
+  },
+  "held_out_response_opened_after_complete_hash_preflight": true,
+  "strong_mechanism_support": true
+}

@@ -1,0 +1,53 @@
+name: lac_ecfp_mlp_strict_scg_formula_adaptation
+adaptation_status: formula_level_not_official_code_reproduction
+source:
+  venue: ICLR_2025
+  title: Curriculum-aware Training for Discriminating Molecular Property Prediction Models
+  paper: https://proceedings.iclr.cc/paper_files/paper/2025/hash/285cf10c8c6153d66b8cd6a3ab0d69ce-Abstract-Conference.html
+  official_code: not_found_after_targeted_search
+  ambiguity: prose_and_equation_keep_top_1_minus_R_while_algorithm_text_says_R
+data_root: data/processed/moleculeace
+mmp_root: graphs/mmp
+fingerprint:
+  kind: ecfp
+  radius: 2
+  n_bits: 1024
+model:
+  type: three_hidden_layer_mlp
+  input_dim: 1024
+  hidden_dim: 512
+  hidden_layers: 3
+  activation: relu
+optimization:
+  epochs: 150
+  batch_size: 256
+  optimizer: adam
+  learning_rate: 0.001
+  beta1: 0.9
+  beta2: 0.99
+  checkpoint_selection: fixed_final_epoch
+lac:
+  cliff_threshold: 1.0
+  non_cliff_weight: 0.5
+  edge_alpha: 0.1
+  schedule: linear
+  schedule_lambda: 0.2
+  schedule_gamma: 0.1
+  curriculum_interpretation: discard_bottom_R_keep_top_1_minus_R
+  pair_source: outer_train_internal_mmp_cliffs_only
+smoke:
+  target: CHEMBL234_Ki
+  fold: 0
+  seed: 0
+  evaluated_partition: outer_validation_pseudo_query
+  outer_test_predictions: prohibited
+  outer_test_labels: prohibited
+decision:
+  minimum_overall_improvement_vs_mlp: 0.02
+  minimum_cliff_improvement_vs_mlp: 0.02
+  maximum_pair_delta_change_vs_mlp: 0.0
+  minimum_active_edge_batch_fraction: 0.50
+  pass_requires_all_criteria: true
+expansion:
+  on_pass: freeze_two_point_replication
+  on_fail: record_no_go_without_curriculum_or_alpha_tuning

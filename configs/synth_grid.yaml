@@ -1,0 +1,30 @@
+seed:
+  validation: [0, 1, 2]
+  evaluation: [100, 101, 102, 103, 104, 105, 106, 107, 108, 109]
+graph:
+  type: random_geometric_knn
+  n_nodes: 1500
+  k: 12
+signal:
+  within_region: sinusoidal
+  jump: [0.0, 0.5, 1.0, 2.0]
+  noise_std: [0.1, 0.3, 0.6]
+smoother:
+  lambda: [0.03, 0.1, 0.3, 1.0, 3.0]
+methods:
+  - observation
+  - global
+  - oracle
+  - random
+  - edge_length
+  - anti_oracle
+selection:
+  criterion: validation_overall_mse
+  equal_trial_budget: true
+go_no_go:
+  material_jump_min: 1.0
+  oracle_boundary_mse_relative_improvement_min: 0.10
+  oracle_overall_degradation_max: 0.01
+  require_anti_oracle_worse_than_oracle: true
+  no_cliff_oracle_vs_global_relative_tolerance: 0.01
+

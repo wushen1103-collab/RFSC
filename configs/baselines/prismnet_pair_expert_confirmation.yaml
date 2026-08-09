@@ -1,0 +1,60 @@
+method: fixed_equal_plus_fixed_half_prismnet_pair_expert
+protocol: moleculeace_scg
+status: two_unseen_fold_confirmation_frozen_after_exploratory_discovery
+source:
+  repository: https://github.com/GZU-SAMLab/PrismNet
+  commit: 4698a5bc6c3ae0e31284e84676a375f8ed10941b
+  license: MIT
+data_root: data/processed/moleculeace
+initialization:
+  checkpoint: external/PrismNet/ckpts/pretrain.pth
+  published_reproduction_requires_checkpoint: true
+  missing_checkpoint_behavior: random_init_architecture_audit
+model:
+  d_atom: 115
+  d_edge: 13
+  d_model: 256
+  layers: 3
+  heads: 4
+  dense_layers: 1
+  generator_layers: 2
+  leaky_relu_slope: 0.1
+  dense_output_nonlinearity: mish
+  distance_matrix_kernel: softmax
+  aggregation_type: gru
+  scale_norm: true
+  dropout: 0.0
+optimization:
+  loss: official_rmse_with_regression_contrastive_loss
+  contrastive_weight: 0.1
+  batch_size: 32
+  max_epochs: 150
+  warmup_factor: 0.1
+  warmup_epochs: 30
+  validation_metric: rmse
+  train_drop_last: true
+  validation_test_drop_last: false
+  early_stopping_patience: 50
+  early_stopping_min_epochs: 75
+components:
+  prismnet_run_root: experiments/prismnet_pair_expert_confirmation/prismnet_runs
+  fixed_equal_ensemble: experiments/rf_gine_ensemble/full
+  gine: experiments/h1_oracle/gine_scg_panel
+pair_expert:
+  prism_weight: 0.5
+  weight_selection: prohibited
+confirmation:
+  maximum_wall_time_seconds_per_run: 1200
+  tasks:
+    - {target: CHEMBL287_Ki, fold: 2, seed: 0}
+    - {target: CHEMBL4005_Ki, fold: 1, seed: 0}
+decision:
+  maximum_overall_relative_change_vs_fixed_equal: 0.01
+  maximum_cliff_relative_change_vs_fixed_equal: 0.01
+  minimum_pair_delta_improvement_vs_fixed_equal: 0.03
+  require_pair_improvement_in_both_runs: true
+  maximum_overall_relative_change_vs_gine: 0.0
+  maximum_cliff_relative_change_vs_gine: 0.0
+  maximum_pair_delta_relative_change_vs_gine: 0.0
+seeds: [0, 1, 2]
+

@@ -1,0 +1,40 @@
+method: gine_acaloss
+protocol: moleculeace_official
+data_root: data/processed/moleculeace
+cache_root: cache/pyg
+selection:
+  strategy: train_only_scaffold_group_holdout
+  validation_fraction: 0.15
+  seed: 2901
+  criterion: validation_mae
+model:
+  hidden_dim: 128
+  layers: 4
+  dropout: 0.2
+optimization:
+  loss: external_acaloss
+  learning_rate: 0.001
+  weight_decay: 0.00001
+  batch_size: 64
+  max_epochs: 200
+  patience: 30
+  gradient_clip: 5.0
+  amp: true
+external:
+  name: ACANet-v3-ACALoss
+  source_root: ${ACANET_REPO:-external/ACANet}
+  commit: 4c43e6024345d0ec4d40fdc88ad57224c898b6da
+  license: GPL-3.0-only
+  license_sha256: 3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986
+aca_loss:
+  alpha: 0.1
+  cliff_lower: 0.2
+  cliff_upper: 1.0
+  squared: false
+  p: 2.0
+  similarity_gate: false
+  dev_mode: true
+evaluation:
+  response: y_pactivity
+  paired_control: gine
+seeds: [0, 1, 2]

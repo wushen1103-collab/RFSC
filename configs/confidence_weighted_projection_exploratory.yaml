@@ -1,0 +1,24 @@
+name: confidence_weighted_bps_v2_chembl36_exploratory
+status: frozen_post_primary_before_v2_predictions
+base_weights:
+  svm: 0.5
+  rf: 0.25
+  gine: 0.25
+uncertainty:
+  definition: weighted_base_prediction_variance_around_frozen_ensemble
+  median_floor_additive: 0.000001
+  precision: reciprocal_uncertainty_plus_target_test_median_floor
+  clipping: none
+operator:
+  graph: internal_test_mmp
+  predicted_delta_threshold: 0.5
+  scale: 1.5
+  center: precision_weighted_component_mean
+decision:
+  minimum_pair_relative_improvement_vs_unscaled: 0.03
+  maximum_overall_cost_vs_unscaled: inherit_ordinary_bps_observed_cost
+  maximum_cliff_cost_vs_unscaled: inherit_ordinary_bps_observed_cost
+  active_edge_difference_tolerance: 0.0000000001
+scope:
+  chembl36_status: exploratory_only
+  next_confirmation: separately_frozen_dockedac

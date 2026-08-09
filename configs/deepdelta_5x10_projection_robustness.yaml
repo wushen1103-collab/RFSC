@@ -1,0 +1,53 @@
+name: deepdelta_5x10_projection_robustness
+status: frozen_before_parsing_any_5x10_response_row_or_metric
+source:
+  repository: https://github.com/RekerLab/DeepDelta
+  commit: cd9b131559d54be639fcb9455e4c057a3dfd2c6b
+  aggregate_prediction_root: external/DeepDelta/Results/DeepDelta5
+  individual_prediction_root: external/DeepDelta/Results/DeepDelta_Individual_CV_Folds
+datasets:
+  - FUBrain
+  - RenClear
+  - FreeSolv
+  - MicroClear
+  - HemoTox
+  - HepClear
+  - Caco2
+  - Sol
+  - VDss
+  - HalfLife
+cross_validation:
+  folds: 10
+  repeats: [0, 1, 2, 3, 4]
+  previously_evaluated_repeat: 1
+  shuffle: true
+  molecule_disjoint: true
+methods:
+  baseline: published_deepdelta_pair_flow
+  ablation: antisymmetric_pair_flow
+  candidate: hodge_cycle_consistent_pair_flow
+evaluation:
+  exclude_diagonal_self_pairs: true
+  high_delta_quantile_within_fold: 0.75
+  metrics: [pair_rmse, pair_mae, high_delta_pair_mae, pearson_r]
+  aggregation: fold_then_repeat_then_dataset_macro
+  bootstrap_unit: dataset
+  bootstrap_iterations: 10000
+decision:
+  minimum_pair_rmse_improved_dataset_fraction_all_repeats: 1.0
+  maximum_pair_rmse_bootstrap_upper_all_repeats: 0.0
+  minimum_pair_rmse_improved_dataset_fraction_new_repeats: 1.0
+  maximum_pair_rmse_bootstrap_upper_new_repeats: 0.0
+  minimum_pair_rmse_improved_repeat_fraction: 0.96
+  minimum_pair_mae_improved_dataset_fraction_all_repeats: 0.8
+  maximum_pair_mae_bootstrap_upper_all_repeats: 0.0
+  maximum_high_delta_pair_mae_relative_change_all_repeats: 0.0
+  maximum_hodge_vs_antisymmetric_rmse_bootstrap_upper: 0.0
+  pythagorean_relative_tolerance: 1.0e-10
+  repeat_one_alignment_absolute_tolerance: 1.0e-12
+firewall:
+  candidate_numeric_parser_receives_only_last_prediction_row: true
+  prediction_row_hashes_committed_before_response_rows_are_parsed: true
+  no_response_based_tuning: true
+  no_model_training: true
+

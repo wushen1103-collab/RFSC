@@ -1,0 +1,18 @@
+method: frozen_molformer_ridge
+protocol: strict_scg_validation_only_v1
+data_root: data/processed/moleculeace
+molformer:
+  model: ibm/MoLFormer-XL-both-10pct
+  revision: 7b12d946c181a37f6012b9dc3b002275de070314
+  device: cuda:3
+  batch_size: 64
+  max_length: 512
+probe:
+  alpha: 1.0
+evaluation:
+  smoke_train_size: 64
+  smoke_query_size: 16
+  smoke_tasks:
+    - {target: CHEMBL287_Ki, fold: 0, seed: 42}
+  full_validation_tasks:
+    - {target: CHEMBL287_Ki, fold: 0, seed: 42}

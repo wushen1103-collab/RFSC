@@ -1,0 +1,33 @@
+method: fixed_equal_plus_prismnet_pair_expert
+protocol: moleculeace_scg
+status: exploratory_after_prism_component_test_metrics_seen
+components:
+  prismnet_run_roots:
+    - experiments/prismnet_random_init_pilot
+    - experiments/prismnet_random_init_replication
+  fixed_equal_ensemble: experiments/rf_gine_ensemble/full
+  rf: experiments/rf_scg/full
+  gine: experiments/h1_oracle/gine_scg_panel
+  gine_validation_source: experiments/sqrl_anchor/full
+selection:
+  partition: next_structure_component_outer_validation
+  prism_weight_candidates: [0.0, 0.1, 0.25, 0.5]
+  maximum_validation_overall_relative_change_vs_identity: 0.02
+  maximum_validation_cliff_relative_change_vs_identity: 0.02
+  require_validation_pair_noninferiority_vs_identity: true
+  objective: minimum_pair_delta_mae_among_point_feasible_candidates
+  tie_break: lower_pair_then_lower_cliff_then_lower_overall_then_lower_prism_weight
+controls:
+  identity_prism_weight: 0.0
+  freeze_all_candidates_before_evaluation: true
+evaluation:
+  runs: 3
+  primary: pair_delta_mae
+  secondary: [overall_mae, cliff_mae]
+decision:
+  maximum_overall_relative_change_vs_fixed_equal: 0.01
+  maximum_cliff_relative_change_vs_fixed_equal: 0.01
+  minimum_pair_delta_improvement_vs_fixed_equal: 0.03
+  minimum_pair_improved_runs: 2
+  passing_only_authorizes_unseen_fold_confirmation: true
+

@@ -1,0 +1,59 @@
+name: phase4_confirmatory_global_gated_rf_gine
+status: frozen_before_confirmatory_predictions
+development_targets_excluded:
+  [CHEMBL287_Ki, CHEMBL2971_Ki, CHEMBL4203_Ki, CHEMBL234_Ki, CHEMBL4005_Ki, CHEMBL4616_EC50]
+confirmatory_targets:
+  - CHEMBL1862_Ki
+  - CHEMBL1871_Ki
+  - CHEMBL2034_Ki
+  - CHEMBL204_Ki
+  - CHEMBL2047_EC50
+  - CHEMBL214_Ki
+  - CHEMBL2147_Ki
+  - CHEMBL218_EC50
+  - CHEMBL219_Ki
+  - CHEMBL228_Ki
+  - CHEMBL231_Ki
+  - CHEMBL233_Ki
+  - CHEMBL235_EC50
+  - CHEMBL236_Ki
+  - CHEMBL237_EC50
+  - CHEMBL237_Ki
+  - CHEMBL238_Ki
+  - CHEMBL239_EC50
+  - CHEMBL244_Ki
+  - CHEMBL262_Ki
+  - CHEMBL264_Ki
+  - CHEMBL3979_EC50
+  - CHEMBL4792_Ki
+seeds: [0, 1, 2]
+components:
+  rf: experiments/phase4_confirmatory/rf_scg
+  gine: experiments/phase4_confirmatory/gine_scg
+operator:
+  base: fixed_equal_rf_gine
+  scale: 1.5
+  predicted_mmp_delta_threshold: 0.5
+  center: prediction_mean_within_selected_mmp_component
+  isolated_nodes: unchanged
+selection_evidence:
+  source: experiments/rf_gine_gated_component_scale_validation/full/validation_grid_summary.csv
+  labels: six_development_targets_outer_validation_only
+  development_target_macro_relative_pct:
+    overall_mae: 0.7471512507542775
+    cliff_mae: 0.27831984323257697
+    pair_delta_mae: -3.220169371230604
+evaluation:
+  labels_in_builder: prohibited
+  primary: mmp_cliff_pair_delta_mae
+  secondary: [cliff_endpoint_mae, overall_mae]
+  aggregation: seed_then_fold_then_target_macro
+decision:
+  maximum_overall_relative_change_vs_fixed_equal: 0.01
+  maximum_cliff_relative_change_vs_fixed_equal: 0.01
+  minimum_pair_relative_improvement_vs_fixed_equal: 0.03
+  minimum_pair_improved_targets_vs_fixed_equal: 12
+  maximum_overall_relative_change_vs_gine: 0.0
+  maximum_cliff_relative_change_vs_gine: -0.03
+  maximum_pair_relative_change_vs_gine: 0.0
+

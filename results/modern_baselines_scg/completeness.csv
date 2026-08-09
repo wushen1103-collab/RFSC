@@ -1,0 +1,8 @@
+method,expected_runs,actual_runs,complete,missing_targets,count_mismatches
+acaloss,429,429,True,[],{}
+attentivefp,429,429,True,[],{}
+gatv2,429,429,True,[],{}
+gcn,429,429,True,[],{}
+gin,429,429,True,[],{}
+graphsage,429,429,True,[],{}
+mpnn,429,429,True,[],{}

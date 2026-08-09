@@ -1,0 +1,19 @@
+method: chemprop_dmpnn_official_rerun
+protocol: moleculeace_scg
+environment_python: .venv_tabpfn/bin/python
+chemprop_version: 2.2.1
+data_root: data/processed/moleculeace
+fold_root: folds/scg
+selection:
+  strategy: next_structure_component_outer_fold
+  criterion: validation_loss
+training:
+  task_type: regression
+  loss_function: mse
+  metrics: [mae, rmse]
+  epochs: 100
+  patience: 20
+  batch_size: 64
+  num_workers: 4
+seeds: [0, 1, 2]
+

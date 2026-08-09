@@ -1,0 +1,30 @@
+name: bindingdb_patents_validation_selected_followup
+status: post_external_reveal_validation_selected_not_confirmatory
+selection_source: experiments/bindingdb_patents_latest_era/validation_projection_diagnostic/summary.json
+base_prediction_root: experiments/bindingdb_patents_latest_era/predictions
+operator:
+  graph: internal_query_mmp
+  active_edge_rule: absolute_unscaled_predicted_delta
+  predicted_delta_threshold: 0.25
+  scale: 1.75
+  center: ordinary_minimum_l2
+  isolated_nodes: unchanged
+  clipping: none
+seeds: [0, 1, 2]
+evaluation:
+  cliff_threshold_log_unit: 1.0
+  bootstrap_iterations: 10000
+decision:
+  minimum_pair_relative_improvement: 0.03
+  maximum_pair_bootstrap_upper: 0.0
+  minimum_pair_improved_target_fraction: 0.70
+  maximum_overall_relative_cost: 0.01
+  maximum_cliff_relative_cost: 0.01
+  maximum_overall_bootstrap_upper: 0.01
+  maximum_cliff_bootstrap_upper: 0.01
+  minimum_pair_eligible_targets: 8
+firewall:
+  prediction_hash_preflight_before_test_response: true
+  no_test_tuning: true
+  confirmatory_eligible: false
+

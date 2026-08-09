@@ -1,0 +1,9 @@
+method: mpnn_common_pyg_rerun
+protocol: moleculeace_scg
+data_root: data/processed/moleculeace
+cache_root: cache/pyg
+selection: {strategy: next_structure_component_outer_fold, validation_fraction: null, seed: 2901, criterion: validation_mae}
+model: {architecture: mpnn, hidden_dim: 128, layers: 3, set2set_steps: 3, dropout: 0.2}
+optimization: {loss: mse_on_robust_scaled_response, learning_rate: 0.001, weight_decay: 0.00001, batch_size: 64, max_epochs: 200, patience: 30, gradient_clip: 5.0, amp: true}
+evaluation: {response: y_pactivity, primary: mmp_cliff_endpoint_mae, constraint: overall_mae}
+seeds: [0, 1, 2]

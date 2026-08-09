@@ -1,0 +1,9 @@
+Experiment: direct Delta-LightGBM projection
+Python environment: remote repository .venv
+Package source for added dependency: https://mirrors.aliyun.com/pypi/simple
+lightgbm==4.6.0
+numpy==1.26.4
+scipy==1.15.2
+rdkit==2025.9.6
+DeepDelta data commit==cd9b131559d54be639fcb9455e4c057a3dfd2c6b
+

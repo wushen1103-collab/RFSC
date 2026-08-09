@@ -1,0 +1,20 @@
+{
+  "balance_rule": "max<=1.5*ideal and min>=0.5*ideal",
+  "chosen_folds": 5,
+  "fold_sizes": [
+    573,
+    573,
+    572,
+    572,
+    572
+  ],
+  "label_columns_read": false,
+  "largest_component": 378,
+  "largest_component_fraction": 0.1320754716981132,
+  "n_components": 682,
+  "n_nodes": 2862,
+  "requested_folds": 5,
+  "seed": 2901,
+  "status": "SCG_FEASIBLE",
+  "target": "CHEMBL264_Ki"
+}

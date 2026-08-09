@@ -1,0 +1,10 @@
+{
+  "broad_transfer_go": false,
+  "checks": {
+    "all_predictions_complete": true,
+    "cliff_cost_within_1pct": false,
+    "family_pair_gain_at_least_1pct": false,
+    "overall_cost_within_1pct": false,
+    "pair_favorable_fraction_at_least_70pct": false
+  }
+}

@@ -1,0 +1,14 @@
+key,group,method,implementation,result_source,split,seeds,provenance_note
+svm_ecfp,Classical fingerprint,ECFP4-SVM,project rerun of MoleculeACE-style ECFP4 SVM,Re-run,identical strict SCG,3,No value copied from an original-paper table
+rf_ecfp,Classical fingerprint,ECFP4-RF,project rerun of MoleculeACE ECFP4 RF,Re-run,identical strict SCG,3,No value copied from an original-paper table
+gcn,Common supervised GNN,GCN,common PyG implementation,Re-run,identical strict SCG,3,No value copied from an original-paper table
+graphsage,Common supervised GNN,GraphSAGE,common PyG implementation,Re-run,identical strict SCG,3,No value copied from an original-paper table
+gin,Common supervised GNN,GIN,common PyG implementation,Re-run,identical strict SCG,3,No value copied from an original-paper table
+gine,Common supervised GNN,GINE,common PyG implementation,Re-run,identical strict SCG,3,No value copied from an original-paper table
+gatv2,Common supervised GNN,GATv2,common PyG implementation,Re-run,identical strict SCG,3,No value copied from an original-paper table
+mpnn,Common supervised GNN,Neural MPNN,NNConv + Set2Set common PyG implementation,Re-run,identical strict SCG,3,No value copied from an original-paper table
+attentivefp,Common supervised GNN,AttentiveFP,common PyG implementation,Re-run,identical strict SCG,3,No value copied from an original-paper table
+chemprop_dmpnn,Molecular message passing,Chemprop D-MPNN,official Chemprop 2.2.1,Re-run,identical strict SCG,3,No value copied from an original-paper table
+acaloss,Direct cliff-aware competitor,ACANet ACA loss / GINE,official pinned ACA loss on identical GINE backbone,Re-run,identical strict SCG,3,No value copied from an original-paper table
+svm_fixed_mixture,Internal frozen reference,SVM/RF/GINE equal-shape mix,fixed prediction ensemble,Ours,identical strict SCG,3,No value copied from an original-paper table
+svm_bps_selected,Proposed method,BPS,fixed response-free incidence projection,Ours,identical strict SCG,3,No value copied from an original-paper table

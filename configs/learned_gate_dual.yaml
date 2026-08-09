@@ -1,0 +1,50 @@
+name: symmetric_logistic_dual_low_high_pass_gate
+development_status: frozen_before_dual_channel_metrics
+graph:
+  representation: ecfp4
+  radius: 2
+  bits: 2048
+  query_to_train_k: 10
+  similarity_floor: 0.4
+  weight: tanimoto
+propagation:
+  lambda: 0.5
+  message: frozen_gine_reference_prediction
+  highpass_message: boundary_weighted_signed_frozen_prediction_difference
+  highpass_gammas: [0.1, 0.25, 0.5]
+  primary_highpass_gamma: 0.25
+  no_smooth_neighbor_fallback: base_query_prediction
+  no_boundary_neighbor_fallback: zero_highpass_residual
+gate:
+  model: standardized_balanced_logistic_regression
+  C: 1.0
+  max_iter: 1000
+  solver: lbfgs
+  boundary_activity_difference: 1.0
+  features:
+    - ecfp_tanimoto
+    - absolute_frozen_gine_prediction_difference
+    - absolute_frozen_gine_embedding_difference
+    - frozen_gine_embedding_product
+  label_source: outer_train_edges_only
+controls:
+  random_soft_gate_permutations: 20
+  similarity: assign_largest_learned_q_to_lowest_similarity
+  matched_quantity: full_per_query_learned_q_multiset_for_both_channels
+  seed: 29012026
+evaluation:
+  development_partitions: [outer_validation_pseudo_query, outer_test_query]
+  aggregation: random_then_seed_then_fold_then_target_macro
+  primary: test_internal_mmp_cliff_endpoint_mae_at_gamma_0p25
+  secondary: [overall_mae, pair_delta_mae, gate_auprc]
+  sensitivity_only_gammas: [0.1, 0.5]
+decision:
+  minimum_primary_cliff_improvement_vs_base: 0.03
+  maximum_primary_overall_degradation_vs_base: 0.01
+  primary_must_beat_matched_random: true
+  primary_must_beat_matched_similarity: true
+  primary_pair_delta_must_beat_cut_only: true
+  primary_pair_delta_must_not_worsen_vs_base: true
+  minimum_gate_auprc_lift_over_prevalence: 0.05
+  authorized_validation_oracle_dual_must_remain_upper_bound: true
+  sensitivity_gamma_cannot_replace_failed_primary: true

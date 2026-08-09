@@ -1,0 +1,50 @@
+name: deepdelta_delta_lgbm_sparse_projection_postprimary
+status: frozen_before_sparse_candidate_metric
+source_config: configs/deepdelta_delta_lgbm_projection_external.yaml
+source_prediction_root: experiments/deepdelta_delta_lgbm_projection/predictions
+datasets:
+  - FUBrain
+  - RenClear
+  - FreeSolv
+  - MicroClear
+  - HemoTox
+  - HepClear
+  - Caco2
+  - Sol
+  - VDss
+  - HalfLife
+sampling:
+  undirected_density:
+    - 0.05
+    - 0.10
+    - 0.25
+    - 0.50
+  random_states:
+    - 2901
+    - 2902
+    - 2903
+    - 2904
+    - 2905
+  force_connected_spanning_tree: true
+  observe_both_directions: true
+evaluation:
+  exclude_diagonal_self_pairs: true
+  primary_density: 0.50
+  bootstrap_unit: dataset
+  average_seeds_within_dataset: true
+  bootstrap_iterations: 10000
+decision:
+  minimum_primary_heldout_rmse_improved_dataset_fraction: 0.8
+  maximum_primary_heldout_rmse_bootstrap_upper: 0.0
+  minimum_primary_heldout_mae_improved_dataset_fraction: 0.8
+  maximum_primary_heldout_mae_bootstrap_upper: 0.0
+  observed_edge_pythagorean_relative_tolerance: 1.0e-10
+  require_all_sampled_graphs_connected: true
+  require_all_observed_edge_identities: true
+firewall:
+  prior_complete_flow_outcomes_already_known: true
+  label_as_postprimary_generality_not_independent_confirmation: true
+  graph_sampling_uses_no_response: true
+  sparse_potentials_and_hashes_committed_before_sparse_metric: true
+  no_response_based_density_or_seed_selection: true
+

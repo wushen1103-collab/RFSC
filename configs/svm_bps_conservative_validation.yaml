@@ -1,0 +1,17 @@
+name: svm_bps_conservative_scale_validation
+status: post_secondary_validation_only_margin_rescue
+labels: six_development_targets_outer_validation
+components:
+  svm: experiments/svm_scg/development
+  rf: experiments/rf_scg/full
+  gine_validation_source: experiments/sqrl_anchor/full
+candidates:
+  svm_weights: [0.5]
+  scales: [1.30, 1.35, 1.40, 1.45]
+  predicted_mmp_delta_thresholds: [0.5]
+decision:
+  baseline: unscaled_mixture
+  maximum_overall_relative_change: 0.005
+  maximum_cliff_relative_change: 0.005
+  minimum_pair_relative_improvement: 0.03
+  minimum_pair_improved_targets: 5

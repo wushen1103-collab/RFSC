@@ -1,0 +1,91 @@
+name: bindingdb_patents_202607_latest_era_external_confirmation
+status: frozen_before_affinity_parsing_or_target_count_audit
+source:
+  release: BindingDB_202607_patents_only
+  url: https://www.bindingdb.org/rwd/bind/downloads/BindingDB_Patents_202607_tsv.zip
+  zip: data/raw/bindingdb_patents_202607/BindingDB_Patents_202607_tsv.zip
+  zip_bytes: 175001352
+  md5: 81e34d497cc88b2719aa9fbf13f4566c
+  tsv_member: BindingDB_Patents.tsv
+  tsv_bytes: 3806662313
+  excludes: [ChEMBL, journal_articles_subset, PubChem, PDSP_Ki]
+curation:
+  source_filter: official_subset_file_only
+  require_patent_number: true
+  target_organisms: [Homo sapiens, Human]
+  number_of_protein_chains: 1
+  require_swissprot_primary_id: true
+  measurement_types: [Ki, Kd]
+  relation: exact_numeric_only
+  units: nM
+  require_positive_finite_value: true
+  require_smiles: true
+  require_publication_year: true
+  response: pAffinity_9_minus_log10_nM
+  duplicate_aggregation: median_within_earliest_publication_year_only
+  duplicate_max_range_log_unit: 1.0
+time_split:
+  mode: task_latest_year_blocks
+  train_fraction_nominal: 0.70
+  validation_fraction: 0.10
+  test_fraction: 0.20
+  keep_publication_year_blocks_intact: true
+  standardized_molecule_disjoint: true
+eligibility_structure_only:
+  minimum_train_molecules: 100
+  minimum_validation_molecules: 20
+  minimum_test_molecules: 30
+  minimum_internal_test_mmp_edges: 8
+  minimum_eligible_targets: 8
+models:
+  svm: configs/baselines/svm_bindingdb_patents_latest_era.yaml
+  rf: configs/baselines/rf_bindingdb_patents_latest_era.yaml
+  gine: configs/baselines/gine_bindingdb_patents_latest_era.yaml
+reference:
+  svm_weight: 0.5
+  rf_weight_inside_rf_gine: 0.5
+  gine_weight_inside_rf_gine: 0.5
+base_weights:
+  svm: 0.5
+  rf: 0.25
+  gine: 0.25
+uncertainty:
+  source: frozen_base_prediction_weighted_disagreement
+  median_floor_additive: 1.0e-6
+candidate_status: fresh_external_confirmation
+operator:
+  graph: internal_query_mmp
+  active_edge_rule: absolute_unscaled_predicted_delta
+  predicted_delta_threshold: 0.5
+  scale: 1.5
+  center: confidence_weighted_by_frozen_ensemble_disagreement
+  uncertainty_floor: target_test_median_plus_1e-6
+  isolated_nodes: unchanged
+  clipping: none
+seeds: [0, 1, 2]
+evaluation:
+  cliff_threshold_log_unit: 1.0
+  metrics: [overall_mae, cliff_endpoint_mae, mmp_cliff_pair_delta_mae]
+  aggregation: seed_then_task_macro
+  endpoint_stratified_secondary: true
+  exact_structure_overlap_with_chembl_and_moleculeace: report_secondary
+  bootstrap_iterations: 10000
+  multiplicity: holm_three_primary_tests
+firewall:
+  predictions_hashed_before_test_labels: true
+  no_test_tuning: true
+decision:
+  minimum_pair_relative_improvement: 0.03
+  maximum_pair_bootstrap_upper: 0.0
+  minimum_pair_improved_target_fraction: 0.70
+  maximum_overall_relative_cost: 0.01
+  maximum_cliff_relative_cost: 0.01
+  maximum_overall_bootstrap_upper: 0.01
+  maximum_cliff_bootstrap_upper: 0.01
+  minimum_pair_eligible_targets: 8
+  active_edge_difference_tolerance: 1.0e-10
+compute:
+  maximum_logical_cpu_threads: 320
+  leave_at_least_physical_cpu_cores: 30
+  gpu_policy: use_only_idle_gpus_after_runtime_audit
+  smoke_before_full: true

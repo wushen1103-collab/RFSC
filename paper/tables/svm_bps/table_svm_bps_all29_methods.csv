@@ -1,0 +1,6 @@
+scope,method,overall_mae,cliff_mae,pair_delta_mae
+all SCG-feasible evaluated targets (29),SVM/RF/GINE equal-shape mix,0.7093838056508159,0.7978263325469294,1.3828313931148728
+all SCG-feasible evaluated targets (29),BPS-GNN+ (selected),0.7152222602675343,0.8022829221805705,1.329732430717895
+all SCG-feasible evaluated targets (29),RF/GINE equal,0.7314784155584143,0.8139373456093298,1.408306503240492
+all SCG-feasible evaluated targets (29),ECFP4-SVM,0.7345808512457531,0.8250350536941957,1.360431488082125
+all SCG-feasible evaluated targets (29),BPS-GNN gated scale,0.7389071535314092,0.8220594646247457,1.37122691907108

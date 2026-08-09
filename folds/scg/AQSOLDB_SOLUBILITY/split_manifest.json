@@ -1,0 +1,20 @@
+{
+  "balance_rule": "max<=1.5*ideal and min>=0.5*ideal",
+  "chosen_folds": 5,
+  "fold_sizes": [
+    2199,
+    1781,
+    1781,
+    1780,
+    1780
+  ],
+  "label_columns_read": false,
+  "largest_component": 2199,
+  "largest_component_fraction": 0.23591889282265852,
+  "n_components": 2945,
+  "n_nodes": 9321,
+  "requested_folds": 5,
+  "seed": 2901,
+  "status": "SCG_FEASIBLE",
+  "target": "AQSOLDB_SOLUBILITY"
+}

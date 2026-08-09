@@ -1,0 +1,27 @@
+name: confidence_weighted_bps_v2_chembl36_earliest_year_robustness
+status: frozen_before_corrected_predictions
+base_weights:
+  svm: 0.5
+  rf: 0.25
+  gine: 0.25
+uncertainty:
+  definition: weighted_base_prediction_variance_around_frozen_ensemble
+  median_floor_additive: 0.000001
+  precision: reciprocal_uncertainty_plus_target_test_median_floor
+  clipping: none
+operator:
+  graph: internal_test_mmp
+  predicted_delta_threshold: 0.5
+  scale: 1.5
+  center: precision_weighted_component_mean
+decision:
+  minimum_pair_relative_improvement_vs_unscaled: 0.03
+  maximum_overall_relative_cost: 0.01
+  maximum_cliff_relative_cost: 0.01
+  maximum_pair_bootstrap_upper: 0.0
+  minimum_pair_improved_target_fraction: 0.70
+  active_edge_difference_tolerance: 0.0000000001
+scope:
+  chembl36_status: post_primary_earliest_year_only_robustness
+  independent_confirmation: false
+  test_labels_opened_before_formula: false

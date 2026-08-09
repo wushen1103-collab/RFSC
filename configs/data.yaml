@@ -1,0 +1,32 @@
+project_seed: 2901
+cpu:
+  total_logical: 384
+  reserved_logical: 32
+  max_workers: 352
+moleculeace:
+  source_repo: ${MOLECULEACE_REPO:-external/MoleculeACE}
+  source_commit: 7e6de0bd2968c56589c580f2a397f01c531ede26
+  benchmark_dir: ${MOLECULEACE_BENCHMARK_DIR:-external/MoleculeACE/MoleculeACE/Data/benchmark_data}
+  code_license: MIT
+  upstream_data_license: CC BY-SA 3.0
+standardization:
+  rdkit_version: 2025.09.6
+  aggregate: median
+  duplicate_discordance_log10: 0.3
+  preserve_stereochemistry: true
+  neutralize_with_rdkit_uncharger: true
+mmp:
+  engine: mmpdb
+  version: 3.1.4
+  num_cuts: 1
+  min_core_heavy_atom_fraction: 0.67
+  max_variable_heavy_atoms: 12
+  max_heavy_atom_difference: 12
+  smallest_transformation_only: false
+  smallest_transform_postselection: per_pair_minimum_max_variable_heavy_atoms
+  max_radius: 3
+ecfp_audit:
+  radius: 2
+  n_bits: 2048
+  k: 10
+  similarity_floor: 0.6

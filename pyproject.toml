@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rfsc"
+version = "0.1.0"
+description = "Response-free structural correction research code"
+requires-python = ">=3.11"
+
+[tool.setuptools.packages.find]
+include = ["bps_gnn*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

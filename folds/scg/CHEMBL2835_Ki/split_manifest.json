@@ -1,0 +1,14 @@
+{
+  "balance_rule": "max<=1.5*ideal and min>=0.5*ideal",
+  "chosen_folds": null,
+  "fold_sizes": [],
+  "label_columns_read": false,
+  "largest_component": 337,
+  "largest_component_fraction": 0.5479674796747968,
+  "n_components": 73,
+  "n_nodes": 615,
+  "requested_folds": 5,
+  "seed": 2901,
+  "status": "SCG_INFEASIBLE",
+  "target": "CHEMBL2835_Ki"
+}

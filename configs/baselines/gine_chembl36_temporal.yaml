@@ -1,0 +1,24 @@
+method: gine
+protocol: chembl36_temporal
+status: inherited_frozen_before_external_predictions
+data_root: data/processed/chembl36_temporal
+cache_root: cache/pyg_chembl36_temporal
+selection:
+  criterion: validation_mae
+model:
+  hidden_dim: 128
+  layers: 4
+  dropout: 0.2
+optimization:
+  loss: mse_on_robust_scaled_response
+  learning_rate: 0.001
+  weight_decay: 0.00001
+  batch_size: 64
+  max_epochs: 200
+  patience: 30
+  gradient_clip: 5.0
+  amp: true
+evaluation:
+  response: y_pactivity
+  primary: mmp_cliff_pair_delta_mae
+seeds: [0, 1, 2]

@@ -1,0 +1,19 @@
+name: gated_component_scale_validation_screen
+status: validation_only_before_outer_test
+scope:
+  labels: outer_validation_only
+  test_labels: prohibited
+operator:
+  base: fixed_equal_rf_gine
+  predicted_mmp_delta_thresholds: [0.0, 0.25, 0.5, 0.75, 1.0]
+  scales: [1.25, 1.5, 2.0]
+selection:
+  protocol: leave_one_target_out
+  maximum_overall_relative_change: 0.01
+  maximum_cliff_relative_change: 0.01
+  minimum_pair_improved_source_targets: 3
+  objective_weights:
+    pair_delta_mae: 1.0
+    cliff_mae: 0.25
+    overall_mae: 0.25
+

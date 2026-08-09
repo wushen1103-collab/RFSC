@@ -1,0 +1,3 @@
+target,fold,seed,rf_rmse_change_pct,fixed_equal_overall_change_pct,fixed_equal_cliff_change_pct,fixed_equal_pair_change_pct,rf_rmse_improves_at_least_1pct,fixed_equal_overall_nonworse,fixed_equal_cliff_nonworse,fixed_equal_pair_within_0_5pct,task_status,n_cliff_endpoints,n_cliff_pairs,validation_prediction_sha256
+CHEMBL287_Ki,1,0,-5.329049819222476,-2.1786850292134563,-0.2368913018287344,-2.919668828772104,True,True,True,True,GO,100,327,dc7a9c3fb2d99586d63bd95449c81df6eafa0bf09005e34494609781c16ad6ca
+CHEMBL4005_Ki,0,0,35.34931933831593,16.69485630986671,21.181611514163777,5.291368516575279,False,False,False,False,NO-GO,115,182,bef10de2682ab7d41088d1ac03e118275e6b135958328991b03301f7129e4687

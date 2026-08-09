@@ -1,0 +1,44 @@
+name: cross_target_rf_gine_utility_router_audit
+status: exploratory_existing_frozen_oof_predictions
+data_root: data/processed/moleculeace
+fold_root: folds/scg
+mmp_root: graphs/mmp
+rf_root: experiments/rf_scg/full
+gine_root: experiments/h1_oracle/gine_scg_panel
+targets:
+  - CHEMBL287_Ki
+  - CHEMBL2971_Ki
+  - CHEMBL4203_Ki
+  - CHEMBL234_Ki
+  - CHEMBL4005_Ki
+  - CHEMBL4616_EC50
+seeds: [0, 1, 2]
+router:
+  type: target_macro_weighted_logistic_regression
+  seed: 2901
+  class_weight: balanced
+  c: 1.0
+  feature_scaling: standard
+  amplitude: 0.25
+  rf_weight_range: [0.25, 0.75]
+  held_target_excluded_from_fit: true
+evaluation:
+  cliff_threshold: 1.0
+  aggregation: seed_mean_then_target_macro
+  comparison: fixed_equal_seed_mean
+decision:
+  minimum_macro_auroc: 0.55
+  minimum_macro_auprc_lift: 0.03
+  minimum_auroc_targets_above_chance: 4
+  minimum_overall_improvement_vs_fixed_equal: 0.01
+  minimum_cliff_improvement_vs_fixed_equal: 0.01
+  maximum_pair_delta_change_vs_fixed_equal: 0.0
+  minimum_cliff_targets_improved: 4
+  pass_requires_all_criteria: true
+expansion:
+  on_pass: one_fresh_outside_panel_target_smoke_only
+  fresh_target_if_passed:
+    target: CHEMBL204_Ki
+    fold: 0
+    seed: 0
+  on_fail: close_router_without_feature_or_amplitude_tuning

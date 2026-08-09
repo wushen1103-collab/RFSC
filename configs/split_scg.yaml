@@ -1,0 +1,14 @@
+name: structure_component_grouped
+seed: 2901
+requested_outer_folds: 5
+minimum_outer_folds: 3
+balance:
+  maximum_fold_to_ideal_ratio: 1.5
+  minimum_fold_to_ideal_ratio: 0.5
+group_edges:
+  exact_connectivity: true
+  nonempty_bemis_murcko_scaffold: true
+  eligible_mmp: true
+  near_duplicate_ecfp4_0_95: false
+label_free: true
+

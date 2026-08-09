@@ -1,0 +1,8 @@
+confirmatory_targets:
+  - CHEMBL287_Ki
+  - CHEMBL2971_Ki
+  - CHEMBL4203_Ki
+  - CHEMBL234_Ki
+  - CHEMBL4005_Ki
+  - CHEMBL4616_EC50
+

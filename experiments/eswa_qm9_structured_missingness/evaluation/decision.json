@@ -1,0 +1,10 @@
+{
+  "primary": {
+    "density": 0.1,
+    "scheme": "chemistry_local"
+  },
+  "primary_favorable_tasks": 1,
+  "primary_rmse_bootstrap95_upper": 0.007417683820674362,
+  "primary_rmse_relative_change": 0.0018468966705291745,
+  "responses_opened_after_complete_hash_preflight": true
+}

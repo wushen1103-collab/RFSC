@@ -1,0 +1,26 @@
+method: rf_gine_linear_ensemble
+protocol: moleculeace_scg
+status: frozen_before_ensemble_predictions
+components:
+  rf: experiments/rf_scg/full
+  gine: experiments/h1_oracle/gine_scg_panel
+  gine_validation_source: experiments/sqrl_anchor/full
+selection:
+  partition: next_structure_component_outer_validation
+  rf_weight_candidates: [0.0, 0.25, 0.5, 0.75, 1.0]
+  objective: cliff_endpoint_mae_plus_alpha_overall_mae
+  overall_alpha: 0.25
+  tie_break: lower_objective_then_closest_to_equal_then_lower_rf_weight
+controls:
+  fixed_equal_rf_weight: 0.5
+evaluation:
+  primary: mmp_cliff_endpoint_mae
+  secondary: [overall_mae, pair_delta_mae]
+  aggregation: seed_then_fold_then_target_macro
+decision:
+  minimum_cliff_improvement_vs_gine: 0.03
+  maximum_overall_relative_change_vs_gine: 0.0
+  maximum_pair_delta_relative_change_vs_gine: 0.0
+  minimum_improved_targets: 4
+  validation_selected_must_beat_fixed_equal_on_cliff: true
+

@@ -1,0 +1,60 @@
+name: cliffloss_gine_strict_scg_formula_adaptation
+adaptation_status: formula_level_not_official_code_reproduction
+source:
+  title: "When Molecular Similarity Works: Property Cliffs Reveal Hidden Errors"
+  paper: https://arxiv.org/abs/2605.17265
+  date: "2026-05-17"
+  code: https://anonymous.4open.science/r/Cliff_Loss
+  code_access_on_2026_07_18: HTTP_401_incomplete_public_link
+  underreported_fields: [similarity_threshold, neighbor_budget, aggregation_budget, backbone_training_hyperparameters]
+data_root: data/processed/moleculeace
+mmp_root: graphs/mmp
+cache_root: cache/pyg
+model:
+  hidden_dim: 128
+  layers: 4
+  dropout: 0.2
+optimization:
+  objective: mae_on_robust_scaled_response
+  learning_rate: 0.001
+  weight_decay: 0.00001
+  batch_size: 64
+  max_epochs: 200
+  patience: 30
+  gradient_clip: 5.0
+  amp: true
+severity:
+  fingerprint:
+    kind: ecfp
+    radius: 2
+    n_bits: 1024
+  similarity_threshold: 0.4
+  neighbor_budget: 10
+  aggregation_budget: 10
+  normalization_quantile: 0.95
+  parameter_provenance: paper_formula_plus_disclosed_public_practice
+  validation_severity_uses_validation_response: true
+cliffloss:
+  base_weight: 0.1
+  ema_alpha: 0.7
+  gamma: 4.0
+  scale_min: 0.25
+  scale_max: 4.0
+evaluation:
+  cliff_threshold: 1.0
+smoke:
+  target: CHEMBL234_Ki
+  fold: 0
+  seed: 0
+  evaluated_partition: outer_validation_pseudo_query
+  outer_test_predictions: prohibited
+  outer_test_labels: prohibited
+decision:
+  minimum_overall_improvement_vs_paired_gine: 0.02
+  minimum_cliff_improvement_vs_paired_gine: 0.03
+  maximum_pair_delta_change_vs_paired_gine: 0.0
+  minimum_train_nonzero_severity_fraction: 0.50
+  pass_requires_all_criteria: true
+expansion:
+  on_pass: freeze_two_point_replication
+  on_fail: record_no_go_without_severity_or_controller_tuning

@@ -1,0 +1,22 @@
+name: component_mean_preserving_fixed_equal_rf_gine
+status: frozen_before_outer_test_predictions
+scope:
+  partition: outer_test
+  test_labels_in_builder: prohibited
+operator:
+  scale: 1.25
+  center: structure_only_internal_mmp_component_prediction_mean
+  isolated_nodes: unchanged
+  base: fixed_equal_rf_gine
+evaluation:
+  primary: mmp_cliff_pair_delta_mae
+  secondary: [overall_mae, cliff_endpoint_mae]
+  aggregation: seed_then_fold_then_target_macro
+decision:
+  maximum_overall_relative_change_vs_fixed_equal: 0.01
+  maximum_cliff_relative_change_vs_fixed_equal: 0.01
+  minimum_pair_relative_improvement_vs_fixed_equal: 0.03
+  minimum_pair_improved_targets_vs_fixed_equal: 4
+  maximum_overall_relative_change_vs_gine: 0.0
+  maximum_cliff_relative_change_vs_gine: -0.03
+  maximum_pair_relative_change_vs_gine: 0.0

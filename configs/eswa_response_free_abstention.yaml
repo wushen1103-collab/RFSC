@@ -1,0 +1,42 @@
+name: eswa_response_free_selective_risk
+status: frozen_before_aqsol_outer_response_evaluation
+development:
+  prediction_roots:
+    - experiments/svm_bps_selected/development
+    - experiments/svm_bps_selected/phase4_secondary
+  data_root: data/processed/moleculeace
+  mmp_root: graphs/mmp
+  base_method: svm_fixed_mixture
+  candidate_method: svm_bps_selected
+features:
+  - correction_abs_scaled
+  - base_disagreement_scaled
+  - active_degree
+  - log_component_size
+  - component_density
+  - component_span_scaled
+model:
+  kind: HistGradientBoostingRegressor
+  max_depth: 3
+  learning_rate: 0.05
+  max_iter: 200
+  l2_regularization: 1.0
+  random_state: 290813
+coverage: [1.0, 0.9, 0.8, 0.7, 0.5]
+primary_coverage: 0.8
+evaluation:
+  bootstrap_iterations: 10000
+  bootstrap_seed: 290816
+external:
+  dataset: AqSolDB
+  target: AQSOLDB_SOLUBILITY
+  data_root: data/processed/aqsoldb_external
+  mmp_root: graphs/mmp
+  cliff_threshold: 1.0
+decision:
+  minimum_realized_node_coverage: 0.65
+  require_point_cost_lower_than_full_coverage: true
+  require_pair_effect_favorable: true
+firewall:
+  no_external_response_in_fit_or_thresholds: true
+  external_scores_hashed_before_response_evaluation: true

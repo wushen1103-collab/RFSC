@@ -1,0 +1,9 @@
+paper,online_date,volume_article,experimental_pattern,local_primary_source
+DMCL-DDI,2025-12-13,304:130815,"DrugBank/Twosides; transductive and inductive; five seeds mean+/-std; ablation; parameter study; cross-dataset case study",paper/写作参考ESWA/1-s2.0-S0957417425044306-main.pdf
+KA-DDI,2026-01-05,308:131076,"DrugBank/KEGG; multiple baselines; paired significance; component ablation; sensitivity; case study",paper/写作参考ESWA/1-s2.0-S0957417425046901-main.pdf
+3D-MolGL,2026-02-03,312:131437,"PubChem/PubChemQC aligned tasks; task-specific baselines; data splits; architecture ablations",paper/写作参考ESWA/1-s2.0-S0957417426003507-main.pdf
+ECMMR,2026-03-09,318:131997,"MoleculeNet property tasks; multimodal baselines; fragment/module ablation; sensitivity",paper/写作参考ESWA/1-s2.0-S0957417426009103-main.pdf
+CHAMP,2026-05-07,326:132735,"multi-dataset molecular prediction; repeated seeds; module analysis; functional retrieval case study; efficiency supplement",paper/写作参考ESWA/1-s2.0-S0957417426016489-main.pdf
+MSMCNN-CL,2026-06-15,331:133301,"7 MoleculeNet plus 13 ADMET datasets; baseline and Uni-Mol controls; t-tests; sensitivity; ablation",paper/写作参考ESWA/1-s2.0-S0957417426022104-main.pdf
+CDIB,2026-06-16,331:133312,"10 MoleculeNet datasets; three runs mean+/-std; route-style comparisons; nonparametric multiple tests/FDR; ablation; sensitivity",paper/写作参考ESWA/1-s2.0-S0957417426022219-main.pdf
+C2SD,2026-06-18,331:133354,"DrugOOD EC50/IC50 under assay/scaffold/size shifts plus 3 OGB tasks; 10 seeds; OOD and graph baselines; ablation; sensitivity; efficiency",paper/写作参考ESWA/1-s2.0-S0957417426022633-main.pdf

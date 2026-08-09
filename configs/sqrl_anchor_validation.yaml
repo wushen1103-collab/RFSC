@@ -1,0 +1,35 @@
+name: validation_only_sqrl_style_labeled_anchor_diagnostic
+status: frozen_before_validation_metrics
+scope:
+  partition: outer_validation_pseudo_query
+  outer_test_labels_and_predictions: prohibited
+  tier: labeled_query_anchor_baseline_not_bps
+graph:
+  representation: ecfp4
+  radius: 2
+  bits: 2048
+  query_to_train_k: 10
+  similarity_floor: 0.4
+methods:
+  primary: weighted_train_residual_anchor
+  alternatives:
+    - nearest_train_residual_anchor
+    - weighted_train_label_knn
+  control: weighted_permuted_train_residual_anchor
+  delta_source: frozen_gine_query_prediction_minus_frozen_gine_reference_prediction
+  absolute_anchor: individual_outer_train_labels
+controls:
+  permutation_seed: 29012026
+evaluation:
+  primary: validation_internal_mmp_cliff_endpoint_mae
+  secondary: [overall_mae, pair_delta_mae, correction_residual_correlation, correction_sign_accuracy]
+  aggregation: seed_then_fold_then_target_macro
+decision:
+  minimum_primary_cliff_improvement_vs_base: 0.03
+  maximum_primary_overall_degradation_vs_base: 0.01
+  minimum_endpoint_correction_residual_correlation: 0.10
+  minimum_endpoint_correction_sign_accuracy: 0.55
+  primary_must_beat_label_knn: true
+  primary_must_beat_permuted_control: true
+  minimum_improved_targets: 4
+

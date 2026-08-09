@@ -1,0 +1,21 @@
+{
+  "overall_vs_fixed_equal": 0.0022195181422208776,
+  "overall_vs_gine": -0.0532949091715052,
+  "cliff_vs_fixed_equal": 0.01218546632332923,
+  "cliff_vs_gine": -0.023325268759833206,
+  "pair_delta_vs_fixed_equal": 0.06691091430082297,
+  "pair_delta_vs_gine": 0.09041250056954642,
+  "pair_improved_runs": 0,
+  "criteria": {
+    "overall_vs_fixed_equal": true,
+    "cliff_vs_fixed_equal": false,
+    "pair_vs_fixed_equal": false,
+    "pair_both_directions": false,
+    "overall_vs_gine": true,
+    "cliff_vs_gine": true,
+    "pair_vs_gine": false
+  },
+  "confirmation_passed": false,
+  "runs": 2,
+  "published_pretrained_prismnet": false
+}

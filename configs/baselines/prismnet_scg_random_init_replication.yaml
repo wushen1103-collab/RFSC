@@ -1,0 +1,54 @@
+method: prismnet
+protocol: moleculeace_scg
+status: two_point_random_init_replication_frozen_after_pilot
+source:
+  repository: https://github.com/GZU-SAMLab/PrismNet
+  commit: 4698a5bc6c3ae0e31284e84676a375f8ed10941b
+  license: MIT
+data_root: data/processed/moleculeace
+initialization:
+  checkpoint: external/PrismNet/ckpts/pretrain.pth
+  published_reproduction_requires_checkpoint: true
+  missing_checkpoint_behavior: random_init_architecture_audit
+model:
+  d_atom: 115
+  d_edge: 13
+  d_model: 256
+  layers: 3
+  heads: 4
+  dense_layers: 1
+  generator_layers: 2
+  leaky_relu_slope: 0.1
+  dense_output_nonlinearity: mish
+  distance_matrix_kernel: softmax
+  aggregation_type: gru
+  scale_norm: true
+  dropout: 0.0
+optimization:
+  loss: official_rmse_with_regression_contrastive_loss
+  contrastive_weight: 0.1
+  batch_size: 32
+  max_epochs: 150
+  warmup_factor: 0.1
+  warmup_epochs: 30
+  validation_metric: rmse
+  train_drop_last: true
+  validation_test_drop_last: false
+  early_stopping_patience: 50
+  early_stopping_min_epochs: 75
+selection:
+  strategy: next_structure_component_outer_fold
+  criterion: validation_rmse
+replication:
+  maximum_wall_time_seconds_per_run: 1200
+  tasks:
+    - {target: CHEMBL287_Ki, fold: 1, seed: 0, device: "cuda:6"}
+    - {target: CHEMBL4005_Ki, fold: 0, seed: 0, device: "cuda:7"}
+decision:
+  reference: paired_gine_same_target_fold_seed
+  maximum_endpoint_relative_change: 0.10
+  all_runs_overall_must_pass: true
+  minimum_passed_endpoint_cells: 4
+  minimum_pair_improved_runs: 1
+seeds: [0, 1, 2]
+

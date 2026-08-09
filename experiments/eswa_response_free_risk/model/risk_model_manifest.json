@@ -1,0 +1,28 @@
+{
+  "development_rows": 144297,
+  "development_runs": 429,
+  "external_responses_read": false,
+  "features": [
+    "correction_abs_scaled",
+    "base_disagreement_scaled",
+    "active_degree",
+    "log_component_size",
+    "component_density",
+    "component_span_scaled"
+  ],
+  "model": {
+    "kind": "HistGradientBoostingRegressor",
+    "l2_regularization": 1.0,
+    "learning_rate": 0.05,
+    "max_depth": 3,
+    "max_iter": 200,
+    "random_state": 290813
+  },
+  "thresholds": {
+    "0.5": 0.00015412093668414832,
+    "0.7": 0.00015412093668414832,
+    "0.8": 0.008648302878998133,
+    "0.9": 0.030370599714419234,
+    "1.0": 0.7397989469804281
+  }
+}

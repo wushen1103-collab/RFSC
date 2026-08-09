@@ -1,0 +1,34 @@
+{
+  "architectures": 6,
+  "cliff_mae_bootstrap95": [
+    0.033210307164810667,
+    0.04788639315021303
+  ],
+  "cliff_mae_favorable_target_architectures": 0,
+  "cliff_mae_relative_change": 0.04011327600113579,
+  "cliff_rmse_bootstrap95": [
+    0.037109141384582774,
+    0.05366723314997888
+  ],
+  "cliff_rmse_favorable_target_architectures": 0,
+  "cliff_rmse_relative_change": 0.0447849140713914,
+  "overall_mae_bootstrap95": [
+    0.02453227597332347,
+    0.03572116884657956
+  ],
+  "overall_mae_favorable_target_architectures": 0,
+  "overall_mae_relative_change": 0.029826890619355728,
+  "overall_rmse_bootstrap95": [
+    0.027193864304487243,
+    0.04038383411233334
+  ],
+  "overall_rmse_favorable_target_architectures": 0,
+  "overall_rmse_relative_change": 0.033147636128992186,
+  "pair_delta_mae_bootstrap95": [
+    -0.012285647530437527,
+    0.0004435507674170985
+  ],
+  "pair_delta_mae_favorable_target_architectures": 103,
+  "pair_delta_mae_relative_change": -0.005841332640557417,
+  "targets": 29
+}

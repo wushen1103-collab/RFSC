@@ -1,0 +1,11 @@
+{
+  "name": "DeepDelta",
+  "source": "https://github.com/RekerLab/DeepDelta",
+  "commit": "cd9b131559d54be639fcb9455e4c057a3dfd2c6b",
+  "commit_date": "2024-03-11T10:52:56-04:00",
+  "license": "GPL-2.0 for non-commercial academic use",
+  "license_sha256": "ebf80cb6a1dc1bf08875491d6c1cc18ce34fcff7e9ff2ef1210e1c2973e83927",
+  "audit_date": "2026-07-18",
+  "local_checkout": "external/DeepDelta",
+  "checkout_tracked": false
+}

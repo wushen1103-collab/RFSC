@@ -1,0 +1,97 @@
+status: frozen_before_model_results
+selection:
+  algorithm: deterministic six-anchor audit coverage
+  anchors:
+  - closest_to_robust_center
+  - maximum_mmp_edges_per_node
+  - minimum_mmp_edges_per_node
+  - maximum_sample_size
+  - maximum_component_concentration_among_five_fold_targets
+  - minimum_strict_scg_cliff_power_among_ec50_targets
+  tie_break: lexicographic target identifier
+  eligible_pool: SCG-feasible MoleculeACE targets only
+  features:
+  - log_n
+  - log_mmp_edges_per_node
+  - official_cliff_prevalence
+  - largest_scg_component_fraction
+  panel_size: 6
+development_panel:
+- CHEMBL287_Ki
+- CHEMBL2971_Ki
+- CHEMBL4203_Ki
+- CHEMBL234_Ki
+- CHEMBL4005_Ki
+- CHEMBL4616_EC50
+selection_trace:
+- step: 1
+  target: CHEMBL287_Ki
+  rule: closest_to_robust_center
+- step: 2
+  target: CHEMBL2971_Ki
+  rule: maximum_mmp_edges_per_node
+- step: 3
+  target: CHEMBL4203_Ki
+  rule: minimum_mmp_edges_per_node
+- step: 4
+  target: CHEMBL234_Ki
+  rule: maximum_sample_size
+- step: 5
+  target: CHEMBL4005_Ki
+  rule: maximum_component_concentration_among_five_fold_targets
+- step: 6
+  target: CHEMBL4616_EC50
+  rule: minimum_strict_scg_cliff_power_among_ec50_targets
+audit_values:
+- target: CHEMBL287_Ki
+  unique_isomeric_smiles: 1328
+  eligible_mmp_edges: 3557
+  mmp_edges_per_node: 2.6784638554216866
+  scg_folds: 5.0
+  minimum_cliff_endpoints_per_fold: 82
+  official_cliff_prevalence: 0.3817771084337349
+  largest_scg_component_fraction: 0.0692771084337349
+- target: CHEMBL2971_Ki
+  unique_isomeric_smiles: 976
+  eligible_mmp_edges: 10074
+  mmp_edges_per_node: 10.32172131147541
+  scg_folds: 4.0
+  minimum_cliff_endpoints_per_fold: 44
+  official_cliff_prevalence: 0.16598360655737704
+  largest_scg_component_fraction: 0.3647540983606557
+- target: CHEMBL4203_Ki
+  unique_isomeric_smiles: 731
+  eligible_mmp_edges: 474
+  mmp_edges_per_node: 0.6484268125854993
+  scg_folds: 5.0
+  minimum_cliff_endpoints_per_fold: 10
+  official_cliff_prevalence: 0.08755129958960328
+  largest_scg_component_fraction: 0.0328317373461012
+- target: CHEMBL234_Ki
+  unique_isomeric_smiles: 3657
+  eligible_mmp_edges: 24090
+  mmp_edges_per_node: 6.587366694011485
+  scg_folds: 5.0
+  minimum_cliff_endpoints_per_fold: 278
+  official_cliff_prevalence: 0.4386108832376265
+  largest_scg_component_fraction: 0.0976210008203445
+- target: CHEMBL4005_Ki
+  unique_isomeric_smiles: 960
+  eligible_mmp_edges: 5384
+  mmp_edges_per_node: 5.608333333333333
+  scg_folds: 5.0
+  minimum_cliff_endpoints_per_fold: 66
+  official_cliff_prevalence: 0.41770833333333335
+  largest_scg_component_fraction: 0.271875
+- target: CHEMBL4616_EC50
+  unique_isomeric_smiles: 682
+  eligible_mmp_edges: 1499
+  mmp_edges_per_node: 2.197947214076246
+  scg_folds: 5.0
+  minimum_cliff_endpoints_per_fold: 13
+  official_cliff_prevalence: 0.5205278592375366
+  largest_scg_component_fraction: 0.2258064516129032
+prohibited_selection_inputs:
+- BPS predictions
+- baseline prediction errors
+- test-set method comparisons

@@ -1,0 +1,12 @@
+{
+  "name": "Galformer",
+  "source": "https://github.com/peizhenbai/Galformer",
+  "commit": "0dcde92980d8f6f176d6ec9e18608ae408557777",
+  "commit_date": "2026-05-24T13:27:51+01:00",
+  "license": "MIT",
+  "license_sha256": "23050df6b75086a38bd0a5832cf07555546580cd5e9f33eb63b8d1b679fdfcad",
+  "audit_date": "2026-07-29",
+  "local_checkout": "external/Galformer",
+  "checkout_tracked": false,
+  "pretrained_checkpoint_released": false
+}

@@ -1,0 +1,11 @@
+{
+  "checks": {
+    "cliff_cost": false,
+    "overall_cost": false,
+    "pair_bootstrap_upper": true,
+    "pair_fold_directions": true,
+    "pair_point_improves": true
+  },
+  "no_external_tuning": true,
+  "strong_external_confirmation": false
+}

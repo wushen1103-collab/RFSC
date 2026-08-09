@@ -1,0 +1,62 @@
+method: prismnet
+protocol: moleculeace_scg
+status: random_init_full_pilot_frozen_after_bounded_smoke
+source:
+  repository: https://github.com/GZU-SAMLab/PrismNet
+  commit: 4698a5bc6c3ae0e31284e84676a375f8ed10941b
+  license: MIT
+data_root: data/processed/moleculeace
+initialization:
+  checkpoint: external/PrismNet/ckpts/pretrain.pth
+  published_reproduction_requires_checkpoint: true
+  missing_checkpoint_behavior: random_init_architecture_audit
+model:
+  d_atom: 115
+  d_edge: 13
+  d_model: 256
+  layers: 3
+  heads: 4
+  dense_layers: 1
+  generator_layers: 2
+  leaky_relu_slope: 0.1
+  dense_output_nonlinearity: mish
+  distance_matrix_kernel: softmax
+  aggregation_type: gru
+  scale_norm: true
+  dropout: 0.0
+optimization:
+  loss: official_rmse_with_regression_contrastive_loss
+  contrastive_weight: 0.1
+  batch_size: 32
+  max_epochs: 150
+  warmup_factor: 0.1
+  warmup_epochs: 30
+  validation_metric: rmse
+  train_drop_last: true
+  validation_test_drop_last: false
+compatibility:
+  scipy_gilbrat_alias_to_gibrat: true
+  pandas_flavor_version: 0.8.1
+selection:
+  strategy: next_structure_component_outer_fold
+  criterion: validation_rmse
+evaluation:
+  response: y_pactivity
+  primary: mmp_cliff_endpoint_mae
+  secondary: [overall_mae, pair_delta_mae]
+pilot:
+  target: CHEMBL287_Ki
+  fold: 0
+  seed: 0
+  device: cuda:7
+  maximum_wall_time_seconds: 1200
+  matrix_scaling_requires_gate: true
+decision:
+  reference: paired_gine_same_target_fold_seed
+  maximum_overall_relative_change: 0.10
+  maximum_cliff_relative_change: 0.10
+  maximum_pair_delta_relative_change: 0.10
+  overall_must_pass: true
+  minimum_passed_endpoints: 2
+seeds: [0, 1, 2]
+

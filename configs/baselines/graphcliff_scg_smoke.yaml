@@ -1,0 +1,48 @@
+method: graphcliff_paper_formula_adaptation
+protocol: moleculeace_scg
+data_root: data/processed/moleculeace
+cache_root: cache/pyg
+source:
+  paper: https://arxiv.org/abs/2511.03170v2
+  accepted_venue: KDD_2026
+  implementation_status: formula_level_adaptation_no_official_code_found
+  caveats:
+    - paper_does_not_report_random_seeds
+    - paper_does_not_report_complete_hyperparameters
+    - paper_evaluates_original_moleculeace_not_strict_scg
+selection:
+  strategy: next_structure_component_outer_fold
+  validation_fraction: null
+  seed: 2901
+  criterion: validation_mae
+model:
+  architecture: graphcliff
+  hidden_dim: 128
+  layers: 3
+  chebyshev_order: 3
+  sag_ratio: 0.5
+  dropout: 0.2
+optimization:
+  loss: mse_on_robust_scaled_response
+  learning_rate: 0.001
+  weight_decay: 0.00001
+  batch_size: 64
+  max_epochs: 75
+  patience: 20
+  gradient_clip: 5.0
+  amp: true
+evaluation:
+  response: y_pactivity
+  primary: validation_mae_for_smoke_only
+  test_label_access: prohibited_before_smoke_gate
+smoke_gate:
+  target: CHEMBL287_Ki
+  fold: 0
+  seed: 0
+  comparator_run: experiments/h1_oracle/gine_scg_panel/CHEMBL287_Ki/fold_0/seed_0/run.json
+  comparator_validation_mae: 0.6327458381371094
+  maximum_relative_validation_degradation: 0.05
+  required_validation_mae: 0.6643831300439649
+  action_if_fail: stop_graphcliff_without_test_evaluation
+  action_if_pass: preregister_two_point_replication_before_test_evaluation
+seeds: [0]

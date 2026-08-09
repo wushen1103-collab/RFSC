@@ -1,0 +1,26 @@
+method: rf_ecfp
+protocol: moleculeace_scg
+status: frozen_before_scg_smoke
+data_root: data/processed/moleculeace
+fingerprint:
+  radius: 2
+  n_bits: 1024
+selection:
+  strategy: next_structure_component_outer_fold
+  criterion: validation_rmse
+  n_estimators: [100, 250, 500, 1000]
+model:
+  n_jobs: 8
+  max_features: 1.0
+  min_samples_leaf: 1
+evaluation:
+  response: y_pactivity
+  primary: mmp_cliff_endpoint_mae
+  constraint: overall_mae
+decision:
+  minimum_cliff_improvement_vs_gine: 0.03
+  maximum_overall_relative_change_vs_gine: 0.0
+  maximum_pair_delta_degradation_vs_gine: 0.01
+  minimum_improved_targets: 4
+seeds: [0, 1, 2]
+

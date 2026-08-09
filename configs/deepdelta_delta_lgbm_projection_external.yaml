@@ -1,0 +1,67 @@
+name: deepdelta_delta_lgbm_projection_external
+status: frozen_before_any_held_out_response_or_metric
+source:
+  dataset_repository: https://github.com/RekerLab/DeepDelta
+  dataset_commit: cd9b131559d54be639fcb9455e4c057a3dfd2c6b
+  model_precedent: external/DeepDelta/Code/models.py::Delta_LGBM
+datasets:
+  - FUBrain
+  - RenClear
+  - FreeSolv
+  - MicroClear
+  - HemoTox
+  - HepClear
+  - Caco2
+  - Sol
+  - VDss
+  - HalfLife
+split:
+  folds: 10
+  held_out_fold: 1
+  shuffle: true
+  random_state: 29
+  molecule_disjoint: true
+fingerprint:
+  radius: 2
+  bits: 2048
+training_pairs:
+  maximum_ordered_pairs: 250000
+  include_both_directions: true
+  include_diagonal: true
+  sampling_random_state: 29017
+direct_lgbm:
+  n_estimators: 100
+  subsample: 0.1
+  subsample_freq: 1
+  random_state: 29
+  n_jobs: 64
+  deterministic: true
+  force_col_wise: true
+absolute_lgbm_control:
+  n_estimators: 100
+  subsample: 0.1
+  subsample_freq: 1
+  random_state: 29
+  n_jobs: 64
+  deterministic: true
+  force_col_wise: true
+evaluation:
+  exclude_diagonal_self_pairs: true
+  high_delta_quantile: 0.75
+  bootstrap_unit: dataset
+  bootstrap_iterations: 10000
+decision:
+  minimum_pair_rmse_improved_dataset_fraction: 1.0
+  maximum_pair_rmse_bootstrap_upper: 0.0
+  minimum_pair_mae_improved_dataset_fraction: 0.8
+  maximum_pair_mae_bootstrap_upper: 0.0
+  maximum_high_delta_pair_mae_relative_change: 0.0
+  maximum_hodge_vs_antisymmetric_rmse_bootstrap_upper: 0.0
+  maximum_direct_vs_absolute_rmse_relative_change: 0.25
+  pythagorean_relative_tolerance: 1.0e-10
+firewall:
+  structure_split_before_response_selection: true
+  training_process_materializes_only_training_responses: true
+  held_out_predictions_and_hashes_committed_before_evaluation: true
+  no_response_based_tuning: true
+

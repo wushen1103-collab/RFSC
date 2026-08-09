@@ -1,0 +1,7 @@
+metric,stratum,targets,observations,relative_change,bootstrap95_lower,bootstrap95_upper,favorable_targets
+pair_delta_mae,all,42,31792,-0.012657,-0.019431,-0.006770,23/42
+pair_delta_mae,both_novel,41,23831,-0.007818,-0.014400,-0.002036,17/41
+pair_delta_mae,mixed,10,211,-0.051329,-0.168213,0.013333,5/10
+pair_delta_mae,both_prior_overlap,12,7750,-0.011713,-0.034776,0.009453,8/12
+overall_mae,novel,42,9973,0.002605,0.000798,0.004605,9/42
+overall_mae,prior_overlap,23,3723,0.002504,-0.000573,0.005864,5/23

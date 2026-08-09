@@ -1,0 +1,35 @@
+method: multifingerprint_rf_regression_adaptation
+protocol: moleculeace_scg
+status: frozen_before_two_point_validation_only_replication
+data_root: data/processed/moleculeace
+source:
+  paper: https://arxiv.org/abs/2603.20724v1
+  official_code: https://github.com/stef41/Multi-RF-Fusion
+  official_commit: e020cb9fd73e3dcbbe6161dd7408264d2d91af6b
+fingerprint:
+  kind: multifingerprint_4263
+selection:
+  strategy: next_structure_component_outer_fold
+  criterion: validation_rmse
+  n_estimators: [500]
+model:
+  n_jobs: 8
+  max_features: 0.20
+  min_samples_leaf: 3
+  criterion: squared_error
+replication_tasks:
+  - target: CHEMBL287_Ki
+    fold: 1
+    seed: 0
+  - target: CHEMBL4005_Ki
+    fold: 0
+    seed: 0
+replication_gate:
+  scope: each_task_must_pass_all_criteria
+  minimum_rf_rmse_improvement: 0.01
+  fixed_equal_overall_max_relative_change: 0.0
+  fixed_equal_cliff_max_relative_change: 0.0
+  fixed_equal_pair_delta_max_relative_change: 0.005
+  action_if_fail: stop_without_test_evaluation_or_feature_tuning
+  action_if_pass: preregister_full_87_run_matrix
+seeds: [0]

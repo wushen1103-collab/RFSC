@@ -1,0 +1,32 @@
+method: rf_gine_pair_safe_ensemble
+protocol: moleculeace_scg
+status: frozen_before_pair_safe_selection
+components:
+  rf: experiments/rf_scg/full
+  gine: experiments/h1_oracle/gine_scg_panel
+  gine_validation_source: experiments/sqrl_anchor/full
+selection:
+  partition: next_structure_component_outer_validation
+  rf_weight_candidates: [0.0, 0.25, 0.5, 0.75, 1.0]
+  objective: validation_cliff_pair_delta_mae_plus_0.25_endpoint_plus_0.25_overall
+  pair_alpha: 1.0
+  endpoint_alpha: 0.25
+  overall_alpha: 0.25
+  tie_break: lower_objective_then_closest_to_equal_then_lower_rf_weight
+  guarded_by_fixed_equal: true
+  output_method: pair_safe_selected
+controls:
+  fixed_equal_rf_weight: 0.5
+evaluation:
+  primary: mmp_cliff_pair_delta_mae
+  secondary: [overall_mae, cliff_endpoint_mae]
+  aggregation: seed_then_fold_then_target_macro
+decision:
+  maximum_overall_relative_change_vs_gine: 0.0
+  maximum_cliff_relative_change_vs_gine: -0.03
+  maximum_pair_delta_relative_change_vs_gine: 0.0
+  maximum_overall_relative_change_vs_fixed_equal: 0.0
+  maximum_cliff_relative_change_vs_fixed_equal: 0.0
+  maximum_pair_delta_relative_change_vs_fixed_equal: -0.005
+  minimum_pair_improved_runs_vs_fixed_equal: 44
+  minimum_improved_targets_vs_gine: 4

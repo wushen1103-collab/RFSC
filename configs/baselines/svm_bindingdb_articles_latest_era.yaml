@@ -1,0 +1,17 @@
+method: svm_ecfp
+protocol: bindingdb_articles_latest_era
+status: inherited_frozen_before_external_predictions
+data_root: data/processed/bindingdb_articles_latest_era
+fingerprint:
+  radius: 2
+  n_bits: 1024
+model:
+  kernel: rbf
+  C: 10.0
+  gamma: 0.01
+  epsilon: 0.1
+  cache_size_mb: 2048
+selection:
+  target_specific_hyperparameters: prohibited
+  validation_labels: not_used
+seeds: [0]

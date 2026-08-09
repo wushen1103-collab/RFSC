@@ -1,0 +1,41 @@
+method: multifingerprint_rf_regression_adaptation
+protocol: moleculeace_scg
+status: frozen_before_validation_only_smoke
+data_root: data/processed/moleculeace
+source:
+  paper: https://arxiv.org/abs/2603.20724v1
+  official_code: https://github.com/stef41/Multi-RF-Fusion
+  official_task: ogbg_molhiv_binary_classification
+  adaptation: use_released_4263d_features_and_max_features_0_20_in_rf_regression
+fingerprint:
+  kind: multifingerprint_4263
+  blocks:
+    - FCFP_radius2_1024
+    - FCFP_radius3_1024
+    - ECFP_radius2_1024
+    - MACCS_167
+    - hashed_atom_pair_1024
+selection:
+  strategy: next_structure_component_outer_fold
+  criterion: validation_rmse
+  n_estimators: [500]
+model:
+  n_jobs: 8
+  max_features: 0.20
+  min_samples_leaf: 3
+  criterion: squared_error
+evaluation:
+  scope: validation_only
+  target: CHEMBL287_Ki
+  fold: 0
+  seed: 0
+  reference_rf: experiments/rf_scg/full/CHEMBL287_Ki/fold_0/seed_0
+  reference_gine_validation: experiments/sqrl_anchor/full/CHEMBL287_Ki/fold_0/validation_predictions.parquet
+smoke_gate:
+  minimum_rf_rmse_improvement: 0.01
+  fixed_equal_overall_max_relative_change: 0.0
+  fixed_equal_cliff_max_relative_change: 0.0
+  fixed_equal_pair_delta_max_relative_change: 0.005
+  action_if_fail: stop_without_test_evaluation_or_feature_tuning
+  action_if_pass: preregister_two_point_replication
+seeds: [0]

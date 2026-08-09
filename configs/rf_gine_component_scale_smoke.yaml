@@ -1,0 +1,17 @@
+name: component_mean_preserving_pair_amplitude_smoke
+status: frozen_before_validation_smoke
+scope:
+  target: CHEMBL287_Ki
+  fold: 0
+  seed: 0
+  partition: outer_validation
+operator:
+  scale: 1.25
+  center: validation_internal_mmp_component_mean
+  isolated_nodes: unchanged
+evaluation:
+  primary: cliff_pair_delta_mae
+  safeguards:
+    maximum_overall_relative_change: 0.01
+    maximum_cliff_relative_change: 0.01
+    minimum_pair_relative_improvement: 0.03

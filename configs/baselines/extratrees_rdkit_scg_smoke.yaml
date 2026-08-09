@@ -1,0 +1,39 @@
+method: rdkit_descriptor_extratrees_config_level_adaptation
+protocol: moleculeace_scg_validation_only
+status: frozen_before_validation_only_smoke
+data_root: data/processed/moleculeace
+source:
+  paper: https://arxiv.org/abs/2604.26498v3
+  supplementary: https://www.biorxiv.org/content/10.64898/2026.04.29.721568v4.supplementary-material
+  released_code_found: false
+  adaptation: registered_rdkit_2d_descriptors_plus_300_tree_extratrees
+features:
+  kind: rdkit_registered_2d_descriptors
+  imputation: train_partition_median
+  filtering: train_partition_all_missing_and_constant_columns
+  scaling: none
+model:
+  n_estimators: 300
+  n_jobs: 16
+  criterion: squared_error
+  max_features: 1.0
+  min_samples_leaf: 1
+  bootstrap: false
+evaluation:
+  scope: validation_only
+  target: CHEMBL287_Ki
+  fold: 0
+  seed: 0
+  reference_rf: experiments/rf_scg/full/CHEMBL287_Ki/fold_0/seed_0
+  reference_gine_validation: experiments/sqrl_anchor/full/CHEMBL287_Ki/fold_0/validation_predictions.parquet
+  sole_candidate_weights:
+    gine: 0.50
+    ecfp_rf: 0.25
+    rdkit_extratrees: 0.25
+smoke_gate:
+  extratrees_rmse_max_relative_to_rf: 1.05
+  diversified_overall_required_improvement: 0.005
+  diversified_cliff_required_improvement: 0.005
+  diversified_pair_max_relative_change: 0.005
+  action_if_fail: stop_without_test_evaluation_or_parameter_search
+  action_if_pass: preregister_two_point_replication

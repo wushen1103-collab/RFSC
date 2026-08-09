@@ -1,0 +1,35 @@
+name: authorized_real_oracle_dual_diagnostic_floor04
+partition: outer_validation_pseudo_query
+reference_partition: outer_train
+outer_test_access: forbidden
+base_model: frozen_scg_gine
+graph:
+  representation: ecfp4
+  radius: 2
+  bits: 2048
+  query_to_train_k: 10
+  similarity_floor: 0.4
+  weight: tanimoto
+boundary:
+  activity_difference: 1.0
+  oracle: binary_query_reference_activity_boundary
+  random: exact_per_query_oracle_boundary_count
+  similarity: assign_boundary_to_lowest_similarity_edges_at_exact_count
+propagation:
+  rule: boundary_cut_lowpass_plus_signed_boundary_highpass
+  lambdas: [0.5]
+  primary_lambda: 0.5
+  highpass_gammas: [0.1, 0.25, 0.5]
+  primary_highpass_gamma: 0.25
+  no_remaining_neighbor_fallback: base_query_prediction
+  no_boundary_neighbor_fallback: zero_highpass_residual
+random:
+  replicates: 20
+  seed: 29012026
+evaluation:
+  methods: [base, global, oracle, random, similarity, oracle_dual, random_dual, similarity_dual]
+  primary: validation_internal_mmp_cliff_endpoint_mae
+  secondary: [overall_mae, pair_delta_mae]
+  aggregation: random_then_seed_then_fold_then_target_macro
+decision:
+  purpose: upper_bound_only

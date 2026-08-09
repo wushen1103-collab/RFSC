@@ -1,0 +1,21 @@
+name: bps_backbone_transfer
+status: frozen_before_full_architecture_aggregation
+input_root: experiments/modern_baselines_scg
+architectures: [gcn, graphsage, gin, gatv2, mpnn, attentivefp]
+fold_root: folds/scg
+mmp_root: graphs/mmp
+data_root: data/processed/moleculeace
+operator:
+  predicted_mmp_delta_threshold: 0.5
+  scale: 1.5
+  selection_source: configs/svm_bps_selected_development.yaml
+evaluation:
+  bootstrap_iterations: 10000
+  bootstrap_unit: target_after_fold_and_seed_mean
+decision:
+  expected_predictions: 2574
+  minimum_pair_relative_improvement: 0.01
+  minimum_pair_favorable_target_architecture_fraction: 0.70
+  maximum_overall_relative_increase: 0.01
+  maximum_cliff_relative_increase: 0.01
+

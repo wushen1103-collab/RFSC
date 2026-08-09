@@ -1,0 +1,17 @@
+operator,n_nodes,observed_directed_edges,density,input_mib,runtime_ms_median,runtime_ms_p95,peak_traced_allocation_mib,repeats,asymptotic_time,additional_memory
+node_boundary_projection,100,400,,0.0117301940917968,2.581117209047079,3.4328670240938663,0.0515975952148437,5,O(n+m),O(n+m) implementation objects
+node_boundary_projection,1000,4000,,0.1079521179199218,13.240454252809286,13.595415838062763,0.1785850524902343,5,O(n+m),O(n+m) implementation objects
+node_boundary_projection,5000,20000,,0.5076103210449219,63.81849711760879,64.56233514472842,0.9752540588378906,5,O(n+m),O(n+m) implementation objects
+node_boundary_projection,10000,40000,,1.015056610107422,129.68549132347107,130.48714930191636,1.665607452392578,5,O(n+m),O(n+m) implementation objects
+node_boundary_projection,25000,100000,,2.411418914794922,335.9116897918284,342.7022020332515,4.589313507080078,5,O(n+m),O(n+m) implementation objects
+complete_edge_hodge,25,625,1.0,0.0047683715820312,0.0943299382925033,0.1403146423399448,0.0164470672607421,5,O(n^2),O(n^2) returned flow; O(n) beyond input/output
+complete_edge_hodge,50,2500,1.0,0.019073486328125,0.0995192676782608,0.1291960477828979,0.059326171875,5,O(n^2),O(n^2) returned flow; O(n) beyond input/output
+complete_edge_hodge,100,10000,1.0,0.0762939453125,0.1137699000537395,0.1433799974620342,0.2037811279296875,5,O(n^2),O(n^2) returned flow; O(n) beyond input/output
+complete_edge_hodge,250,62500,1.0,0.476837158203125,0.2076090313494205,0.2391041256487369,0.60546875,5,O(n^2),O(n^2) returned flow; O(n) beyond input/output
+complete_edge_hodge,500,250000,1.0,1.9073486328125,0.5459543317556381,1.2671198695898054,2.0379180908203125,5,O(n^2),O(n^2) returned flow; O(n) beyond input/output
+complete_edge_hodge,1000,1000000,1.0,7.62939453125,2.203343901783228,3.2160673290491104,7.763778686523437,5,O(n^2),O(n^2) returned flow; O(n) beyond input/output
+complete_edge_hodge,2000,4000000,1.0,30.517578125,104.96153496205808,1189.5939627662297,30.659591674804688,5,O(n^2),O(n^2) returned flow; O(n) beyond input/output
+incomplete_edge_hodge_dense_lstsq,25,300,0.5,0.006866455078125,0.4675262607634067,0.875380914658308,0.1806564331054687,5,dense least-squares backend,O(nm) dense incidence; benchmark-scale only
+incomplete_edge_hodge_dense_lstsq,50,1226,0.5,0.0280609130859375,1.369360834360123,2.078987192362547,1.0278701782226562,5,dense least-squares backend,O(nm) dense incidence; benchmark-scale only
+incomplete_edge_hodge_dense_lstsq,100,4950,0.5,0.1132965087890625,12.867860030382872,16.74894690513611,7.730842590332031,5,dense least-squares backend,O(nm) dense incidence; benchmark-scale only
+incomplete_edge_hodge_dense_lstsq,133,8778,0.5,0.2009124755859375,30.495905317366123,35.6943997554481,18.087464332580566,5,dense least-squares backend,O(nm) dense incidence; benchmark-scale only

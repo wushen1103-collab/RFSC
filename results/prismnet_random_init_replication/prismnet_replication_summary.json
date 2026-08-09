@@ -1,0 +1,18 @@
+{
+  "runs": 2,
+  "random_init_only": true,
+  "mean_relative_change_vs_gine": {
+    "overall": 0.03577900428683656,
+    "cliff": 0.03633976016767304,
+    "pair_delta": -0.12284937401906537
+  },
+  "passed_endpoint_cells": 5,
+  "pair_improved_runs": 2,
+  "criteria": {
+    "all_runs_overall": false,
+    "passed_endpoint_cells": true,
+    "pair_improved_runs": true
+  },
+  "advance_random_init_matrix": false,
+  "total_wall_time_seconds": 816.1151560936123
+}

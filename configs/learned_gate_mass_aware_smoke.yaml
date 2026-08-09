@@ -1,0 +1,47 @@
+name: mass_aware_soft_boundary_gate_smoke
+development_status: preregistered_validation_only_smoke
+graph:
+  representation: ecfp4
+  radius: 2
+  bits: 2048
+  query_to_train_k: 10
+  similarity_floor: 0.4
+  weight: tanimoto
+propagation:
+  lambda: 0.5
+  message: frozen_gine_reference_prediction
+  mass_aware_smoke: true
+  rule: base_plus_lambda_times_smooth_weighted_residual_over_original_similarity_mass
+  no_neighbor_fallback: base_query_prediction
+gate:
+  model: standardized_balanced_logistic_regression
+  C: 1.0
+  max_iter: 1000
+  solver: lbfgs
+  boundary_activity_difference: 1.0
+  features:
+    - ecfp_tanimoto
+    - absolute_frozen_gine_prediction_difference
+    - absolute_frozen_gine_embedding_difference
+    - frozen_gine_embedding_product
+  label_source: outer_train_edges_only
+controls:
+  random_soft_gate_permutations: 20
+  similarity: assign_largest_learned_q_to_lowest_similarity
+  matched_quantity: full_per_query_learned_q_multiset
+  seed: 29012026
+smoke:
+  target: CHEMBL287_Ki
+  fold: 0
+  evaluated_partition: outer_validation_pseudo_query
+  outer_test_labels: prohibited
+  minimum_cliff_improvement_vs_normalized_soft: 0.02
+  minimum_pair_improvement_vs_normalized_soft: 0.05
+  maximum_overall_change_vs_normalized_soft: 0.0
+  minimum_pair_gap_reduction_toward_base: 0.40
+  must_beat_mass_matched_random_on_cliff: true
+  must_beat_mass_matched_similarity_on_cliff: true
+  pass_requires_all_criteria: true
+expansion:
+  on_pass: freeze_two_unseen_fold_replication_before_any_matrix_run
+  on_fail: record_no_go_without_tuning_lambda_or_gate

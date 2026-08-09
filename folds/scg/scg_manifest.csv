@@ -1,0 +1,2 @@
+target,status,n_nodes,n_components,largest_component,largest_component_fraction,requested_folds,chosen_folds,fold_sizes,seed,label_columns_read,balance_rule
+AQSOLDB_SOLUBILITY,SCG_FEASIBLE,9321,2945,2199,0.23591889282265852,5,5,"[2199, 1781, 1781, 1780, 1780]",2901,False,max<=1.5*ideal and min>=0.5*ideal

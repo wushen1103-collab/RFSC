@@ -1,0 +1,28 @@
+name: svm_bps_selected_development
+status: frozen_after_development_validation
+selection_source: experiments/svm_rf_gine_validation/full
+selection:
+  svm_weight: 0.5
+  scale: 1.5
+  predicted_mmp_delta_threshold: 0.5
+  rule: robust_direction_before_mean_gain
+  evidence:
+    improved_targets_overall_mae: 6
+    improved_targets_cliff_mae: 6
+    improved_targets_pair_delta_mae: 6
+    development_targets: 6
+scope:
+  labels: six_development_targets_outer_test_once
+  targets:
+    - CHEMBL234_Ki
+    - CHEMBL287_Ki
+    - CHEMBL2971_Ki
+    - CHEMBL4005_Ki
+    - CHEMBL4203_Ki
+    - CHEMBL4616_EC50
+  expected_runs: 87
+decision:
+  maximum_overall_relative_change_vs_svm: 0.0
+  maximum_cliff_relative_change_vs_svm: 0.0
+  maximum_pair_relative_change_vs_svm: 0.0
+  minimum_improved_targets_per_metric: 4

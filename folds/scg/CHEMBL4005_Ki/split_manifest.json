@@ -1,0 +1,20 @@
+{
+  "balance_rule": "max<=1.5*ideal and min>=0.5*ideal",
+  "chosen_folds": 5,
+  "fold_sizes": [
+    261,
+    175,
+    175,
+    175,
+    174
+  ],
+  "label_columns_read": false,
+  "largest_component": 261,
+  "largest_component_fraction": 0.271875,
+  "n_components": 133,
+  "n_nodes": 960,
+  "requested_folds": 5,
+  "seed": 2901,
+  "status": "SCG_FEASIBLE",
+  "target": "CHEMBL4005_Ki"
+}

@@ -1,0 +1,10 @@
+{
+  "checks": {
+    "pair_effect_favorable": true,
+    "point_cost_lower_than_full": true,
+    "realized_coverage": true
+  },
+  "external_scores_frozen_before_response_evaluation": true,
+  "primary_nominal_coverage": 0.8,
+  "useful_risk_control": true
+}

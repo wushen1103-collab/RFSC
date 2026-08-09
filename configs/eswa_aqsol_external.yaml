@@ -1,0 +1,35 @@
+name: eswa_aqsol_external_untouched
+status: frozen_before_response_materialization
+source:
+  expected_sha256: 1f9c4bb47c2c62b515719717899191f11a9772e7d30cc5b0443e0050bed2eae2
+  response_unit: supplied_log_aqueous_solubility
+target: AQSOLDB_SOLUBILITY
+data_root: data/processed/aqsoldb_external
+fold_root: folds/scg
+mmp_root: graphs/mmp
+seeds: [0, 1, 2]
+reference:
+  svm_weight: 0.5
+  rf_weight_inside_rf_gine: 0.5
+  gine_weight_inside_rf_gine: 0.5
+operator:
+  predicted_delta_threshold: 0.5
+  scale: 1.5
+evaluation:
+  cliff_threshold: 1.0
+  bootstrap_iterations: 10000
+  bootstrap_seed: 290808
+decision:
+  minimum_pair_improved_fold_fraction: 0.8
+  maximum_pair_bootstrap_upper: 0.0
+  maximum_overall_relative_cost: 0.01
+  maximum_cliff_relative_cost: 0.01
+eligibility:
+  minimum_unique_molecules: 2500
+  minimum_mmp_edges: 100
+  minimum_folds: 3
+  minimum_internal_mmp_edges_per_fold: 10
+firewall:
+  structures_before_labels: true
+  all_predictions_hashed_before_outer_test_evaluation: true
+  no_external_tuning: true

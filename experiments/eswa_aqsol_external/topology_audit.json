@@ -1,0 +1,27 @@
+{
+  "checks": {
+    "minimum_folds": true,
+    "minimum_internal_mmp_edges_per_fold": true,
+    "minimum_mmp_edges": true,
+    "minimum_unique_molecules": true
+  },
+  "eligible": true,
+  "folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "internal_mmp_edges_by_fold": {
+    "0": 7469,
+    "1": 2315,
+    "2": 1865,
+    "3": 1112,
+    "4": 1256
+  },
+  "n_mmp_edges": 14017,
+  "n_unique_molecules": 9321,
+  "response_columns_read": false,
+  "target": "AQSOLDB_SOLUBILITY"
+}

@@ -1,0 +1,2 @@
+target,n_structures,eligible_mmp_edges,raw_mmp_candidates,num_cuts,min_core_heavy_atom_fraction,max_variable_heavy_atoms,max_heavy_atom_difference,smallest_transformation_only,smallest_transform_postselection,upstream_smallest_transform_flag_disabled_reason,max_radius,label_columns_read
+AQSOLDB_SOLUBILITY,9321,14017,15783,1,0.67,12,12,False,per_pair_minimum_max_variable_heavy_atoms,mmpdb 3.1.4 attachment-mask compatibility failure with RDKit 2025.9.6,3,False

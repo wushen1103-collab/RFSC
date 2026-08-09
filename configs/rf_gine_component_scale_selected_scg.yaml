@@ -1,0 +1,22 @@
+name: validation_selected_component_mean_preserving_rf_gine
+status: frozen_before_validation_selection_and_outer_test
+scope:
+  partition: next_structure_component_outer_validation_then_outer_test
+  test_labels_in_builder: prohibited
+operator:
+  scale_candidates: [1.0, 1.25, 1.5, 2.0]
+  center: internal_mmp_component_prediction_mean
+  base: fixed_equal_rf_gine
+selection:
+  objective: validation_cliff_pair_delta_mae_plus_0.25_cliff_plus_0.25_overall
+  guarded_by_identity_overall_and_cliff: true
+  tie_break: closest_to_identity_then_lower_scale
+evaluation:
+  primary: mmp_cliff_pair_delta_mae
+  secondary: [overall_mae, cliff_endpoint_mae]
+  aggregation: seed_then_fold_then_target_macro
+decision:
+  maximum_overall_relative_change_vs_fixed_equal: 0.01
+  maximum_cliff_relative_change_vs_fixed_equal: 0.01
+  minimum_pair_relative_improvement_vs_fixed_equal: 0.03
+  minimum_pair_improved_targets_vs_fixed_equal: 4

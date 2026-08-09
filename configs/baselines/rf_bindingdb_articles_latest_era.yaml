@@ -1,0 +1,16 @@
+method: rf_ecfp
+protocol: bindingdb_articles_latest_era
+status: inherited_frozen_before_external_predictions
+data_root: data/processed/bindingdb_articles_latest_era
+fingerprint:
+  radius: 2
+  n_bits: 1024
+selection:
+  criterion: validation_rmse
+  n_estimators: [100, 250, 500, 1000]
+model:
+  n_jobs: 8
+  max_features: 1.0
+  min_samples_leaf: 1
+  criterion: squared_error
+seeds: [0, 1, 2]

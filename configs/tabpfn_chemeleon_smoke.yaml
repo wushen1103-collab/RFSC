@@ -1,0 +1,33 @@
+method: tabpfn_chemeleonfp
+protocol: strict_scg_validation_only
+data_root: data/processed/moleculeace
+chemeleon:
+  checkpoint: ${CHEMELEON_CHECKPOINT:-external/checkpoints/chemeleon_mp.valid}
+  checkpoint_bytes: 34859448
+  checkpoint_sha256: c376624d3407204e780a0ed13a9ac097cc9bb1c13ef89cdbc633c1715c183651
+  device: cuda:0
+  batch_size: 256
+tabpfn:
+  # Two estimators are the bounded smoke configuration; promoted runs use 8.
+  n_estimators_smoke: 2
+  n_estimators_full: 8
+  device: cuda
+  ignore_pretraining_limits: true
+  feature_clip: [-6.0, 6.0]
+  random_state_source: official_tabpfn_chemeleonfp_seed_list
+evaluation:
+  smoke_train_size: 64
+  smoke_query_size: 16
+  smoke_tasks:
+    - {target: CHEMBL287_Ki, fold: 0, seed: 42}
+  full_validation_tasks:
+    - {target: CHEMBL287_Ki, fold: 0, seed: 42}
+  replication_tasks:
+    - {target: CHEMBL2971_Ki, fold: 0, seed: 42}
+    - {target: CHEMBL4616_EC50, fold: 0, seed: 42}
+  support_gate_tasks:
+    - {target: CHEMBL4005_Ki, fold: 0, seed: 42}
+    - {target: CHEMBL4203_Ki, fold: 0, seed: 42}
+  primary_ensemble: equal_rf_gine_tabpfn
+  primary_weights: [0.3333333333, 0.3333333333, 0.3333333334]
+  no_parameter_search: true

@@ -1,0 +1,34 @@
+{
+  "aggregate_algorithm": "sha256 of sorted lines '<file_sha256><two_spaces><path_relative_to_external_DeepDelta>\\n'",
+  "audit_date": "2026-07-19",
+  "benchmark_csv": {
+    "Datasets/Benchmarks/Caco2.csv": "e5ee5551a3556da808e87ce6ce744211fd7831da0fd48d019ce5195dc1558e9b",
+    "Datasets/Benchmarks/FUBrain.csv": "f961ba3036b885a1dfc2c55d2d6379513edbedfd15ee573e6566c1b02f1254b9",
+    "Datasets/Benchmarks/FreeSolv.csv": "aa21a6730a0655efc0179446fc3af0ae1fcf3230a4fe5f9b78efdda0cd5b173d",
+    "Datasets/Benchmarks/HalfLife.csv": "fc9356ab265c9525201a4fa9001ff18c6d72ff2384b426128fbb8697277b43d5",
+    "Datasets/Benchmarks/HemoTox.csv": "777979655d40a17a98a8d6f1551fb41b7f453c23d9e5304fefdbb008c098a8c7",
+    "Datasets/Benchmarks/HepClear.csv": "a24df6658fe5896e47e9685c8e85a511a7374444c809e507ddaa793c172afa90",
+    "Datasets/Benchmarks/MicroClear.csv": "6edb89136f87d3d6cef54045a611e9054c57414771c3719ce233b2ea3b9f5bb2",
+    "Datasets/Benchmarks/RenClear.csv": "25d93f02985cd33362574b73f2939e4df0cf0225a92dec77a7338eb3476b7dc2",
+    "Datasets/Benchmarks/Sol.csv": "2ba8c9344424377c26246a57a69f347794df82cd7086fea8d1346577256da61d",
+    "Datasets/Benchmarks/VDss.csv": "2dd492f9f2765f8837764ae2d9c8c2b624160a4233bed872bf51167726b1f538"
+  },
+  "commit": "cd9b131559d54be639fcb9455e4c057a3dfd2c6b",
+  "groups": {
+    "Datasets/Benchmarks/*.csv": {
+      "aggregate_sha256": "82ff816bbeb533736b069afb4ff12f9a36546f01e5f64356a3ef7f26c3f3ea2b",
+      "files": 10
+    },
+    "Results/DeepDelta5/*": {
+      "aggregate_sha256": "e6e86146ce5b1906d4478de83c349436febb0cb5ef2f38940489edd16246c3f5",
+      "files": 50
+    },
+    "Results/DeepDelta_Individual_CV_Folds/*": {
+      "aggregate_sha256": "dd4d6b75f6a0e1a28a49cf68d1dd5bb0a31dcc3bdb8606f0701fad821b6b16d6",
+      "files": 100
+    }
+  },
+  "license_sha256": "ebf80cb6a1dc1bf08875491d6c1cc18ce34fcff7e9ff2ef1210e1c2973e83927",
+  "source": "https://github.com/RekerLab/DeepDelta"
+}
+

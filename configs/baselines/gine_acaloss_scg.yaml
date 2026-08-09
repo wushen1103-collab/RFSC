@@ -1,0 +1,43 @@
+method: gine_acaloss_official_loss_rerun
+protocol: moleculeace_scg
+status: frozen_2026_07_29_before_scg_smoke
+data_root: data/processed/moleculeace
+cache_root: cache/pyg
+selection:
+  strategy: next_structure_component_outer_fold
+  validation_fraction: null
+  seed: 2901
+  criterion: validation_mae
+model:
+  architecture: gine
+  hidden_dim: 128
+  layers: 4
+  dropout: 0.2
+optimization:
+  loss: external_acaloss
+  learning_rate: 0.001
+  weight_decay: 0.00001
+  batch_size: 64
+  max_epochs: 200
+  patience: 30
+  gradient_clip: 5.0
+  amp: true
+external:
+  name: ACANet-v3-ACALoss
+  source_root: ${ACANET_REPO:-external/ACANet}
+  commit: 4c43e6024345d0ec4d40fdc88ad57224c898b6da
+  license: GPL-3.0-only
+  license_sha256: 3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986
+aca_loss:
+  alpha: 0.1
+  cliff_lower: 0.2
+  cliff_upper: 1.0
+  squared: false
+  p: 2.0
+  similarity_gate: false
+  dev_mode: true
+evaluation:
+  response: y_pactivity
+  primary: mmp_cliff_endpoint_mae
+  paired_control: gine_identical_backbone
+seeds: [0, 1, 2]

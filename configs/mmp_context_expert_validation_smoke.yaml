@@ -1,0 +1,39 @@
+name: context_local_mmp_effect_projection_validation_smoke
+status: frozen_before_outer_validation_predictions
+scope:
+  partition: outer_validation_pseudo_query
+  target: CHEMBL287_Ki
+  fold: 0
+  seeds: [0, 1, 2]
+  outer_test_labels_and_predictions: prohibited
+components:
+  rf: experiments/rf_scg/full
+  gine_validation_source: experiments/sqrl_anchor/full
+  baseline: fixed_equal_rf_gine
+transformation_prior:
+  key: canonical_undirected_variable_fragment_pair
+  direction: canonical_lexicographic_fragment_order
+  context: mmp_constant_fragment_ecfp4
+  fingerprint_bits: 2048
+  maximum_context_neighbors: 3
+  minimum_context_neighbors: 2
+  context_similarity_floor: 0.4
+  minimum_fit_occurrences: 2
+  estimator: tanimoto_weighted_mean_activity_delta
+projection:
+  objective: point_anchor_plus_weighted_pair_constraints
+  pair_strength: 0.25
+  edge_weight: mean_context_similarity
+  component_mean_preservation: exact_by_incidence_construction
+evaluation:
+  cliff_delta_threshold: 1.0
+  primary: validation_internal_mmp_cliff_pair_delta_mae
+  secondary: [overall_mae, cliff_endpoint_mae]
+decision:
+  minimum_supported_query_edges: 5
+  minimum_pair_delta_improvement_vs_fixed_equal: 0.01
+  maximum_overall_relative_change_vs_fixed_equal: 0.005
+  maximum_cliff_relative_change_vs_fixed_equal: 0.005
+  minimum_pair_improved_seeds: 2
+  all_criteria_required_before_full_validation: true
+

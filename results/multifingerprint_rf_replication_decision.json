@@ -1,0 +1,14 @@
+{
+  "status": "NO-GO",
+  "validation_only": true,
+  "test_labels_materialized": false,
+  "required_task_passes": 2,
+  "observed_task_passes": 1,
+  "mean_relative_changes_pct": {
+    "rf_rmse_change_pct": 15.010134759546727,
+    "fixed_equal_overall_change_pct": 7.258085640326628,
+    "fixed_equal_cliff_change_pct": 10.472360106167521,
+    "fixed_equal_pair_change_pct": 1.1858498439015874
+  },
+  "action": "stop_without_test_evaluation_or_feature_tuning"
+}

@@ -1,0 +1,14 @@
+{
+  "checks": {
+    "all_100_dataset_folds_present": true,
+    "all_100_pythagorean_checks_pass": true,
+    "high_delta_mae_not_worse": true,
+    "mae_at_least_8_of_10_datasets": true,
+    "mae_bootstrap_upper_below_zero": true,
+    "rmse_at_least_8_of_10_datasets": true,
+    "rmse_bootstrap_upper_below_zero": true
+  },
+  "experiment": "deepdelta_delta_lgbm_10fold_robustness",
+  "robustness_go": true,
+  "statistical_unit": "dataset_after_ten_fold_mean"
+}

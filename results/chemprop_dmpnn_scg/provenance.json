@@ -1,0 +1,12 @@
+{
+  "method": "Chemprop D-MPNN",
+  "result_source": "Re-run",
+  "implementation": "official Chemprop 2.2.1",
+  "split": "identical frozen strict SCG",
+  "selection": "validation-best checkpoint",
+  "seeds": [
+    0,
+    1,
+    2
+  ]
+}

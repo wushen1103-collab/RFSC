@@ -1,0 +1,42 @@
+name: train_only_component_heldout_mmp_transform_effect_feasibility
+status: frozen_before_execution
+scope:
+  authorized_labels: outer_train_only
+  outer_validation_labels: prohibited
+  outer_test_labels: prohibited
+  targets:
+    - CHEMBL287_Ki
+    - CHEMBL2971_Ki
+    - CHEMBL4203_Ki
+    - CHEMBL234_Ki
+    - CHEMBL4005_Ki
+    - CHEMBL4616_EC50
+inner_evaluation:
+  grouping: complete_mmp_component
+  folds: 5
+  deterministic_hash_seed: 2901
+transformation_prior:
+  key: canonical_undirected_variable_fragment_pair
+  direction: canonical_lexicographic_fragment_order
+  estimator: median_activity_delta
+  minimum_fit_occurrences: 2
+  shrinkage: none
+evaluation:
+  cliff_delta_threshold: 1.0
+  primary: pair_delta_mae_relative_change_vs_zero
+  secondary:
+    - pearson_correlation
+    - sign_accuracy
+    - cliff_pair_delta_mae_relative_change_vs_zero
+    - cliff_sign_accuracy
+  aggregation: edge_micro_and_target_macro
+decision:
+  minimum_supported_edges: 1000
+  minimum_pair_delta_improvement_vs_zero: 0.05
+  minimum_cliff_pair_delta_improvement_vs_zero: 0.03
+  minimum_pearson_correlation: 0.20
+  minimum_sign_accuracy: 0.60
+  minimum_cliff_sign_accuracy: 0.60
+  minimum_improved_targets: 4
+  all_criteria_required_before_validation: true
+

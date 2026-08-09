@@ -1,0 +1,42 @@
+name: symmetric_logistic_cut_only_gate
+development_status: frozen_after_oracle_floor_sensitivity
+graph:
+  representation: ecfp4
+  radius: 2
+  bits: 2048
+  query_to_train_k: 10
+  similarity_floor: 0.4
+  weight: tanimoto
+propagation:
+  lambda: 0.5
+  message: frozen_gine_reference_prediction
+  no_neighbor_fallback: base_query_prediction
+gate:
+  model: standardized_balanced_logistic_regression
+  C: 1.0
+  max_iter: 1000
+  solver: lbfgs
+  boundary_activity_difference: 1.0
+  features:
+    - ecfp_tanimoto
+    - absolute_frozen_gine_prediction_difference
+    - absolute_frozen_gine_embedding_difference
+    - frozen_gine_embedding_product
+  label_source: outer_train_edges_only
+controls:
+  random_soft_gate_permutations: 20
+  similarity: assign_largest_learned_q_to_lowest_similarity
+  matched_quantity: full_per_query_learned_q_multiset
+  seed: 29012026
+evaluation:
+  development_partitions: [outer_validation_pseudo_query, outer_test_query]
+  aggregation: random_then_seed_then_fold_then_target_macro
+  primary: test_internal_mmp_cliff_endpoint_mae
+  gate_primary: query_to_train_boundary_auprc
+decision:
+  minimum_learned_cliff_improvement_vs_base: 0.03
+  maximum_learned_overall_degradation_vs_base: 0.01
+  learned_must_beat_random: true
+  learned_must_beat_similarity: true
+  minimum_gate_auprc_lift_over_prevalence: 0.05
+  authorized_validation_oracle_must_remain_upper_bound: true

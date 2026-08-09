@@ -1,0 +1,8 @@
+method: svm_ecfp
+protocol: aqsol_external_scg
+status: inherited_frozen_parameters
+data_root: data/processed/aqsoldb_external
+fingerprint: {radius: 2, n_bits: 1024}
+model: {kernel: rbf, C: 10.0, gamma: 0.01, epsilon: 0.1, cache_size_mb: 2048}
+selection: {target_specific_hyperparameters: prohibited, validation_labels: not_used}
+seeds: [0]

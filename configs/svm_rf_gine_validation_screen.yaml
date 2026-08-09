@@ -1,0 +1,18 @@
+name: svm_rf_gine_gated_validation_screen
+status: development_validation_only
+labels: six_development_targets_outer_validation
+test_predictions: prohibited
+components:
+  svm: experiments/svm_scg/development
+  rf: experiments/rf_scg/full
+  gine_validation_source: experiments/sqrl_anchor/full
+candidates:
+  svm_weights: [0.0, 0.25, 0.5, 0.75, 1.0]
+  scales: [1.0, 1.25, 1.5]
+  predicted_mmp_delta_thresholds: [0.0, 0.5]
+decision:
+  maximum_overall_relative_change_vs_svm: 0.0
+  maximum_cliff_relative_change_vs_svm: 0.0
+  maximum_pair_relative_change_vs_svm: 0.0
+  minimum_improved_targets_per_metric: 4
+

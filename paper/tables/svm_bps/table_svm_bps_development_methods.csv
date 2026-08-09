@@ -1,0 +1,6 @@
+scope,method,overall_mae,cliff_mae,pair_delta_mae
+development outer test (6 targets),SVM/RF/GINE equal-shape mix,0.6813574536784449,0.7549505939358386,1.3608227227127951
+development outer test (6 targets),BPS-GNN+ (selected),0.6854127001184694,0.756903341348287,1.3131350568033298
+development outer test (6 targets),ECFP4-SVM,0.7015139939455484,0.7706123135506325,1.3523077911158758
+development outer test (6 targets),RF/GINE equal,0.7021059273373683,0.7772279951977678,1.3715526209704028
+development outer test (6 targets),BPS-GNN gated scale,0.7091292495066983,0.7843565464923669,1.3378015247430728

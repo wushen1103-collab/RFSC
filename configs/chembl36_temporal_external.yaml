@@ -1,0 +1,76 @@
+name: chembl36_temporal_external_confirmation
+status: frozen_before_label_extraction
+source:
+  release: chembl_36
+  archive: ${CHEMBL36_ARCHIVE:-data/raw/chembl_36_sqlite.tar.gz}
+  bytes: 5611751319
+  sha256: b25820eef0f0481ad7712bdf4bac3b45f354e3cbacb76be1fdbf4205d6b48fb9
+curation:
+  target_type: SINGLE PROTEIN
+  target_organism: Homo sapiens
+  assay_type: B
+  confidence_score: 9
+  standard_type: Ki
+  standard_relation: "="
+  standard_units: nM
+  require_positive_finite_value: true
+  require_canonical_smiles: true
+  require_publication_year: true
+  response: pKi_9_minus_log10_nM
+  duplicate_aggregation: median
+  duplicate_max_range_log_unit: 1.0
+time_split:
+  train_max_year: 2019
+  validation_years: [2020, 2021]
+  test_min_year: 2022
+  standardized_molecule_disjoint: true
+eligibility_structure_only:
+  minimum_train_molecules: 200
+  minimum_validation_molecules: 40
+  minimum_test_molecules: 60
+  minimum_internal_test_mmp_edges: 10
+  minimum_eligible_targets: 8
+models:
+  svm:
+    fingerprint: ECFP4
+    kernel: rbf
+    C: 10
+    gamma: 0.01
+    epsilon: 0.1
+  rf: configs/baselines/rf_ecfp_scg.yaml
+  gine: configs/baselines/gine_scg.yaml
+reference:
+  svm_weight: 0.5
+  rf_weight_inside_rf_gine: 0.5
+  gine_weight_inside_rf_gine: 0.5
+operator:
+  graph: internal_query_mmp
+  active_edge_rule: absolute_unscaled_predicted_delta
+  predicted_delta_threshold: 0.5
+  scale: 1.5
+  center: active_component_prediction_mean
+  isolated_nodes: unchanged
+seeds: [0, 1, 2]
+evaluation:
+  cliff_threshold_log_unit: 1.0
+  metrics: [overall_mae, cliff_endpoint_mae, mmp_cliff_pair_delta_mae]
+  aggregation: seed_then_target_macro
+  bootstrap_iterations: 10000
+  multiplicity: holm_three_primary_tests
+firewall:
+  predictions_hashed_before_test_labels: true
+  no_test_tuning: true
+decision:
+  minimum_pair_relative_improvement: 0.03
+  maximum_pair_bootstrap_upper: 0.0
+  minimum_pair_improved_target_fraction: 0.70
+  maximum_overall_relative_cost: 0.01
+  maximum_cliff_relative_cost: 0.01
+  maximum_overall_bootstrap_upper: 0.01
+  maximum_cliff_bootstrap_upper: 0.01
+  minimum_pair_eligible_targets: 8
+compute:
+  maximum_logical_cpu_threads: 320
+  leave_at_least_physical_cpu_cores: 30
+  gpu_policy: use_only_idle_gpus_after_runtime_audit
+  smoke_before_full: true

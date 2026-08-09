@@ -1,0 +1,2 @@
+method,target,fold,seed,protocol,validation_mae,gine_validation_mae,relative_change_pct,maximum_allowed_degradation_pct,best_epoch,epochs_ran,parameters,peak_vram_mib,wall_time_seconds,test_labels_materialized,decision
+GraphCliff_formula_adaptation,CHEMBL287_Ki,0,0,strict_SCG,0.7590545316683006,0.6327458381371094,19.96199515164909,5.0,24,44,1962898,193.04248046875,16.609108050353825,false,NO-GO

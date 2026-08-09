@@ -1,0 +1,32 @@
+method: train_centered_scale_calibrated_fixed_equal_rf_gine
+protocol: moleculeace_scg
+status: frozen_before_scale_predictions
+components:
+  fixed_equal_ensemble: experiments/rf_gine_ensemble/full
+  rf: experiments/rf_scg/full
+  gine_validation_source: experiments/sqrl_anchor/full
+selection:
+  partition: next_structure_component_outer_validation
+  center: outer_train_label_median
+  scale_candidates: [1.0, 1.25, 1.5, 2.0]
+  objective: cliff_endpoint_mae_plus_alpha_overall_mae_plus_beta_pair_delta_mae
+  overall_alpha: 0.25
+  pair_delta_beta: 0.25
+  tie_break: lower_objective_then_closest_to_identity_then_lower_scale
+controls:
+  identity_scale: 1.0
+  freeze_all_candidate_predictions_before_test_evaluation: true
+evaluation:
+  primary: mmp_cliff_endpoint_mae
+  secondary: [overall_mae, pair_delta_mae]
+  aggregation: seed_then_fold_then_target_macro
+decision:
+  minimum_cliff_improvement_vs_gine: 0.03
+  maximum_overall_relative_change_vs_gine: 0.0
+  maximum_pair_delta_relative_change_vs_gine: 0.0
+  minimum_cliff_improved_targets_vs_gine: 4
+  maximum_cliff_relative_change_vs_fixed_equal: 0.01
+  maximum_overall_relative_change_vs_fixed_equal: 0.01
+  maximum_pair_delta_relative_change_vs_fixed_equal: 0.0
+  minimum_pair_improved_targets_vs_fixed_equal: 4
+

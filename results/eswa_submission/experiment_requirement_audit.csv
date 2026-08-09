@@ -1,0 +1,17 @@
+requirement,before_2026_08_08,after_expansion,assessment
+8-12 external methods,11 external predictors on identical strict SCG,unchanged 11 plus internal reference and proposed row,complete
+classic methods,ECFP4-SVM and ECFP4-RF,unchanged,complete
+recent same-task methods,GCN GraphSAGE GIN GINE GATv2 MPNN AttentiveFP Chemprop,unchanged,complete
+direct mechanism competitors,ACANet plus raw antisymmetry Hodge absolute controls,QM9 adds diagonal repair and independent absolute control,complete with provenance caveat
+route grouping,classical common-GNN molecular-MPNN direct-cliff project rows,unchanged,complete
+2-4 public datasets,MoleculeACE ChEMBL BindingDB DeepDelta and NOAA,AqSolDB and QM9 added,exceeds ESWA norm
+fair same split,29 targets and 143 strict-SCG folds per method; identical OOD splits,AqSolDB 5 SCG folds and QM9 shared 5-fold cohorts added,complete
+special scenarios,SCG temporal OOD source/patent OOD structure novelty random missingness and cross-domain,structured missingness plus selective abstention added,complete
+mean plus standard deviation,three seeds throughout modern node panel,5-fold mean/std added for AqSolDB and QM9,complete
+multiple runs,429 artifacts per modern predictor,15 AqSolDB and 15 QM9 task-fold runs plus 135 structured cells,complete
+original versus rerun provenance,explicit source column and official-code/loss labels,new experiments are marked independently rerun,complete
+truly untouched external node source,absent,AqSolDB structure-first label-firewalled confirmation complete,completed but full composite gate NO-GO
+new non-ADMET edge family,absent,QM9 HOMO LUMO and gap complete,completed with Hodge GO and absolute-control NO-GO
+response-free abstention,only confidence weighting negative,MoleculeACE-trained rule externally evaluated on AqSolDB,completed and preregistered risk gate GO
+structured missingness,random connected missingness only,hub chemistry-local and disconnected mechanisms complete,completed; preregistered primary NO-GO
+anchor recovery,absent,QM9 1 3 and 5 measured anchors complete,completed negative versus absolute model

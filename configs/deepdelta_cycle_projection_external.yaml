@@ -1,0 +1,46 @@
+name: deepdelta_cycle_consistent_external
+status: frozen_before_loading_any_admet_response_or_metric
+source:
+  repository: https://github.com/RekerLab/DeepDelta
+  commit: cd9b131559d54be639fcb9455e4c057a3dfd2c6b
+  prediction_root: external/DeepDelta/Results/DeepDelta_Individual_CV_Folds
+  data_root: external/DeepDelta/Datasets/Benchmarks
+datasets:
+  - FUBrain
+  - RenClear
+  - FreeSolv
+  - MicroClear
+  - HemoTox
+  - HepClear
+  - Caco2
+  - Sol
+  - VDss
+  - HalfLife
+cross_validation:
+  folds: 10
+  shuffle: true
+  random_state: 1
+  molecule_disjoint: true
+methods:
+  baseline: published_deepdelta_pair_flow
+  ablation: antisymmetric_pair_flow
+  candidate: hodge_cycle_consistent_pair_flow
+evaluation:
+  exclude_diagonal_self_pairs: true
+  high_delta_quantile_within_fold: 0.75
+  metrics: [pair_rmse, pair_mae, high_delta_pair_mae, pearson_r]
+  aggregation: fold_then_dataset_macro
+  bootstrap_iterations: 10000
+decision:
+  minimum_pair_rmse_improved_dataset_fraction: 1.0
+  maximum_pair_rmse_bootstrap_upper: 0.0
+  minimum_pair_mae_improved_dataset_fraction: 0.8
+  maximum_pair_mae_bootstrap_upper: 0.0
+  maximum_high_delta_pair_mae_relative_change: 0.0
+  maximum_hodge_vs_antisymmetric_rmse_bootstrap_upper: 0.0
+  pythagorean_relative_tolerance: 1.0e-10
+firewall:
+  build_from_prediction_only_files: true
+  predictions_hashed_before_benchmark_responses: true
+  no_response_based_tuning: true
+
