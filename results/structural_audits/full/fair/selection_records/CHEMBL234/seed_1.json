@@ -1,0 +1,66 @@
+{
+  "selected": [
+    {
+      "chosen_candidate": "BPS_s1.75_t0.50",
+      "identity_selected": false,
+      "method": "calibrated_BPS",
+      "scale": 1.75,
+      "seed": 1,
+      "selection_reason": "validation_pair_minimum_under_point_budget",
+      "target": "CHEMBL234",
+      "test_response_used_for_selection": false,
+      "threshold": 0.5,
+      "validation_candidates_per_family": 13,
+      "validation_cliff_pairs": 101,
+      "validation_pair_mae": 1.4496327621938863,
+      "validation_point_cost": 0.0027998535565103566
+    },
+    {
+      "chosen_candidate": "Laplacian_unsharp_s1.25_t0.50",
+      "identity_selected": false,
+      "method": "calibrated_Laplacian_unsharp",
+      "scale": 1.25,
+      "seed": 1,
+      "selection_reason": "validation_pair_minimum_under_point_budget",
+      "target": "CHEMBL234",
+      "test_response_used_for_selection": false,
+      "threshold": 0.5,
+      "validation_candidates_per_family": 13,
+      "validation_cliff_pairs": 101,
+      "validation_pair_mae": 1.4612435537764126,
+      "validation_point_cost": -0.0009912071508431097
+    },
+    {
+      "chosen_candidate": "random_edge_scaling_s1.75_t0.75",
+      "identity_selected": false,
+      "method": "calibrated_random_edge_scaling",
+      "scale": 1.75,
+      "seed": 1,
+      "selection_reason": "validation_pair_minimum_under_point_budget",
+      "target": "CHEMBL234",
+      "test_response_used_for_selection": false,
+      "threshold": 0.75,
+      "validation_candidates_per_family": 13,
+      "validation_cliff_pairs": 101,
+      "validation_pair_mae": 1.4308201166342058,
+      "validation_point_cost": -0.0016649678443160232
+    },
+    {
+      "chosen_candidate": "naive_active_edge_push_s1.50_t0.25",
+      "identity_selected": false,
+      "method": "calibrated_naive_active_edge_push",
+      "scale": 1.5,
+      "seed": 1,
+      "selection_reason": "validation_pair_minimum_under_point_budget",
+      "target": "CHEMBL234",
+      "test_response_used_for_selection": false,
+      "threshold": 0.25,
+      "validation_candidates_per_family": 13,
+      "validation_cliff_pairs": 101,
+      "validation_pair_mae": 1.4647534964261224,
+      "validation_point_cost": -0.009193152815466177
+    }
+  ],
+  "test_labels_loaded": false,
+  "time_unix": 1792493098.9830496
+}

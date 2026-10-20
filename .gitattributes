@@ -1,0 +1,7 @@
+# Preserve published audit hashes on all platforms.
+results/structural_audits/** text eol=lf
+protocol/structural_audits.md text eol=lf
+reproduction/structural_audits.md text eol=lf
+scripts/*structural*.py text eol=lf
+scripts/infer_audit_validation.py text eol=lf
+scripts/evaluate_audit_matched_controls.py text eol=lf

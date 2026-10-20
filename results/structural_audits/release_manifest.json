@@ -1,0 +1,626 @@
+{
+  "protocol/structural_audits.md": {
+    "bytes": 4629,
+    "sha256": "71fcea04cdf503c19a9323510e9f6ff97157a3716b1d2b70c1231e40efeccb0e"
+  },
+  "reproduction/structural_audits.md": {
+    "bytes": 3810,
+    "sha256": "7f5e457a9a2c59813cd0b9b9944d8faede94e101f8f64866dd60fc71b0998cb1"
+  },
+  "results/structural_audits/EXECUTOR_VERIFICATION.json": {
+    "bytes": 803,
+    "sha256": "53b678d4020cbbe92b09b9a352e06d95e2faf5b2ab4f9dd24bc8834d40cf01e1"
+  },
+  "results/structural_audits/FINAL_CHECKS.json": {
+    "bytes": 467,
+    "sha256": "5f894dafd0afde1f9097eef2a0e65fae869a2bd24da3af1ea8d40c64b871a82e"
+  },
+  "results/structural_audits/full/fair/DONE.json": {
+    "bytes": 505,
+    "sha256": "180660038ca52bc26c1c9ca6e908d80a983792cc7a2f7cc1a2fe957c6d9d61bc"
+  },
+  "results/structural_audits/full/fair/fair_comparison_summary.csv": {
+    "bytes": 4507,
+    "sha256": "3872841df71ec03f9fbaa9694830b2c5c99e38137864bac7d9468c79e39de56d"
+  },
+  "results/structural_audits/full/fair/identity_selection_summary.csv": {
+    "bytes": 245,
+    "sha256": "ea123ebbdc81756b3e5a95021a21bf2682f920e527f4b1028d747cb657f2a1ab"
+  },
+  "results/structural_audits/full/fair/paired_method_contrasts.csv": {
+    "bytes": 1692,
+    "sha256": "d0eca29bdfc9c8526c89cba34a7741701b0427647cb0ac1beaefcfd499dfba71"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL1833/seed_0.json": {
+    "bytes": 2250,
+    "sha256": "54ec695274ed6abb00270bde4ef23548c53e378e8863f4670f4669f574bb6ce0"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL1833/seed_1.json": {
+    "bytes": 2277,
+    "sha256": "215df11181ac409c3f11c53e6e75deeda2f2ea721f9a70af016a626f0e82731b"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL1833/seed_2.json": {
+    "bytes": 2276,
+    "sha256": "d25523fea69d7b520289af2ba4b91f41389488d3271ebed4062f51feef5d2090"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL1889/seed_0.json": {
+    "bytes": 2197,
+    "sha256": "0d88956f509bc0ff62fc699c7a767e66e280ee01f4dfa08e3e538113ba51e270"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL1889/seed_1.json": {
+    "bytes": 2261,
+    "sha256": "55ff3b72697a223a417f49f96a4e7527a3b7fbeefe964c0f137ba3c0ac4e8e8c"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL1889/seed_2.json": {
+    "bytes": 2282,
+    "sha256": "f2bea3a47de9984c555927ae6ae1cc98ca1cde7e1274798ca44789c0958e9c8e"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL205/seed_0.json": {
+    "bytes": 2272,
+    "sha256": "0ab47a031f363b906d7bde60e00af4d2b50d69c9b3fe57bcba833b5a450493a1"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL205/seed_1.json": {
+    "bytes": 2275,
+    "sha256": "e2d85356cf61d93cf87b34ed8f61f365360b0b73eee49ae70e6a0286f5b50108"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL205/seed_2.json": {
+    "bytes": 2272,
+    "sha256": "5e2c8961c7c7b60c885fcf2b60088621e2629c44df38bbdefed9d2c99c1d1193"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL2056/seed_0.json": {
+    "bytes": 2271,
+    "sha256": "c3be9298b87d73a6bf0ccce76a73fb4678168ec67229f44fb2b11ff2c0b6329c"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL2056/seed_1.json": {
+    "bytes": 2273,
+    "sha256": "90e997783dc08c5bd5096283ad436a15a701c11d2199239ad6c9e07a7d741aa4"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL2056/seed_2.json": {
+    "bytes": 2276,
+    "sha256": "e4d915bef74fca2ece9e806fe63047fdb5e4c3aecb6c1a7aa7343a4ba7083ddb"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL214/seed_0.json": {
+    "bytes": 2272,
+    "sha256": "b0992229ce41ced63122cbd005cc6dc76ee760378853baf1bf76c9ba50bf882b"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL214/seed_1.json": {
+    "bytes": 2275,
+    "sha256": "b384616f879e8f1f1da1317731d830e76d8e687ac3ed3a610e3b19844e078715"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL214/seed_2.json": {
+    "bytes": 2271,
+    "sha256": "70125f3ebf0b1307c886fc7a7fe6d3061f4ec75142a515946bf4aea137ad6174"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL2148/seed_0.json": {
+    "bytes": 2274,
+    "sha256": "c7c95be765d0d86d1240aacfee64d56d904a28d7166305e0ebf18857acffd54d"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL2148/seed_1.json": {
+    "bytes": 2269,
+    "sha256": "38f24f1f72cfd00bcacf138a0e500c1593c671cea94a2f858b734e6eff95327c"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL2148/seed_2.json": {
+    "bytes": 2279,
+    "sha256": "fe9ad1fd37f6d648d3e2b9a36315320b9b64773f9bc16b8f58547847538085f3"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL217/seed_0.json": {
+    "bytes": 2277,
+    "sha256": "7b65ff06e356e8516831a65aa45880b9787c7de18ff144f3d7b14f97e1de96ea"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL217/seed_1.json": {
+    "bytes": 2275,
+    "sha256": "5fd0602bc132024b3a3730cae6b2e915296aa67a50633a92157d27d2ff12094c"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL217/seed_2.json": {
+    "bytes": 2274,
+    "sha256": "0776bb969fc02faf8cbbb2631c66446b1b75e2fbc8e3319d4aeee3518147a8a9"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL218/seed_0.json": {
+    "bytes": 2275,
+    "sha256": "5172b30c30a7e8d7e4502a7fc513dec36ab05ed047ac398085092b7f72c9c145"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL218/seed_1.json": {
+    "bytes": 2276,
+    "sha256": "d996718532c42b6b40e6e534d8a7f3f3a3b17aabc5fb52611c8cb549deabd50e"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL218/seed_2.json": {
+    "bytes": 2275,
+    "sha256": "662acf2d089673428053bea982cf93710e44c7b2555ded0e572b590f1042677f"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL219/seed_0.json": {
+    "bytes": 2271,
+    "sha256": "fc6bde20b67140a3cfab1fd154b83f51d55b5a1a509d46edc8d834bfd632055b"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL219/seed_1.json": {
+    "bytes": 2268,
+    "sha256": "53faf7e4ef4d6944fe3a1ec4d850a74de140ee561dd0dd4fabcbdc0635b01516"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL219/seed_2.json": {
+    "bytes": 2274,
+    "sha256": "147644e38740f2d7be3dedc76199272b9bbb0e4ed4f135962b715a1570eada2c"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL222/seed_0.json": {
+    "bytes": 2113,
+    "sha256": "b7dc4601ad222e4857a471833a1e47b230e50309c612be4496126677793383e7"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL222/seed_1.json": {
+    "bytes": 2108,
+    "sha256": "7c65a6b61e480614e6af44cf2693a06ecb594fdedad39029132b9b20c91c4fb9"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL222/seed_2.json": {
+    "bytes": 2113,
+    "sha256": "20fd5763e2c78ed75462e755935949963b2cc18a453a943485686673a3bd9898"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL224/seed_0.json": {
+    "bytes": 2209,
+    "sha256": "56c22edfef1ad6166953323a91539da7eda6df64efe2473b1074e585fb2ec792"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL224/seed_1.json": {
+    "bytes": 2238,
+    "sha256": "81c2d6b1b15b729499c30e4355bfb4f4139fa50f2e479715b9d3ca668ff8dfd9"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL224/seed_2.json": {
+    "bytes": 2248,
+    "sha256": "9bb2eafc959c873689595ed576432c6cb0d1166807e6f2f1febe7f64f496241b"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL225/seed_0.json": {
+    "bytes": 2168,
+    "sha256": "899f900826ee73a11030ffe99eb7379156ad1b0ba3fd300f9013442f0b0ee5f4"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL225/seed_1.json": {
+    "bytes": 2121,
+    "sha256": "272e0875fa9688fb3fe452e9b49ec16ec6e828aaa5ffcde4fddc913eb7226f3a"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL225/seed_2.json": {
+    "bytes": 2167,
+    "sha256": "181467770c8f82668b2d3902ef292790a9112599f2107904d71facaaf75df1a8"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL226/seed_0.json": {
+    "bytes": 2157,
+    "sha256": "7be45b100cdd9a6bad718865efeeea1d993a88e2ea4d698ec807d8ec376f208c"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL226/seed_1.json": {
+    "bytes": 2273,
+    "sha256": "5ff42592279684d1377afb0a5ee27b603a4b725c6625bd97aaa09fd8e825e718"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL226/seed_2.json": {
+    "bytes": 2272,
+    "sha256": "a2be07848b686276101ed536ba51f7a7787074f6edf3c24b7ef2f92b09e623a6"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL228/seed_0.json": {
+    "bytes": 2273,
+    "sha256": "8fc3c9b087df569293cedaf2a4a867c81a4eb5d24d0eec4fbae2de5fa2449b09"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL228/seed_1.json": {
+    "bytes": 2276,
+    "sha256": "6501eaaad98c75f602e56294762a21c6104433ee5963a3a393ebd592938c8605"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL228/seed_2.json": {
+    "bytes": 2271,
+    "sha256": "52a3601cb76ea77ac1411340b8b31cba5ae6af85afdc71a3a5467feb45c67d1f"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL2326/seed_0.json": {
+    "bytes": 2168,
+    "sha256": "5494ff4a317ea00517f3728226fe792325754030ec95ffda324f093dc9db58de"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL2326/seed_1.json": {
+    "bytes": 2115,
+    "sha256": "3ad706f339ab120638b2dd3c9f64c764e4e5a4c524a36e2241fef84194767102"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL2326/seed_2.json": {
+    "bytes": 2165,
+    "sha256": "ff2583eafcd133a004bf9fc3c45018d2d438d16ec8fff9a1af466032682590c6"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL233/seed_0.json": {
+    "bytes": 2274,
+    "sha256": "f5e98e018cc748c805125305abd5873f40c2d58451b7ae90b072dfadcead5056"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL233/seed_1.json": {
+    "bytes": 2275,
+    "sha256": "96d0d6ef4cacf652d53f298be976cbe9fada87756f76739dcaf8692243f90799"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL233/seed_2.json": {
+    "bytes": 2276,
+    "sha256": "7b065357e9c24cd04a4becd08f5b57fbc1a38b5e9017de9aeb18605c409d6600"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL234/seed_0.json": {
+    "bytes": 2235,
+    "sha256": "4913e5073cb0a7e3e2bb53a1188a523767542f36e8e433fdd6fdf1da0bc63c3a"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL234/seed_1.json": {
+    "bytes": 2281,
+    "sha256": "d9638db9bc06812fd0f66daa1e1d38cd2e0c7b81bbeea2ea99bdeaaa8fbbfe08"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL234/seed_2.json": {
+    "bytes": 2232,
+    "sha256": "435f22fe07f673ac54c7d2d19d8f5a53069f5e04296a0a4c81a75ec7bba09a04"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL236/seed_0.json": {
+    "bytes": 2277,
+    "sha256": "3b9906ed245c2161e33a0b398fe0733dd7772452ebfbd811a50257159542a5a2"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL236/seed_1.json": {
+    "bytes": 2188,
+    "sha256": "24c10759ea0c25859acd41e85a395cee2e507e695d39d31c395276cd9fefb15d"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL236/seed_2.json": {
+    "bytes": 2277,
+    "sha256": "5d9018a991078162483b907838e04e0501648d141d97246ab70246df48356b95"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL237/seed_0.json": {
+    "bytes": 2169,
+    "sha256": "db2dabfd6e699a85f8c76486f47a89cc5901d5c2b815ab9bd9677055f4c413c0"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL237/seed_1.json": {
+    "bytes": 2278,
+    "sha256": "e3598e8fa213bb7a6f748f5ba299dd82678cb6af72f58576d0aa4c12659a3a6d"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL237/seed_2.json": {
+    "bytes": 2168,
+    "sha256": "ed624b7c87578251add0a1242db326f2b2bc8ef5d6ed831b4b15d1f3c53f6128"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL245/seed_0.json": {
+    "bytes": 2272,
+    "sha256": "79e15a1b5ecfeabf306ea6c7fb3e8988e0673e61c1ad66c949e54b81aa3adc08"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL245/seed_1.json": {
+    "bytes": 2273,
+    "sha256": "fe5225b5334230fc3ef5623d77f4129bab09e6547c1835e0cf2db14633116edb"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL245/seed_2.json": {
+    "bytes": 2272,
+    "sha256": "b9a94e49add6ee42816655d3e1aa1da6fbd785d0808a3965cec80fd960ddeada"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL251/seed_0.json": {
+    "bytes": 2278,
+    "sha256": "704c7f5c80d605a17c293c51584a0cefc1eab9e900b1a1a3518ec71e63ddb39c"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL251/seed_1.json": {
+    "bytes": 2275,
+    "sha256": "1bdd2655a1b714f3856227223d5f609f73c604259d8e6512772a7dae4a90f0d2"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL251/seed_2.json": {
+    "bytes": 2271,
+    "sha256": "af1ba9dd39b2502ddddb2e489b2242b048d5f66172075091528664d915285bfd"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL253/seed_0.json": {
+    "bytes": 2276,
+    "sha256": "11650833c42fdde567e917915f4369357ae366cfb260e574fed45c7515c7aa70"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL253/seed_1.json": {
+    "bytes": 2276,
+    "sha256": "d7d3f9ac4222db3211085e13ec79c201ab746b4333f48e4d5034652d5e441327"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL253/seed_2.json": {
+    "bytes": 2276,
+    "sha256": "1cbef2cdfd1b8e5e98cf2847309bcdf0ca5ffd14ed9b429afb1ca86464f81d0f"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL255/seed_0.json": {
+    "bytes": 2113,
+    "sha256": "cade6aef4643330140f2d495d67a020eef0e1011e33f2b159c108f973f9bfde6"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL255/seed_1.json": {
+    "bytes": 2161,
+    "sha256": "5451ba1fe0ba3a7a89838084d8d2733e9f0b420b3375112bb322f468b826bb81"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL255/seed_2.json": {
+    "bytes": 2117,
+    "sha256": "55f7fe2f0f891eebffb4de12a0bd8e56306cf32aef24a373dcaf6f395b3cfbc3"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL256/seed_0.json": {
+    "bytes": 2274,
+    "sha256": "a6079c2db4fbe729a7240925b41d01dc596edc5d5e68aac70eb56cd536f3f2bc"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL256/seed_1.json": {
+    "bytes": 2276,
+    "sha256": "fc474efc027da76ec1de6ee6e0aed82910b33a278cd3a7ccfc5a3ea51fafa61a"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL256/seed_2.json": {
+    "bytes": 2272,
+    "sha256": "acc9c1b8314cecb6dde0f7050a63935b944d9b6233ebfa35b40ba5817bf8f476"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL259/seed_0.json": {
+    "bytes": 2041,
+    "sha256": "dec9525e5b83eaacf5666ca357c84e2d94b158818c10d8e207746e12d2d5ebe9"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL259/seed_1.json": {
+    "bytes": 2041,
+    "sha256": "24dd6018e2462a0f6d7bf244e039b67b3b7af1eef64b0968df8a0d51d4733362"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL259/seed_2.json": {
+    "bytes": 2040,
+    "sha256": "ca75e0fcdfbf29b884eba87316a5cc354bcf42dea7f52a05dc79422fa52dc8ca"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL261/seed_0.json": {
+    "bytes": 2277,
+    "sha256": "034ac41df1d65049289d3ea1f63b0451c5d068de0c4c6da844ab9dc66dafcd42"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL261/seed_1.json": {
+    "bytes": 2276,
+    "sha256": "ed53a673b4f71be038b7d2344133a48b728d68940f5d9adeaac8e09845412802"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL261/seed_2.json": {
+    "bytes": 2273,
+    "sha256": "aab868228528853958d2180b8817d8ba5a110a3975ac67853fbf0365cc7f2a61"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL264/seed_0.json": {
+    "bytes": 2270,
+    "sha256": "1f49b47861db7b64de1f9046a558c6db0a9c399550a1c9d913c2f37e3fe9aea4"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL264/seed_1.json": {
+    "bytes": 2230,
+    "sha256": "b7175641f527a0ec05a9da89bbe50628e6f20bf1bc02b08b77eebed782e17d71"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL264/seed_2.json": {
+    "bytes": 2225,
+    "sha256": "25c585ba36b9b4f73ba9bc196bd584ad351649893bf4439ffa771782211d21da"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL287/seed_0.json": {
+    "bytes": 2231,
+    "sha256": "a51cdbd58af8821d026183a4ae62b14bbf01355c68c105549db29109d559ab28"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL287/seed_1.json": {
+    "bytes": 2276,
+    "sha256": "edec8a2fda68c89bd8320a4112eca865ee712f801aad840776a4bb8f17f32477"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL287/seed_2.json": {
+    "bytes": 2273,
+    "sha256": "cbdb29c9025d086b63b447df1e5bb72e697f1188dd812933b2a8ccfc5e0bdf5b"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL3155/seed_0.json": {
+    "bytes": 2276,
+    "sha256": "dc7824566aea7dc49e89cd85ab8aef04492c68b34fe03d89c3ecb6ab949bf472"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL3155/seed_1.json": {
+    "bytes": 2277,
+    "sha256": "afd3fe0e0a9484c75998babc7f018f0b63e14ee39a5c52f12696daa1ed7e4dc5"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL3155/seed_2.json": {
+    "bytes": 2277,
+    "sha256": "efc6c5a52aac3093e017fd3ca4bb2aa9401077e03d22a65284d41ed67165f694"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL3242/seed_0.json": {
+    "bytes": 2279,
+    "sha256": "535ec95cdbbd17ee06d043cc06429455942d54d263796c6b46c5f4aa6610f119"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL3242/seed_1.json": {
+    "bytes": 2279,
+    "sha256": "403dab15acb42833c13e2bae39f2931f68e1d8cf961a976acaa4008b9e7f501a"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL3242/seed_2.json": {
+    "bytes": 2280,
+    "sha256": "bdee526b473e8ef8e7c1384f0a782ea02edca188b850e8d92b157ddc0b41536a"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL3371/seed_0.json": {
+    "bytes": 2281,
+    "sha256": "0dcd49676530f78bd51916da3e4d221a54683564d83329e4314a9cb8cce1597b"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL3371/seed_1.json": {
+    "bytes": 2279,
+    "sha256": "b679ec25f6c86fc5ca98958a83bd1da7f712aef19b8b673b3d16884774d3e069"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL3371/seed_2.json": {
+    "bytes": 2280,
+    "sha256": "e89c1fff68b7de482030e39c2bade7aa3226573c1f8059a7a77e15489fbbadda"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL3594/seed_0.json": {
+    "bytes": 2277,
+    "sha256": "33e1e58f1073375f9a7318f5faa20585983b586caa765851df256f7f485cf23d"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL3594/seed_1.json": {
+    "bytes": 2280,
+    "sha256": "ce8461a12054dafc57b9b0b897a6f3336be4b5cbad8d80d1e441295e3b7ec848"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL3594/seed_2.json": {
+    "bytes": 2280,
+    "sha256": "a1ff8b06b8a8013758bf4bdf72de24917f7c250c0e57e9e0c0b61f2316b16535"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL3729/seed_0.json": {
+    "bytes": 2276,
+    "sha256": "ff3f86596c44b345f88e1504063deff09c7b4b73faae6362112c780987ae3f82"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL3729/seed_1.json": {
+    "bytes": 2281,
+    "sha256": "6011ee5faf4fa55652cf53abe70ca9ef263c2bf7b78ca00b466212a0fb80fd76"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL3729/seed_2.json": {
+    "bytes": 2277,
+    "sha256": "3a35186eda11db824dbe9aebc55d1fe9fda9f7b0f0389aef78e2ebccaf979012"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL4361/seed_0.json": {
+    "bytes": 2278,
+    "sha256": "cc136024bc941bfdc4860db3ecce4d9a625e24cd796f230dce4ac82c6d3fa03c"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL4361/seed_1.json": {
+    "bytes": 2277,
+    "sha256": "f2afa4d37a37dfc35d7d8f53e18c75174c49f4a7328eb22456ca34c4c8f3e963"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL4361/seed_2.json": {
+    "bytes": 2277,
+    "sha256": "67bf96ada5c048e81f8ccfbbd36d4f3894e2b5736c8fa25af1e785c9bfe35b9f"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL4789/seed_0.json": {
+    "bytes": 2045,
+    "sha256": "d58ca35fd4af3aaec1b6a74b8b8355788c118dbe73d597dfcfd5761b07298d4c"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL4789/seed_1.json": {
+    "bytes": 2045,
+    "sha256": "9c0b0043b1b2babdadc5eb3ee70e9f9eeca463cf1c0087381b8b24ba608c4ebb"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL4789/seed_2.json": {
+    "bytes": 2045,
+    "sha256": "cda95ec127a5f225f8a3088536fcc4c8c2808c134b8e5a3a9cd3f900e83a1960"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL5113/seed_0.json": {
+    "bytes": 2045,
+    "sha256": "f586361bc5adae1a57aa315f34112607ba565ec719de913aa7e909c3dcd7502a"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL5113/seed_1.json": {
+    "bytes": 2045,
+    "sha256": "a6cbfd6cb2e20a6d2665ca8be9d6ece8e687cde34862d3779047a48f31e60f5f"
+  },
+  "results/structural_audits/full/fair/selection_records/CHEMBL5113/seed_2.json": {
+    "bytes": 2045,
+    "sha256": "6a3ff74a5d39aecaa10628dd14c43b9f1709c1304dd76d050788944ec209ebe8"
+  },
+  "results/structural_audits/full/fair/source_hashes.json": {
+    "bytes": 111750,
+    "sha256": "65be9b0a1cbe6a41bc534829711528bca6c9cd7397cd7f3d18715a8059dfeebe"
+  },
+  "results/structural_audits/full/fair/test_run_metrics.csv": {
+    "bytes": 79299,
+    "sha256": "f9f0d80e628d43f954d051d50510d19dc46ff8ae6427e7d245d765396a9e45a7"
+  },
+  "results/structural_audits/full/fair/test_target_metrics.csv": {
+    "bytes": 23158,
+    "sha256": "6d000a6911b23c4cc870ed91e81d0ff687925cd5f3145000d87767233910b4fb"
+  },
+  "results/structural_audits/full/fair/validation_candidate_grid_metrics.csv": {
+    "bytes": 1355107,
+    "sha256": "5c9583291dd909784333493dd8368b731cb0928990ce08ff59443bf42315c006"
+  },
+  "results/structural_audits/full/fair/validation_selected_parameters.csv": {
+    "bytes": 72747,
+    "sha256": "8c9135cced9d2a729bb239c0ee6472b076d7a2ca0fdf88a9fad732d901d5c8a7"
+  },
+  "results/structural_audits/full/mechanism/DONE.json": {
+    "bytes": 362,
+    "sha256": "df45be408a23c2225028b01acfb35500a98ad82364402310ed0a5f7abe9a6fce"
+  },
+  "results/structural_audits/full/mechanism/mechanism_run_metrics.csv": {
+    "bytes": 938017,
+    "sha256": "4876ee2939796f3221406bf9a0ad32992a67b1934121c374a1a6d9688b43d2d8"
+  },
+  "results/structural_audits/full/mechanism/mechanism_summary.csv": {
+    "bytes": 8245,
+    "sha256": "6f38903c5dcd71120e432d75c747c9541a4fb20da7d4f1c823349696a50b28ce"
+  },
+  "results/structural_audits/full/mechanism/mechanism_target_metrics.csv": {
+    "bytes": 158089,
+    "sha256": "3da91612c92e47955df71a7bd77f30048883a6708341fd456f96b381be83b8bc"
+  },
+  "results/structural_audits/full/mechanism/predicted_delta_bins_run.csv": {
+    "bytes": 2297349,
+    "sha256": "344290d2821e6042c8a2ffc3b367f969ea59245718b87b91b570ea4ff8de13ba"
+  },
+  "results/structural_audits/full/mechanism/predicted_delta_bins_summary.csv": {
+    "bytes": 9680,
+    "sha256": "5bcbddfc0e8d03d0ea49e99a6b682c5ed1f927ee56dfa5fca2777096a96802f0"
+  },
+  "results/structural_audits/full/mechanism/predicted_delta_bins_target.csv": {
+    "bytes": 297070,
+    "sha256": "8b912a9e641bf7cbd53014f862b9debff96b716daf1dca89cfaf4e021cef1221"
+  },
+  "results/structural_audits/full/mechanism/source_hashes.json": {
+    "bytes": 482721,
+    "sha256": "37e2bb926b30d19aa432662b9c741683695396bb877becd4091a3ef29fa71bb7"
+  },
+  "results/structural_audits/full/perturb/DONE.json": {
+    "bytes": 336,
+    "sha256": "c157a6cbf5265383973c7d46f8793a1e4ad81e58dd2dddbda680ee26157bb9d1"
+  },
+  "results/structural_audits/full/perturb/perturbation_run_metrics.csv": {
+    "bytes": 61261,
+    "sha256": "5d11c79fa322cfc6125565fba87389949721d28818c7f383246f5ed84d707362"
+  },
+  "results/structural_audits/full/perturb/perturbation_summary.csv": {
+    "bytes": 1724,
+    "sha256": "72a31310e9f20e73140ea2d63ebceda3b9d6c06ecebb7a4b7e9f0c14432d4c83"
+  },
+  "results/structural_audits/full/perturb/source_hashes.json": {
+    "bytes": 22805,
+    "sha256": "61c2add51e91dd708a82c2eb6ebd05a09e9f89c406472119679d7c57f39b88f7"
+  },
+  "results/structural_audits/full/perturb/threshold_neighborhood_run_metrics.csv": {
+    "bytes": 21888,
+    "sha256": "19316ed0e4c376cfe7d2aa1f2b67bd71c2a4205255ebf93aa9accf6fea77b36a"
+  },
+  "results/structural_audits/full/perturb/threshold_neighborhood_summary.csv": {
+    "bytes": 561,
+    "sha256": "f1a6d9990222f254eafa4086000ca18d5108d3f35ad5104d8afc4175e02e0482"
+  },
+  "results/structural_audits/full/selector/DONE.json": {
+    "bytes": 1188,
+    "sha256": "b2d1f53a34039f71c654afeeeb1fb7a3a257d5666d970067447ff89ea083626c"
+  },
+  "results/structural_audits/full/selector/molecule_repeat_counts.csv": {
+    "bytes": 285114,
+    "sha256": "f11ff33cb7eaadbd18223b71ad20422eb8f99da198b1755724a2a4e5a7c74005"
+  },
+  "results/structural_audits/full/selector/source_hashes.json": {
+    "bytes": 5589,
+    "sha256": "1575cdff1bc20912d3b57a7556f284f00ce25d7f910f938e4cb77d10efe74fe8"
+  },
+  "results/structural_audits/full/selector/threshold_quantile_reproduction.csv": {
+    "bytes": 450,
+    "sha256": "8852ac8fc89db3b6b05d8965923346d5cc4ebc1e55edc7ec7f885b6fb30a4c96"
+  },
+  "results/structural_audits/full/selector/training_internal_run_correlations.csv": {
+    "bytes": 16123,
+    "sha256": "f0ad42e36fc411a64c3bf3a179282d8ec7b01aa21d43a7b55ae8c07714a69b6d"
+  },
+  "results/structural_audits/full/structure/DONE.json": {
+    "bytes": 427,
+    "sha256": "d24c4b99bb6d041e4623b84599a449027d89d2a136443d4c808ba622085e9439"
+  },
+  "results/structural_audits/full/structure/component_mean_pooled_descriptive.csv": {
+    "bytes": 566,
+    "sha256": "364b23e162ad893854825c365573e63da60368718b8eaeda84bad17da4c4ecd1"
+  },
+  "results/structural_audits/full/structure/component_mean_run_metrics.csv": {
+    "bytes": 9028,
+    "sha256": "93bea676b3d22c4fadf22665d510017bee4e1a3a93ef12f091980b30a9c2dedc"
+  },
+  "results/structural_audits/full/structure/constraint_pooled_descriptive.csv": {
+    "bytes": 975,
+    "sha256": "2c12274c9af9ca6b046b47dba3f9922a999b30c9755e6f595f6e36b0d084d9ab"
+  },
+  "results/structural_audits/full/structure/constraint_run_metrics.csv": {
+    "bytes": 15663,
+    "sha256": "445b0fe0d15f4eb3cda54596d08ad6be54cfe5c4dea7f4965acd3639b1dbe2bb"
+  },
+  "results/structural_audits/full/structure/source_hashes.json": {
+    "bytes": 22805,
+    "sha256": "61c2add51e91dd708a82c2eb6ebd05a09e9f89c406472119679d7c57f39b88f7"
+  },
+  "results/structural_audits/interpretation.json": {
+    "bytes": 1643,
+    "sha256": "5dd843e3908a932af430cd7174040debb516f570b9265faf616b0f68ed4dcc03"
+  },
+  "results/structural_audits/mechanism_cohort_summaries.csv": {
+    "bytes": 3217,
+    "sha256": "ece0c83284b6f32b396dbced3d74b1788d1fc80285f5b80173d5560e61008528"
+  },
+  "results/structural_audits/selector_fit_provenance.json": {
+    "bytes": 778,
+    "sha256": "56cbd14df9079c622689217b8bd23193a31634832d26fcd478dd0800f12e01e2"
+  },
+  "scripts/audit_structural_release.py": {
+    "bytes": 5006,
+    "sha256": "eed4e7abd5d6b50561578cf3a6de64df53ea14fd7a9b90af496701fe1015f4c0"
+  },
+  "scripts/build_structural_audit_tables.py": {
+    "bytes": 15460,
+    "sha256": "13ca7baf2410e0864989e319da4c4a841cd9c08f72a7b72ea8dcee7af09025c2"
+  },
+  "scripts/evaluate_audit_matched_controls.py": {
+    "bytes": 21890,
+    "sha256": "a6c8852ba5a855365d46ed4b34104a9f775b4eec9edb5f86c8d6b99075aedeed"
+  },
+  "scripts/finalize_structural_audits.py": {
+    "bytes": 3964,
+    "sha256": "98123c840011883f326749327b87af00768ffde033b75d7b1f5e9b172f8c60fc"
+  },
+  "scripts/infer_audit_validation.py": {
+    "bytes": 5459,
+    "sha256": "e77ab8b93c53cab252b602b8d3af77a997799104fae3a4379f21c93fecc8f81d"
+  },
+  "scripts/run_structural_audits.py": {
+    "bytes": 36355,
+    "sha256": "9be3ec5e0e1a429b7674a0fe8b9ba8ad0fa2cbaeeb433b57cc41b30568aae128"
+  },
+  "scripts/verify_structural_audits.py": {
+    "bytes": 7450,
+    "sha256": "8d4995f3118afce2e5e8384b2a09ba3185ebefe5cef75f318203f531da583a42"
+  }
+}

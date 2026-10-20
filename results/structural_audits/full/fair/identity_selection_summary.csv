@@ -1,0 +1,5 @@
+method,runs,identity_count,identity_fraction
+calibrated_BPS,108,27,0.25
+calibrated_Laplacian_unsharp,108,28,0.25925925925925924
+calibrated_naive_active_edge_push,108,22,0.2037037037037037
+calibrated_random_edge_scaling,108,24,0.2222222222222222

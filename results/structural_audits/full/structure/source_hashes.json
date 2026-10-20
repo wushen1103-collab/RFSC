@@ -1,0 +1,430 @@
+{
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_0/seed_0/bps/predictions.parquet": {
+    "bytes": 79378,
+    "sha256": "e5647e6d69ad9db641d0caed9f0dec0f85281d8843657490ac5c0a4f689528cf"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_0/seed_0/gine/predictions.parquet": {
+    "bytes": 74851,
+    "sha256": "d14867d3a665649a52ea47a5d53fe214b95f2efbc0d3c7eb0884ce95edb208e4"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_0/seed_0/rf/predictions.parquet": {
+    "bytes": 78898,
+    "sha256": "2820e954784840b7558cda5183474981740f44a762b33691d7da69b27fa6bd47"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_0/seed_0/run.json": {
+    "bytes": 343,
+    "sha256": "8663ca724a668f998c92bd38be98e09336acf739ae1080720574d5d2e72e269b"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_0/seed_0/svm/predictions.parquet": {
+    "bytes": 78898,
+    "sha256": "685e45fcc785505b9f0696a77895683d2392fcf0640b2ebd4a1d6bb65f05b304"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_0/seed_0/unscaled_reference/predictions.parquet": {
+    "bytes": 79378,
+    "sha256": "1c85ea6301bf53e7d95d1ef1933a8257ed690f7f9b5dc20b9889691c9ee7d7bc"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_0/seed_1/bps/predictions.parquet": {
+    "bytes": 79378,
+    "sha256": "5cb5f27777bdfc43694dfc21d34a4f45a7dd50a6028d3aa8ec8c5315d1380e91"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_0/seed_1/gine/predictions.parquet": {
+    "bytes": 74866,
+    "sha256": "3d94ce0b7810b8497e1aff429fdbe6e73b9e548f2e2174f7434919a148396339"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_0/seed_1/rf/predictions.parquet": {
+    "bytes": 78890,
+    "sha256": "f719938da3ac3f89c7d4c8a0803beed1f1d1d44db8da72edb1dbd7c9de464860"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_0/seed_1/run.json": {
+    "bytes": 343,
+    "sha256": "a92fc5a1358c6992c165df7d0d3992aced66fac3de8ec740c08bb43f28b8930b"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_0/seed_1/svm/predictions.parquet": {
+    "bytes": 78898,
+    "sha256": "685e45fcc785505b9f0696a77895683d2392fcf0640b2ebd4a1d6bb65f05b304"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_0/seed_1/unscaled_reference/predictions.parquet": {
+    "bytes": 79378,
+    "sha256": "03ce4cbb8af28e9023bd089aa89387271631f708041ec7100ba00f13af930094"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_0/seed_2/bps/predictions.parquet": {
+    "bytes": 79378,
+    "sha256": "1976582ac65cb8bf722c042c03e6247196e33048b8d9c4c4e8b2a703ce09eb00"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_0/seed_2/gine/predictions.parquet": {
+    "bytes": 74894,
+    "sha256": "7d252be4f77fc03c537434003394b438d75f027b61f3c8aacf1af5f71450dbe2"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_0/seed_2/rf/predictions.parquet": {
+    "bytes": 78882,
+    "sha256": "d63375af23e0aa33b0f95a63cc6ebdc7d98e996cdd5defa28be45dab4d48a7a6"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_0/seed_2/run.json": {
+    "bytes": 343,
+    "sha256": "f9e5e405aede3c434a322f22b8566de8fa980397833a4f52f57380c4946f2aaa"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_0/seed_2/svm/predictions.parquet": {
+    "bytes": 78898,
+    "sha256": "685e45fcc785505b9f0696a77895683d2392fcf0640b2ebd4a1d6bb65f05b304"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_0/seed_2/unscaled_reference/predictions.parquet": {
+    "bytes": 79378,
+    "sha256": "958542c2e6e78f098476ab73fa43ac4834336c271b6fb0b6777e45c661b9ad22"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_1/seed_0/bps/predictions.parquet": {
+    "bytes": 64404,
+    "sha256": "b0f5cf451c7da3ee7d0407ad0328407b2db158cd80c454a4a6372080b187ee68"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_1/seed_0/gine/predictions.parquet": {
+    "bytes": 60946,
+    "sha256": "5db09b43c61298f106ae2720c0fa93f76d3fb45d3f1e3261174b05254fe83f79"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_1/seed_0/rf/predictions.parquet": {
+    "bytes": 63164,
+    "sha256": "495b2ba6a615b4b4489b82aef04351dffe6c3060efa29f818f83f02bd72d7a05"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_1/seed_0/run.json": {
+    "bytes": 343,
+    "sha256": "407b72e580b69cb326ff53c7d80c98db67671baea0174d32680f9a360942d571"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_1/seed_0/svm/predictions.parquet": {
+    "bytes": 63188,
+    "sha256": "ff1ac430cce816902e2b8af75811507d39c2b5d8d12917fe57b243e4e25f280e"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_1/seed_0/unscaled_reference/predictions.parquet": {
+    "bytes": 64404,
+    "sha256": "608cd5fdf9de4530495ca69d04d389ed29ac65fac0756f343b665038e41eb6a8"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_1/seed_1/bps/predictions.parquet": {
+    "bytes": 64404,
+    "sha256": "13ba10a4cd89efba571f582b9457c85416faeda26583178d0e710cdfa35a5269"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_1/seed_1/gine/predictions.parquet": {
+    "bytes": 60941,
+    "sha256": "28b8c3eb0df6de275b636afb444943893276c1b603de88dae544729c7f68d761"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_1/seed_1/rf/predictions.parquet": {
+    "bytes": 63164,
+    "sha256": "5ea397d45c2845ae36ca351146b8de24fee8a05dcc3ceeb884b493367d540d3f"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_1/seed_1/run.json": {
+    "bytes": 343,
+    "sha256": "ca61189c15106c492c26d9e094a0aa09b11aee0f96cad95f9328eb5a59c9d3ab"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_1/seed_1/svm/predictions.parquet": {
+    "bytes": 63188,
+    "sha256": "ff1ac430cce816902e2b8af75811507d39c2b5d8d12917fe57b243e4e25f280e"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_1/seed_1/unscaled_reference/predictions.parquet": {
+    "bytes": 64404,
+    "sha256": "8708765cfa4cf013f6084d62391b042e83334d1b8398dd7e56b9180253266681"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_1/seed_2/bps/predictions.parquet": {
+    "bytes": 64396,
+    "sha256": "ce53ac8def25c10011ed893a66ec0c0d3f1eb63ca6adc1550a3dbd8c0e5b7b85"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_1/seed_2/gine/predictions.parquet": {
+    "bytes": 60934,
+    "sha256": "f9013168dbc382e42581d363d741195c1c3ef9bc131968212423355d34c6e80b"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_1/seed_2/rf/predictions.parquet": {
+    "bytes": 63156,
+    "sha256": "ba15e25ef7cffc43e4bf27d6908eb2bc7bab8af9f903d332c1f7514ef604bd91"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_1/seed_2/run.json": {
+    "bytes": 343,
+    "sha256": "86f9e8e2286cc010447fbaec145e595e49a9ff26ef7ef168af89bbde707d02b6"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_1/seed_2/svm/predictions.parquet": {
+    "bytes": 63188,
+    "sha256": "ff1ac430cce816902e2b8af75811507d39c2b5d8d12917fe57b243e4e25f280e"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_1/seed_2/unscaled_reference/predictions.parquet": {
+    "bytes": 64396,
+    "sha256": "bcfa0e9a3aa3f232747449d3cdc60988d149f151add696cdce6fc76c93e79a57"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_2/seed_0/bps/predictions.parquet": {
+    "bytes": 64353,
+    "sha256": "c2147587a813efd61ace37cd5dd527ab7212cc6402e9be5c8489cdc00d30e9b1"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_2/seed_0/gine/predictions.parquet": {
+    "bytes": 60789,
+    "sha256": "90f8d63dbbd7c28c18aac1f3894c85880f1283e5fce60f046d72223e1d41b8b0"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_2/seed_0/rf/predictions.parquet": {
+    "bytes": 63439,
+    "sha256": "029bbae25ea20b8eb16af5a8ae206298aeb2f01dfe1a8938c6fcce1b9661af4c"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_2/seed_0/run.json": {
+    "bytes": 343,
+    "sha256": "f8fc59a25e624e22d2c16aaafc3caaaaaf0376c3cd6df3acbd340350595ba2ca"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_2/seed_0/svm/predictions.parquet": {
+    "bytes": 63479,
+    "sha256": "486f38fd0668dae659116efa4ddbc17a30300b30e1c12c7820fa7a8c38951814"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_2/seed_0/unscaled_reference/predictions.parquet": {
+    "bytes": 64345,
+    "sha256": "a75eb65c788fb075f5dd6fbf455750181320a81cad5d7c520673b7771fe3356a"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_2/seed_1/bps/predictions.parquet": {
+    "bytes": 64360,
+    "sha256": "87776f09dc4d9e4a85491207d72d103df8512556e43fbabd2a28b487c1ecb0c5"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_2/seed_1/gine/predictions.parquet": {
+    "bytes": 60789,
+    "sha256": "2d1743f40f11936cc5ea4cd502d6e5ea5143dadf7fdb4a393a40f1b1a577b82c"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_2/seed_1/rf/predictions.parquet": {
+    "bytes": 63439,
+    "sha256": "90b47e87de9f4b10449d6dc9dd814ed3eb9377f44687aa28e33d249231fa1743"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_2/seed_1/run.json": {
+    "bytes": 343,
+    "sha256": "bb2f66e16aeaab0caf3a1c402692d94437a2a56ed1b39ac5618a6d54d58a91cf"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_2/seed_1/svm/predictions.parquet": {
+    "bytes": 63479,
+    "sha256": "486f38fd0668dae659116efa4ddbc17a30300b30e1c12c7820fa7a8c38951814"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_2/seed_1/unscaled_reference/predictions.parquet": {
+    "bytes": 64352,
+    "sha256": "1f611f3c7da6ec02797affee072569ec2c9292de3e10aca56dccea65bca5e774"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_2/seed_2/bps/predictions.parquet": {
+    "bytes": 64353,
+    "sha256": "5bdfc6109379821d2162b80c525334f83e28561666f3b59b8820b901ade97894"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_2/seed_2/gine/predictions.parquet": {
+    "bytes": 60784,
+    "sha256": "15458ab13401820460ab28d7bd3a6bfdb9ff79cbaf5c8bab2ea3b96ccb9ad951"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_2/seed_2/rf/predictions.parquet": {
+    "bytes": 63415,
+    "sha256": "f44d9b28172d46f3b89e8bf9dbacf2048ceda903ad1a94a6aa34b62fecb9f8f6"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_2/seed_2/run.json": {
+    "bytes": 343,
+    "sha256": "75e184b548b8157e9f5fc0a88f8e5dbd961e48e277864f5b0dcaac65c3666584"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_2/seed_2/svm/predictions.parquet": {
+    "bytes": 63479,
+    "sha256": "486f38fd0668dae659116efa4ddbc17a30300b30e1c12c7820fa7a8c38951814"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_2/seed_2/unscaled_reference/predictions.parquet": {
+    "bytes": 64337,
+    "sha256": "406dd0ac2e7b77d386fef4201da49421801651d19298f8231a4a9ef0317c4830"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_3/seed_0/bps/predictions.parquet": {
+    "bytes": 64325,
+    "sha256": "2ca7acc280765ce15f293416af2fbc19436a4cd94b3a3c3ab6fb7e09a1e52d17"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_3/seed_0/gine/predictions.parquet": {
+    "bytes": 60780,
+    "sha256": "454b92625ebd0d3e424bf0d0fbe35e9365ed0c8e3a72f5a002abd0be34a3b232"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_3/seed_0/rf/predictions.parquet": {
+    "bytes": 63797,
+    "sha256": "6f58928750dcf953b422c2bc965eed475ff28d3ded2ec88bfd5260a8bea2fd09"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_3/seed_0/run.json": {
+    "bytes": 342,
+    "sha256": "f22d637f851c873aaa154b4025fc1f6b70802aa015d42fdecaa000ec416e681d"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_3/seed_0/svm/predictions.parquet": {
+    "bytes": 63821,
+    "sha256": "7f9a192b199f46e7a9c5e9784ba69ca5de4f5c81f30d31349e812a5e3f117607"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_3/seed_0/unscaled_reference/predictions.parquet": {
+    "bytes": 64325,
+    "sha256": "17c19189092e10037f9deb8f11c2c9e5f24ca19e4f5cd87c39c275ea8c6b6bc4"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_3/seed_1/bps/predictions.parquet": {
+    "bytes": 64325,
+    "sha256": "06826e8cec3b7e456368fef59e27f754a9ca77d7bea8f0e53d36b1534e4e29cb"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_3/seed_1/gine/predictions.parquet": {
+    "bytes": 60786,
+    "sha256": "bb2ff5040dd4f614f1741cfa8017f6d327767d56174e685c6691e25c54ec52b8"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_3/seed_1/rf/predictions.parquet": {
+    "bytes": 63805,
+    "sha256": "bd0c324f24091eaf4ce444e150624961804250e6920ca405f5d2a06ade34d0cb"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_3/seed_1/run.json": {
+    "bytes": 342,
+    "sha256": "9ba57de4f0343d524954bc662c09743d6e1b80630aeeddc359bac6af87e8db0d"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_3/seed_1/svm/predictions.parquet": {
+    "bytes": 63821,
+    "sha256": "7f9a192b199f46e7a9c5e9784ba69ca5de4f5c81f30d31349e812a5e3f117607"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_3/seed_1/unscaled_reference/predictions.parquet": {
+    "bytes": 64325,
+    "sha256": "fe766cf56b4c0be4cef4b7b702d818cb3206bccbabe81f05a7a0a44da6657b7b"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_3/seed_2/bps/predictions.parquet": {
+    "bytes": 64325,
+    "sha256": "19140960bf2a017c373900c42eb9461ea9821376811953708dda48fffc47d260"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_3/seed_2/gine/predictions.parquet": {
+    "bytes": 60792,
+    "sha256": "2695a0a1f2d9f8b331da411eee366cfcee0d33f3692dbd65d7bb272634b235ce"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_3/seed_2/rf/predictions.parquet": {
+    "bytes": 63805,
+    "sha256": "bce1694a9eda6f47061eafbfd4cf6e7f1e0ac6098c09ba6ed5e5f89080261803"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_3/seed_2/run.json": {
+    "bytes": 342,
+    "sha256": "27e4c44677dc77ecd5f09549df47f1979166c7952e92bd32fc92349e147f6035"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_3/seed_2/svm/predictions.parquet": {
+    "bytes": 63821,
+    "sha256": "7f9a192b199f46e7a9c5e9784ba69ca5de4f5c81f30d31349e812a5e3f117607"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_3/seed_2/unscaled_reference/predictions.parquet": {
+    "bytes": 64325,
+    "sha256": "1504e3efac699d08c41db2299480eff1448b1245af6eaec332af77ecdd327100"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_4/seed_0/bps/predictions.parquet": {
+    "bytes": 64313,
+    "sha256": "c2dafb88ab5e01fcdc69b7e384d7396c23bf6523a39290d39ec94d66ab73e465"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_4/seed_0/gine/predictions.parquet": {
+    "bytes": 60778,
+    "sha256": "40e6fc016b19836c371da2f0fc46afcf8cae65020a3c08f018b7b3501a81efab"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_4/seed_0/rf/predictions.parquet": {
+    "bytes": 63289,
+    "sha256": "053528e007e84365421b64d8dd09b1c437bad18300a845b11578c3a41a262190"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_4/seed_0/run.json": {
+    "bytes": 342,
+    "sha256": "4025858a6adb0fd0adc3204acf7976e9631ba8db7db9173c6e14d85f2071f4bf"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_4/seed_0/svm/predictions.parquet": {
+    "bytes": 63305,
+    "sha256": "59c862a1c1f5453934b9e36e1319802d2a6ec6d11f376913acfb1314543086d4"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_4/seed_0/unscaled_reference/predictions.parquet": {
+    "bytes": 64313,
+    "sha256": "9aaef22f2afd58eca9bd1592b9f1855a42a75a827846a243dae887740232daa9"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_4/seed_1/bps/predictions.parquet": {
+    "bytes": 64313,
+    "sha256": "b25669187c6df5c87b28ec5d3ef34f85e0855c6834584b886484cc3001f3b34b"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_4/seed_1/gine/predictions.parquet": {
+    "bytes": 60742,
+    "sha256": "16f1f34253da0fa4b3be1d6adc61c09adfee685cb0ab7dd22a55e1c166a72d81"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_4/seed_1/rf/predictions.parquet": {
+    "bytes": 63281,
+    "sha256": "3194bd443cd607c78b867edfe7b2ae4e1b195af7a1245e74ed4d42a2462b97c3"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_4/seed_1/run.json": {
+    "bytes": 342,
+    "sha256": "d7c8fb18563b927893e6cb7768047e26b3c75ac141e22f02802caafeb454686b"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_4/seed_1/svm/predictions.parquet": {
+    "bytes": 63305,
+    "sha256": "59c862a1c1f5453934b9e36e1319802d2a6ec6d11f376913acfb1314543086d4"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_4/seed_1/unscaled_reference/predictions.parquet": {
+    "bytes": 64313,
+    "sha256": "6ffe0fb43c310f792106f01640e9a1ce78b6b343053f6123371da4953d7bd3f1"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_4/seed_2/bps/predictions.parquet": {
+    "bytes": 64313,
+    "sha256": "7504d956ef08030b60fa0114639397b812e6c053ad75a48397dc688469562af9"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_4/seed_2/gine/predictions.parquet": {
+    "bytes": 60769,
+    "sha256": "c9fd86e4a59a98ddd6aca28e9b5ab7a51f7ca5e5385fe47caaa736abf4e6dfea"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_4/seed_2/rf/predictions.parquet": {
+    "bytes": 63273,
+    "sha256": "21aa790bfe9b60507f0e34dbef580c4b3aca360457310b76093555aa690cdb4f"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_4/seed_2/run.json": {
+    "bytes": 342,
+    "sha256": "ce39add14c478e196f342c98dfbeb57712905a1079041934a449b618cf4d9c5f"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_4/seed_2/svm/predictions.parquet": {
+    "bytes": 63305,
+    "sha256": "59c862a1c1f5453934b9e36e1319802d2a6ec6d11f376913acfb1314543086d4"
+  },
+  "experiments/eswa_aqsol_external/predictions/AQSOLDB_SOLUBILITY/fold_4/seed_2/unscaled_reference/predictions.parquet": {
+    "bytes": 64313,
+    "sha256": "86d495bc52a5d2cda82b6a7a3fc777016d8252a782e8cac7871385b42ee6f9df"
+  },
+  "experiments/eswa_response_free_risk/aqsol_scores/AQSOLDB_SOLUBILITY/fold_0/seed_0/risk_scores.parquet": {
+    "bytes": 114837,
+    "sha256": "f535ad430c204ef7d472fa6821ebc867e7cbbba13c2a24b6027d17926d7272b2"
+  },
+  "experiments/eswa_response_free_risk/aqsol_scores/AQSOLDB_SOLUBILITY/fold_0/seed_1/risk_scores.parquet": {
+    "bytes": 115433,
+    "sha256": "d4e2fc5a9a26534ba40d6d5688191baf9cfa767ce978bb657d1ff96c9c41d66c"
+  },
+  "experiments/eswa_response_free_risk/aqsol_scores/AQSOLDB_SOLUBILITY/fold_0/seed_2/risk_scores.parquet": {
+    "bytes": 115376,
+    "sha256": "ce391868bc2ca12730483e80b16f90f76776396f82fb2e2135cb7d0678f8f6e5"
+  },
+  "experiments/eswa_response_free_risk/aqsol_scores/AQSOLDB_SOLUBILITY/fold_1/seed_0/risk_scores.parquet": {
+    "bytes": 87229,
+    "sha256": "64bb53a1150f020aeeadca9e59ed44266df90328ab99468e627140e4b0ede5f5"
+  },
+  "experiments/eswa_response_free_risk/aqsol_scores/AQSOLDB_SOLUBILITY/fold_1/seed_1/risk_scores.parquet": {
+    "bytes": 87315,
+    "sha256": "86f89761d8cffb00fecfee7eabafac015c96558e35ddfc3e03f18c6c5d321808"
+  },
+  "experiments/eswa_response_free_risk/aqsol_scores/AQSOLDB_SOLUBILITY/fold_1/seed_2/risk_scores.parquet": {
+    "bytes": 87199,
+    "sha256": "e50705b046fd7d078169ec17ca880eac6494fa30bee215092177957d4c1a069d"
+  },
+  "experiments/eswa_response_free_risk/aqsol_scores/AQSOLDB_SOLUBILITY/fold_2/seed_0/risk_scores.parquet": {
+    "bytes": 84937,
+    "sha256": "e90bdef62d1ceacae79143ad3e893f24286fbf9186ca6281995cbce248464fb7"
+  },
+  "experiments/eswa_response_free_risk/aqsol_scores/AQSOLDB_SOLUBILITY/fold_2/seed_1/risk_scores.parquet": {
+    "bytes": 84937,
+    "sha256": "c1077be684795c5dd0a6a524f443860ca90945c5746654fd5f0e9c62c85868b8"
+  },
+  "experiments/eswa_response_free_risk/aqsol_scores/AQSOLDB_SOLUBILITY/fold_2/seed_2/risk_scores.parquet": {
+    "bytes": 85135,
+    "sha256": "9a8e7c8ad0eb1660b5e04f3bb86565f1483efc1b8ce0350a5539ff5bd949e262"
+  },
+  "experiments/eswa_response_free_risk/aqsol_scores/AQSOLDB_SOLUBILITY/fold_3/seed_0/risk_scores.parquet": {
+    "bytes": 82638,
+    "sha256": "92f8de855f688a411c442da6e1360e0e1e2214170615d05edd229e82909ba946"
+  },
+  "experiments/eswa_response_free_risk/aqsol_scores/AQSOLDB_SOLUBILITY/fold_3/seed_1/risk_scores.parquet": {
+    "bytes": 82697,
+    "sha256": "e4845fed58cf9bd333ee92249fc7057b6f122d6bee7c7e94e651287723b2dd33"
+  },
+  "experiments/eswa_response_free_risk/aqsol_scores/AQSOLDB_SOLUBILITY/fold_3/seed_2/risk_scores.parquet": {
+    "bytes": 82221,
+    "sha256": "87eff7e1967212787affd97759fbef5518bd14b321e89b6f6a94168181002ca7"
+  },
+  "experiments/eswa_response_free_risk/aqsol_scores/AQSOLDB_SOLUBILITY/fold_4/seed_0/risk_scores.parquet": {
+    "bytes": 84472,
+    "sha256": "b5a61e6b40609689b6e68f82cc394d1645c557b4ece31aa7845a301965f4909a"
+  },
+  "experiments/eswa_response_free_risk/aqsol_scores/AQSOLDB_SOLUBILITY/fold_4/seed_1/risk_scores.parquet": {
+    "bytes": 84184,
+    "sha256": "f95b4b03426662bdc57e5e6b0df2e52ac1952e12fcb653f79f4e7fdb5c0a1bd0"
+  },
+  "experiments/eswa_response_free_risk/aqsol_scores/AQSOLDB_SOLUBILITY/fold_4/seed_2/risk_scores.parquet": {
+    "bytes": 84302,
+    "sha256": "778f0bab8c4f9beea9dddc616cac2f0fbdadb984bd1b335e6c774b979b1cc699"
+  },
+  "experiments/eswa_response_free_risk/model/risk_model.joblib": {
+    "bytes": 162792,
+    "sha256": "b08311bae5b5f5b0582c1c918554bb56e512e588523e99635888fa284978f1f5"
+  },
+  "graphs/mmp/AQSOLDB_SOLUBILITY/eligible_mmp_edges.parquet": {
+    "bytes": 345062,
+    "sha256": "44f5f77e6b29daf632b6c8730b6fae9c6a881fb55503bf95852249f54df4aeed"
+  }
+}

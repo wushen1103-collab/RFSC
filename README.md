@@ -21,11 +21,13 @@ responses at deployment time and do not retrain the upstream predictor.
 - `protocol/`: preregistered experiment and decision-gate notes.
 - `results/`: lightweight aggregate result tables and decision summaries.
 - `experiments/*/evaluation` and selected `model` files: small evaluation
-  artifacts needed to audit the ESWA submission results.
+  artifacts needed to audit the original benchmark results.
 - `paper/tables/`: manuscript-ready CSV/Markdown tables.
 - `figure_data/`: curated source data used by the released figure script.
 - `figures/final/`: final PDF figures for reference.
 - `reproduction/main_tables.yaml`: table-to-source lineage.
+- `results/structural_audits/`: frozen validation-only controls, mechanism,
+  selective-execution, stability, and selector-provenance audits (Tables S8--S11).
 
 Large raw datasets, upstream checkouts, frozen prediction matrices, model
 checkpoints, caches, local logs, and machine-specific paths are intentionally
@@ -50,9 +52,27 @@ See `REPRODUCING.md` for the ordered commands. The short version is:
 
 ```bash
 python scripts/audit_release_package.py
+python scripts/audit_structural_release.py
 python scripts/build_expansion_tables.py
-python scripts/draw_eswa_figures.py --input figure_data --out reproduced/figures
+python scripts/build_structural_audit_tables.py
 ```
+
+The new audit commands verify the released summaries and regenerate Tables
+S8--S11 without model training. See
+[`reproduction/structural_audits.md`](reproduction/structural_audits.md) for full
+prediction-reuse protocols, additional artifact requirements, and evidence timing.
+Optional figure reproduction uses `scripts/draw_figures.py`; this release update
+does not change any reference figure.
+
+## Interpreting selective correction
+
+The frozen AqSolDB selector has measured **candidate** boundary gains, not a
+deployment risk guarantee. Predictions and thresholds are frozen before external
+response access; the completed risk audit then gives **NO-GO for subsequent
+deployment**, requiring identity fallback. Historical diagnostic decision fields
+are retained as provenance, not reinterpreted as strict deployment authorization.
+The current interpretation is recorded in
+`results/structural_audits/interpretation.json`.
 
 Some full reruns require public upstream datasets or repositories such as
 MoleculeACE, ChEMBL 36, BindingDB, QM9, NOAA GHCN/HCN, and DeepDelta. The

@@ -1,0 +1,17 @@
+{
+  "actual_gradient_fit_rows": 129867,
+  "actual_iterations": 152,
+  "correct_description": "Development diagnostics combine gradient-fit rows and an automatic row-level early-stopping monitor; they are not molecule-disjoint held-out selector validation.",
+  "early_stopping_active": true,
+  "early_stopping_parameter": "auto",
+  "external_responses_used_in_fit_or_thresholds": false,
+  "fit_input_rows": 144297,
+  "internal_early_stopping_monitor_rows": 14430,
+  "molecule_group_split": false,
+  "monitor_fraction_sharing_molecule_with_training": 0.9906444906444907,
+  "monitor_rows_sharing_molecule_id_with_training": 14295,
+  "original_frozen_model_changed": false,
+  "selector_level_independent_OOF": false,
+  "split_random_seed": 2473385717,
+  "validation_fraction": 0.1
+}

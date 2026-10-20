@@ -1,0 +1,24 @@
+{
+  "canonical_ChEMBL_reproduction_errors": {
+    "cliff_endpoint_mae": 1.1102230246251565e-16,
+    "overall_mae": 0.0,
+    "pair_delta_mae": 0.0
+  },
+  "completed_full_stages": [
+    "mechanism",
+    "fair",
+    "structure",
+    "perturb",
+    "selector"
+  ],
+  "fair_test_rows": 648,
+  "fair_test_runs": 108,
+  "independent_review_status": "REVIEW_UNAVAILABLE",
+  "maximum_original_evaluator_error": 6.661338147750939e-16,
+  "maximum_original_operator_conformance_error": 3.552713678800501e-15,
+  "original_risk_model_sha256": "b08311bae5b5f5b0582c1c918554bb56e512e588523e99635888fa284978f1f5",
+  "source_hashes_reverified": 2668,
+  "stage_execution_complete": true,
+  "validation_selected_rows": 432,
+  "verification_kind": "executor reproducibility checks, not independent integrity certification"
+}

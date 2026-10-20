@@ -18,7 +18,9 @@ The mirror is optional and only affects package download transport.
 
 ```bash
 python scripts/audit_release_package.py
+python scripts/audit_structural_release.py
 python scripts/build_expansion_tables.py --output-dir reproduced/tables/benchmark_expansion
+python scripts/build_structural_audit_tables.py
 ```
 
 `reproduction/main_tables.yaml` maps the main tables to their source artifacts,
@@ -27,7 +29,7 @@ commands, and evidence-status labels.
 ## 3. Figure reproduction
 
 ```bash
-python scripts/draw_eswa_figures.py --input figure_data --out reproduced/figures
+python scripts/draw_figures.py --input figure_data --out reproduced/figures
 ```
 
 The figure script uses curated CSV sources in `figure_data/`. Final reference
@@ -97,3 +99,11 @@ python scripts/benchmark_projection_scaling.py \
 The repository stores aggregate summaries and hashes, not large frozen
 prediction matrices. Regenerate those matrices locally when full reruns are
 needed.
+
+## 6. Additional structural audits (Tables S8--S11)
+
+Read `reproduction/structural_audits.md`. Released CSVs support lightweight
+summary verification and table regeneration. Full audits reuse upstream frozen
+predictions, graphs, selector scores, and checkpoints; these larger artifacts must
+first be regenerated under the recorded protocols. No audit command is a claim
+that unbundled row-level artifacts have been independently reproduced.

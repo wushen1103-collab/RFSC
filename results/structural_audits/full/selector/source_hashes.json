@@ -1,0 +1,130 @@
+{
+  "data/processed/moleculeace/CHEMBL1862_Ki/structures.parquet": {
+    "bytes": 97451,
+    "sha256": "be2374350dc611e589d8f09695661f1188c2cf5b4c9d3482c6d7da2fc924c45b"
+  },
+  "data/processed/moleculeace/CHEMBL1871_Ki/structures.parquet": {
+    "bytes": 82721,
+    "sha256": "72f9e831295cae5a5894d0f7c32744b3617fe14be13830e0c0b102f9f0344ea3"
+  },
+  "data/processed/moleculeace/CHEMBL2034_Ki/structures.parquet": {
+    "bytes": 91031,
+    "sha256": "e7d86ef80051f8404d56a5d0f728313d43a1f051a999bfdf8e9eddc21c09a904"
+  },
+  "data/processed/moleculeace/CHEMBL2047_EC50/structures.parquet": {
+    "bytes": 79432,
+    "sha256": "63748efd4b8bd024f657a62b595dbe6d58468f59d0859d5c0ed5b238114c8832"
+  },
+  "data/processed/moleculeace/CHEMBL204_Ki/structures.parquet": {
+    "bytes": 338157,
+    "sha256": "ccc15f760c20a533400f3e0d76059294706c964ac4ebc0f4b852daef0a0ddcfb"
+  },
+  "data/processed/moleculeace/CHEMBL2147_Ki/structures.parquet": {
+    "bytes": 178703,
+    "sha256": "8e95b1a0ce320aa8684d7b1372b3a47685b9b3680b0f719ae084f3f15443f4a3"
+  },
+  "data/processed/moleculeace/CHEMBL214_Ki/structures.parquet": {
+    "bytes": 377933,
+    "sha256": "2f9d3269ac9e714b970405a62188aced1becc4dcd608fd186af5cc27eea1ce56"
+  },
+  "data/processed/moleculeace/CHEMBL218_EC50/structures.parquet": {
+    "bytes": 128347,
+    "sha256": "3de822838fba5e52a95ce3697c6aeb3f1c00f38444a3e285299c71253e240dd3"
+  },
+  "data/processed/moleculeace/CHEMBL219_Ki/structures.parquet": {
+    "bytes": 215631,
+    "sha256": "c16110330d77436627d1233f7103c3b048b8697a3fbb193c69d9b9c2ed159625"
+  },
+  "data/processed/moleculeace/CHEMBL228_Ki/structures.parquet": {
+    "bytes": 195575,
+    "sha256": "a0d8a4b8bb9dc905dbe432ec4d8bebc445073b127db03afa5af0a4d6259b28e6"
+  },
+  "data/processed/moleculeace/CHEMBL231_Ki/structures.parquet": {
+    "bytes": 121463,
+    "sha256": "0d993fc923061e9b2400c8691dd7ea30de3d94891b2ef2fa0fa7a10abfbf8ff7"
+  },
+  "data/processed/moleculeace/CHEMBL233_Ki/structures.parquet": {
+    "bytes": 398000,
+    "sha256": "2a2b98e6a198f43aadbaee4e84210e8c30c88d82bd6a41f82f59a9ab04aa779b"
+  },
+  "data/processed/moleculeace/CHEMBL234_Ki/structures.parquet": {
+    "bytes": 422987,
+    "sha256": "75205fdf007e763ddf3696976c1b9459bcb031aac5a13df38a45460b4837467a"
+  },
+  "data/processed/moleculeace/CHEMBL235_EC50/structures.parquet": {
+    "bytes": 268411,
+    "sha256": "b1fa78179dfd6e6f2c2595aeea80ea7171b8331587ef2105ec95e464a63eccf4"
+  },
+  "data/processed/moleculeace/CHEMBL236_Ki/structures.parquet": {
+    "bytes": 340492,
+    "sha256": "d17aedf17a1447b08718195d91a2ea3951e1f3a48e81de7d0b4a07a263902a38"
+  },
+  "data/processed/moleculeace/CHEMBL237_EC50/structures.parquet": {
+    "bytes": 130066,
+    "sha256": "4d82747f3089df1b65aab3e4a327035296dd4f2113661ee55490616f08e284b0"
+  },
+  "data/processed/moleculeace/CHEMBL237_Ki/structures.parquet": {
+    "bytes": 333323,
+    "sha256": "24db477f5c03b965f20f310854770a3a3488bf1a9b5a765c884fdf022d46ce86"
+  },
+  "data/processed/moleculeace/CHEMBL238_Ki/structures.parquet": {
+    "bytes": 125552,
+    "sha256": "7ecce98651240478bda53b6d95a86ff1ec36b702d995c6a51eb0ed73fb8bfd15"
+  },
+  "data/processed/moleculeace/CHEMBL239_EC50/structures.parquet": {
+    "bytes": 196338,
+    "sha256": "922691d49e9a66d82385bb00063def1d4a229974ec3201af125464edf0bcae3c"
+  },
+  "data/processed/moleculeace/CHEMBL244_Ki/structures.parquet": {
+    "bytes": 362899,
+    "sha256": "e2d5749152e2b8b523936585f28a24d60fe62c64e4c42ffae1524031fbf65e22"
+  },
+  "data/processed/moleculeace/CHEMBL262_Ki/structures.parquet": {
+    "bytes": 112965,
+    "sha256": "dfe454384ad6c824a91010d4693a8aeb2a9e1819c25cb0ee958077fc73f26c1d"
+  },
+  "data/processed/moleculeace/CHEMBL264_Ki/structures.parquet": {
+    "bytes": 322452,
+    "sha256": "622cb76c7a69be83b0ff5cb10380513ac389a283bbdafea4a4ae2763b3aa7dbe"
+  },
+  "data/processed/moleculeace/CHEMBL287_Ki/structures.parquet": {
+    "bytes": 155964,
+    "sha256": "603d44538dd403136f84f51c3eaf6e61dc618397f4a5ba6776e636c65ffb503c"
+  },
+  "data/processed/moleculeace/CHEMBL2971_Ki/structures.parquet": {
+    "bytes": 120842,
+    "sha256": "9feeca1bc14e638ff1d125e08223599340567ae72cdf0e915e929af1562721e6"
+  },
+  "data/processed/moleculeace/CHEMBL3979_EC50/structures.parquet": {
+    "bytes": 129548,
+    "sha256": "fb747a65e97845e63288835ef515a9b09b2348dddedc0d90037db4d664f53065"
+  },
+  "data/processed/moleculeace/CHEMBL4005_Ki/structures.parquet": {
+    "bytes": 112100,
+    "sha256": "d88ae71dcd8119c441226862ad8aecf72ebf84fa5aff0dda4f8a36cf4abd45b2"
+  },
+  "data/processed/moleculeace/CHEMBL4203_Ki/structures.parquet": {
+    "bytes": 104191,
+    "sha256": "6a264f931b2abab1da62cdee3db2f288e9142c5e13eaeffafcb5cf4074b7a1bc"
+  },
+  "data/processed/moleculeace/CHEMBL4616_EC50/structures.parquet": {
+    "bytes": 87462,
+    "sha256": "dbeae562bf041a84ef7492175e524d8b98f29227ce3e11b3b0c5f3bc14989e51"
+  },
+  "data/processed/moleculeace/CHEMBL4792_Ki/structures.parquet": {
+    "bytes": 177296,
+    "sha256": "32cf45adc794eade177d21ff26ad6de381bb3b5db92376e74b18eb064d878829"
+  },
+  "experiments/eswa_response_free_risk/model/development_run_audit.csv": {
+    "bytes": 26816,
+    "sha256": "8bcc7b87c8785fd481d2e79af5d7f23192bed7f686e96c2256c7544aaf1fcd58"
+  },
+  "experiments/eswa_response_free_risk/model/risk_model.joblib": {
+    "bytes": 162792,
+    "sha256": "b08311bae5b5f5b0582c1c918554bb56e512e588523e99635888fa284978f1f5"
+  },
+  "results/is_revision2_selector_coverage_curve/development_selector_frame.parquet": {
+    "bytes": 4360206,
+    "sha256": "8d70d1cca02a78c46d022c56b968798362739b6e97104283db9415e070c21947"
+  }
+}

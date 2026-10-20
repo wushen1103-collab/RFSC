@@ -1,0 +1,13 @@
+candidate,reference,metric,eligible_targets,relative_change,bootstrap95_lower,bootstrap95_upper,favorable_targets,tied_targets
+calibrated_BPS,canonical_BPS,overall_mae,36,-0.001253456915282336,-0.003695990367942489,0.0011021490646495396,18,1
+calibrated_BPS,canonical_BPS,cliff_endpoint_mae,35,-0.0013763900196152035,-0.006320635375575911,0.003286203732641689,18,0
+calibrated_BPS,canonical_BPS,pair_delta_mae,35,0.003516186903415708,-0.009755436925906325,0.015644233823258396,15,0
+calibrated_BPS,calibrated_Laplacian_unsharp,overall_mae,36,-0.002323759259040936,-0.005917772655366932,0.00019916101247855945,16,7
+calibrated_BPS,calibrated_Laplacian_unsharp,cliff_endpoint_mae,35,-0.0015827415464780836,-0.0094216447812638,0.005802291853153373,15,6
+calibrated_BPS,calibrated_Laplacian_unsharp,pair_delta_mae,35,0.002489156540050441,-0.009254539637368915,0.016140066885105518,13,6
+calibrated_BPS,calibrated_random_edge_scaling,overall_mae,36,5.453909203811946e-05,-0.001950116067087726,0.0022079242201325723,17,6
+calibrated_BPS,calibrated_random_edge_scaling,cliff_endpoint_mae,35,-0.0016428691219710911,-0.006065664013752322,0.0028089202676306133,19,5
+calibrated_BPS,calibrated_random_edge_scaling,pair_delta_mae,35,-0.0051603623994720405,-0.01559064025977093,0.004262750581859276,17,5
+calibrated_BPS,calibrated_naive_active_edge_push,overall_mae,36,-0.002156341504495396,-0.00826459399167131,0.004103883763917973,15,6
+calibrated_BPS,calibrated_naive_active_edge_push,cliff_endpoint_mae,35,-0.00895711560422996,-0.023842875190547463,0.004146233255485346,20,5
+calibrated_BPS,calibrated_naive_active_edge_push,pair_delta_mae,35,-0.0112930998517623,-0.026273076819030655,0.0015741200138657853,18,5

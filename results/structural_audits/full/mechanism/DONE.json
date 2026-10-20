@@ -1,0 +1,13 @@
+{
+  "datasets": [
+    "MoleculeACE",
+    "corrected_ChEMBL"
+  ],
+  "duration_seconds": 10.438267946243286,
+  "model_runs": 1611,
+  "protocol_sha256": "a2b5f8ec43cf46d9fb8fdd6e592868c52aeba8878ef0da78ad78ed8f251f9b37",
+  "runs": 537,
+  "script_sha256": "330624a6e99de9445ceedbadadb43dbe2de51c22b3e2d7891c082e88b8d51b8b",
+  "smoke": false,
+  "stage": "mechanism"
+}

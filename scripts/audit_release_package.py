@@ -46,6 +46,7 @@ def verify_release_layout() -> int:
         "bps_gnn/pair_flow.py",
         "scripts/build_expansion_tables.py",
         "scripts/draw_eswa_figures.py",
+        "scripts/draw_figures.py",
         "figure_data/figure_render_sources/fig2_domain_shift_selector_source.csv",
         "figures/final/Figure_1_final.pdf",
         "reproduction/main_tables.yaml",
@@ -56,6 +57,8 @@ def verify_release_layout() -> int:
 
 
 def verify_decisions() -> int:
+    # Historical fields below are retained as source provenance, not as a current
+    # strict deployment decision. The later external-risk interpretation is separate.
     checks = {
         "experiments/eswa_aqsol_external/evaluation/decision.json": [
             ("no_external_tuning", True),
@@ -82,7 +85,10 @@ def verify_decisions() -> int:
             if record.get(key) is not expected:
                 raise RuntimeError(f"decision drift: {relative}/{key}")
             verified += 1
-    return verified
+    current = json.loads(require('results/structural_audits/interpretation.json').read_text(encoding='utf-8'))
+    if current['AqSolDB_subsequent_deployment_authorization'] != 'NO-GO':
+        raise RuntimeError('Current strict AqSolDB authorization must remain NO-GO')
+    return verified + 1
 
 
 def verify_benchmark_tables() -> int:

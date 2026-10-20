@@ -1,0 +1,13 @@
+{
+  "MoleculeACE_23_task_original_effect_reproduced": -0.0402392815597549,
+  "MoleculeACE_original_effect_absolute_error": 0.0,
+  "calibrated_BPS_test_noninferiority_CI_within_1pct": {
+    "cliff_endpoint_mae": false,
+    "overall_mae": true
+  },
+  "checkpoint_hash_checks": 108,
+  "checkpoint_retraining_performed": false,
+  "full_point_and_cliff_gate_passed": false,
+  "independent_review_status": "REVIEW_UNAVAILABLE",
+  "regenerated_validation_predictions": 108
+}
