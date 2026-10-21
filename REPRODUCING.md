@@ -32,8 +32,9 @@ commands, and evidence-status labels.
 python scripts/draw_figures.py --input figure_data --out reproduced/figures
 ```
 
-The figure script uses curated CSV sources in `figure_data/`. Final reference
-PDFs are provided in `figures/final/`.
+The journal-neutral implementation `scripts/draw_figures.py` uses curated CSV
+sources in `figure_data/`. The legacy filename is a compatibility launcher only.
+Final reference PDFs are provided in `figures/final/`.
 
 ## 4. External upstream data
 

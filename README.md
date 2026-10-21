@@ -1,7 +1,8 @@
 # RFSC
 
-Response-Free Structural Correction (RFSC) is a research code release for
-post-prediction structural correction in molecular property prediction.
+Response-Free Structural Correction (RFSC) is the reproducibility release for
+"Response-Free Structural Correction of Molecular Machine-Learning Predictions
+with Selective Risk Gating," including the MLST revision audits (Tables S8--S11).
 
 The repository contains two correction layers:
 
@@ -61,8 +62,11 @@ The new audit commands verify the released summaries and regenerate Tables
 S8--S11 without model training. See
 [`reproduction/structural_audits.md`](reproduction/structural_audits.md) for full
 prediction-reuse protocols, additional artifact requirements, and evidence timing.
-Optional figure reproduction uses `scripts/draw_figures.py`; this release update
-does not change any reference figure.
+Optional figure reproduction uses the journal-neutral implementation
+`scripts/draw_figures.py`, consistently across this README, `REPRODUCING.md`,
+and the figure-data documentation. The legacy script name is retained only as a
+compatibility launcher. This documentation/entry-point update does not change
+reference figures, numerical results, configurations, or frozen audit evidence.
 
 ## Interpreting selective correction
 

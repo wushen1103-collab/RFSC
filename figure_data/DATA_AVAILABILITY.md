@@ -1,6 +1,6 @@
 # Figure data availability
 
-This directory contains curated CSV tables used by `scripts/draw_eswa_figures.py`.
+This directory contains curated CSV tables used by `scripts/draw_figures.py`.
 The large `raw_sources/` export is not included in the public release.
 
 Included tables are aggregate or plotting-level sources for:

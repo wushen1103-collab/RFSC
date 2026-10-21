@@ -45,7 +45,6 @@ def verify_release_layout() -> int:
         "bps_gnn/projection.py",
         "bps_gnn/pair_flow.py",
         "scripts/build_expansion_tables.py",
-        "scripts/draw_eswa_figures.py",
         "scripts/draw_figures.py",
         "figure_data/figure_render_sources/fig2_domain_shift_selector_source.csv",
         "figures/final/Figure_1_final.pdf",
